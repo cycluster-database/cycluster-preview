@@ -89,7 +89,7 @@
       "35063515239394764",
       "1971043639046131296"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 64 z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 64 z\\right)}",
     "Q_x_tex": "\\frac{1-80x+4096x^{2}}{4(1-64x)^{2}x^{2}}",
     "euler_factors": "euler_factors/order_3/3.1.1.json",
     "operator_relations": [
@@ -268,7 +268,7 @@
       "7015285600198426251",
       "665834722090404067674"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 108 z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 108 z\\right)}",
     "Q_x_tex": "\\frac{1-132x+11340x^{2}}{4(1-108x)^{2}x^{2}}",
     "euler_factors": "euler_factors/order_3/3.1.2.json",
     "operator_relations": [
@@ -428,7 +428,7 @@
       "42699876138705090352588",
       "9613773583043391430693792"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 256 z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 256 z\\right)}",
     "Q_x_tex": "\\frac{1-304x+61440x^{2}}{4(1-256x)^{2}x^{2}}",
     "euler_factors": "euler_factors/order_3/3.1.3.json",
     "operator_relations": [
@@ -588,7 +588,7 @@
       "9433668720359866477436486024652",
       "14354283113962706185538044113452448"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 1728 z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 1728 z\\right)}",
     "Q_x_tex": "\\frac{1-1968x+2654208x^{2}}{4x^{2}-13824x^{3}+11943936x^{4}}",
     "euler_factors": "euler_factors/order_3/3.1.4.json",
     "operator_relations": [
@@ -1618,7 +1618,7 @@
       "176088675303",
       "2995262133660"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 18 z - 27 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 18 z - 27 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1-24x+378x^{2}+648x^{3}+729x^{4}}{4x^{2}-144x^{3}+1080x^{4}+3888x^{5}+2916x^{6}}",
     "euler_factors": "euler_factors/order_3/3.2.7.json",
     "operator_relations": [],
@@ -2527,7 +2527,7 @@
       "22488035188",
       "315629692592"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 16 z\\right) \\left(1 + 4 z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 16 z\\right) \\left(1 + 4 z\\right)}",
     "Q_x_tex": "\\frac{1-16x+224x^{2}+976x^{3}+3840x^{4}}{4(-1-4x)^{2}x^{2}(-1+16x)^{2}}",
     "euler_factors": "euler_factors/order_3/3.2.13.json",
     "operator_relations": [],
@@ -2687,7 +2687,7 @@
       "5278178323233",
       "125050693010547"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 27 z\\right) \\left(1 + z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 27 z\\right) \\left(1 + z\\right)}",
     "Q_x_tex": "\\frac{1-34x+745x^{2}+840x^{3}+648x^{4}}{4(-1-x)^{2}x^{2}(-1+27x)^{2}}",
     "euler_factors": "euler_factors/order_3/3.2.14.json",
     "operator_relations": [],
@@ -3173,7 +3173,7 @@
       "28190763160715",
       "791893635531322"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 32 z\\right) \\left(1 + 4 z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 32 z\\right) \\left(1 + 4 z\\right)}",
     "Q_x_tex": "\\frac{1-36x+972x^{2}+3712x^{3}+12288x^{4}}{4(-1-4x)^{2}x^{2}(-1+32x)^{2}}",
     "euler_factors": "euler_factors/order_3/3.2.17.json",
     "operator_relations": [
@@ -3339,7 +3339,7 @@
       "843753060863476",
       "32862276595561856"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 44 z - 16 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 44 z - 16 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1 - 56x + 2000x^{2} + 720x^{3} + 192x^{4}}{4x^{2} - 352x^{3} + 7616x^{4} + 5632x^{5} + 1024x^{6}}",
     "euler_factors": "euler_factors/order_3/3.2.18.json",
     "operator_relations": [
@@ -3502,7 +3502,7 @@
       "12938343126",
       "166002388228"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 4 z\\right) \\left(1 - 18 z + 49 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 4 z\\right) \\left(1 - 18 z + 49 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1-32x+482x^{2}-3332x^{3}+12553x^{4}-27636x^{5}+28812x^{6}}{4x^{2}(-1+4x)^{2}(-1+18x-49x^{2})^{2}}",
     "euler_factors": "euler_factors/order_3/3.3.1.json",
     "operator_relations": [],
@@ -3680,7 +3680,7 @@
       "2451664843",
       "25573623510"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 12 z\\right) \\left(1 - 8 z\\right) \\left(1 - 4 z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 12 z\\right) \\left(1 - 8 z\\right) \\left(1 - 4 z\\right)}",
     "Q_x_tex": "\\frac{1-36x+572x^{2}-5088x^{3}+26688x^{4}-78336x^{5}+110592x^{6}}{4(1-8x)^{2}x^{2}(-1+4x)^{2}(-1+12x)^{2}}",
     "euler_factors": "euler_factors/order_3/3.3.2.json",
     "operator_relations": [],
@@ -3879,7 +3879,7 @@
       "1381888573",
       "14530308866"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 12 z\\right) \\left(1 - 2 z + 5 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 12 z\\right) \\left(1 - 2 z + 5 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1-20x+206x^{2}-336x^{3}+57x^{4}-1980x^{5}+2700x^{6}}{4x^{2}(-1+12x)^{2}(-1+2x-5x^{2})^{2}}",
     "euler_factors": "euler_factors/order_3/3.3.3.json",
     "operator_relations": [],
@@ -4051,7 +4051,7 @@
       "399653364",
       "3660544816"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 4 z\\right) \\left(1 - 12 z + 16 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 4 z\\right) \\left(1 - 12 z + 16 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1-24x+272x^{2}-1488x^{3}+4352x^{4}-6144x^{5}+4096x^{6}}{4x^{2}(-1+4x)^{2}(-1+12x-16x^{2})^{2}}",
     "euler_factors": "euler_factors/order_3/3.3.4.json",
     "operator_relations": [],
@@ -4262,7 +4262,7 @@
       "1023940650379",
       "21547259276914"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 24 z\\right) \\left(1 + 8 z\\right) \\left(1 + 12 z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 24 z\\right) \\left(1 + 8 z\\right) \\left(1 + 12 z\\right)}",
     "Q_x_tex": "\\frac{1 - 4x + 492x^{2} + 14400x^{3} + 89856x^{4}}{4x^{2} - 32x^{3} - 3008x^{4} - 6144x^{5} + 663552x^{6} + 7077888x^{7} + 21233664x^{8}}",
     "euler_factors": "euler_factors/order_3/3.3.5.json",
     "operator_relations": [],
@@ -4409,7 +4409,7 @@
       "388274918795877771",
       "28671869575008024066"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 84 z\\right) \\left(1 + 24 z\\right)^{2}}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 84 z\\right) \\left(1 + 24 z\\right)^{2}}",
     "Q_x_tex": "\\frac{1 - 84x + 8748x^{2}}{4x^{2} - 480x^{3} - 1728x^{4} + 967680x^{5} + 16257024x^{6}}",
     "euler_factors": "euler_factors/order_3/3.3.6.json",
     "operator_relations": [],
@@ -4552,7 +4552,7 @@
       "1274469059553228",
       "53757970811009568"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 48 z\\right) \\left(1 + 16 z\\right)^{2}}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 48 z\\right) \\left(1 + 16 z\\right)^{2}}",
     "Q_x_tex": "\\frac{1 - 48x + 3072x^{2}}{4x^{2} - 256x^{3} - 2048x^{4} + 196608x^{5} + 2359296x^{6}}",
     "euler_factors": "euler_factors/order_3/3.3.7.json",
     "operator_relations": [],
@@ -4695,7 +4695,7 @@
       "22254341688052",
       "632590991957168"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 + 12 z\\right) \\left(1 - 20 z - 400 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 + 12 z\\right) \\left(1 - 20 z - 400 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1 - 8x + 848x^{2} + 31440x^{3} + 220800x^{4}}{4x^{2} - 64x^{3} - 4864x^{4} + 2560x^{5} + 1945600x^{6} + 24576000x^{7} + 92160000x^{8}}",
     "euler_factors": "euler_factors/order_3/3.3.8.json",
     "operator_relations": [],
@@ -4851,7 +4851,7 @@
       "6044857349771",
       "148631578608470"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 28 z\\right) \\left(1 + 4 z\\right) \\left(1 + 8 z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 28 z\\right) \\left(1 + 4 z\\right) \\left(1 + 8 z\\right)}",
     "Q_x_tex": "\\frac{1 - 20x + 636x^{2} + 10016x^{3} + 40640x^{4}}{4x^{2} - 128x^{3} - 1408x^{4} + 31744x^{5} + 484352x^{6} + 2179072x^{7} + 3211264x^{8}}",
     "euler_factors": "euler_factors/order_3/3.3.9.json",
     "operator_relations": [],
@@ -4998,7 +4998,7 @@
       "663382111158170251",
       "51317217920254452454"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 88 z\\right) \\left(1 + 20 z\\right)^{2}}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 88 z\\right) \\left(1 + 20 z\\right)^{2}}",
     "Q_x_tex": "\\frac{1 - 92x + 9100x^{2}}{4x^{2} - 544x^{3} + 4416x^{4} + 957440x^{5} + 12390400x^{6}}",
     "euler_factors": "euler_factors/order_3/3.3.10.json",
     "operator_relations": [],
@@ -5141,7 +5141,7 @@
       "1106781129250796683",
       "89504114088437508554"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 92 z\\right) \\left(1 + 16 z\\right)^{2}}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 92 z\\right) \\left(1 + 16 z\\right)^{2}}",
     "Q_x_tex": "\\frac{1 - 100x + 9484x^{2}}{4x^{2} - 608x^{3} + 11328x^{4} + 894976x^{5} + 8667136x^{6}}",
     "euler_factors": "euler_factors/order_3/3.3.11.json",
     "operator_relations": [],
@@ -5284,7 +5284,7 @@
       "1806804824434320267",
       "152458709068398184110"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 96 z\\right) \\left(1 + 12 z\\right)^{2}}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 96 z\\right) \\left(1 + 12 z\\right)^{2}}",
     "Q_x_tex": "\\frac{1 - 108x + 9900x^{2}}{4x^{2} - 672x^{3} + 19008x^{4} + 774144x^{5} + 5308416x^{6}}",
     "euler_factors": "euler_factors/order_3/3.3.12.json",
     "operator_relations": [],
@@ -5427,7 +5427,7 @@
       "3204444754602684",
       "146417370960149616"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 52 z\\right) \\left(1 + 12 z\\right)^{2}}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 52 z\\right) \\left(1 + 12 z\\right)^{2}}",
     "Q_x_tex": "\\frac{1 - 56x + 3280x^{2}}{4x^{2} - 320x^{3} + 1408x^{4} + 199680x^{5} + 1557504x^{6}}",
     "euler_factors": "euler_factors/order_3/3.3.13.json",
     "operator_relations": [],
@@ -5570,7 +5570,7 @@
       "7525901454533132",
       "370276450782822464"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 56 z\\right) \\left(1 + 8 z\\right)^{2}}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 56 z\\right) \\left(1 + 8 z\\right)^{2}}",
     "Q_x_tex": "\\frac{1 - 64x + 3520x^{2}}{4x^{2} - 384x^{3} + 5632x^{4} + 172032x^{5} + 802816x^{6}}",
     "euler_factors": "euler_factors/order_3/3.3.14.json",
     "operator_relations": [],
@@ -5713,7 +5713,7 @@
       "16665795026193852",
       "878411869418800656"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 60 z\\right) \\left(1 + 4 z\\right)^{2}}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 60 z\\right) \\left(1 + 4 z\\right)^{2}}",
     "Q_x_tex": "\\frac{1 - 72x + 3792x^{2}}{4x^{2} - 448x^{3} + 10624x^{4} + 107520x^{5} + 230400x^{6}}",
     "euler_factors": "euler_factors/order_3/3.3.15.json",
     "operator_relations": [],
@@ -5856,7 +5856,7 @@
       "85228089711348",
       "2722124523681184"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 + 8 z\\right) \\left(1 - 28 z - 304 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 + 8 z\\right) \\left(1 - 28 z - 304 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1 - 24x + 1040x^{2} + 24016x^{3} + 109376x^{4}}{4x^{2} - 160x^{3} - 2624x^{4} + 65024x^{5} + 1504256x^{6} + 10272768x^{7} + 23658496x^{8}}",
     "euler_factors": "euler_factors/order_3/3.3.16.json",
     "operator_relations": [],
@@ -6003,7 +6003,7 @@
       "283815111666676",
       "10059697393927312"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 + 4 z\\right) \\left(1 - 36 z - 176 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 + 4 z\\right) \\left(1 - 36 z - 176 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1 - 40x + 1424x^{2} + 14288x^{3} + 31744x^{4}}{4x^{2} - 256x^{3} + 1536x^{4} + 76288x^{5} + 589824x^{6} + 1802240x^{7} + 1982464x^{8}}",
     "euler_factors": "euler_factors/order_3/3.3.17.json",
     "operator_relations": [],
@@ -6620,7 +6620,7 @@
       "142020363299106174/9765625",
       "9482108310414073078/48828125"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(5 + 8 z\\right) \\left(125 - 1900 z - 40 z^{2} - 188 z^{3}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 + \\frac{8 z}{5}\\right) \\left(1 - \\frac{76 z}{5} - \\frac{8 z^{2}}{25} - \\frac{188 z^{3}}{125}\\right)}",
     "Q_x_tex": "\\frac{390625-7187500x+88437500x^{2}+192937500x^{3}+256775000x^{4}-51024000x^{5}-43026900x^{6}}{1562500x^{2}-42500000x^{3}+212000000x^{4}+1040900000x^{5}+1026800000x^{6}+257504000x^{7}+191643200x^{8}+15160320x^{9}+9048064x^{10}}",
     "euler_factors": "euler_factors/order_3/3.4.1.json",
     "operator_relations": [],
@@ -6789,7 +6789,7 @@
       "26241129",
       "183210705"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 8 z\\right) \\left(1 - 4 z\\right) \\left(1 - 3 z\\right) \\left(1 + z\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 8 z\\right) \\left(1 - 4 z\\right) \\left(1 - 3 z\\right) \\left(1 + z\\right)}",
     "Q_x_tex": "\\frac{1-22x+225x^{2}-1292x^{3}+4436x^{4}-8304x^{5}+5124x^{6}+2016x^{7}+6912x^{8}}{4(1-8x)^{2}(1-4x)^{2}(-1-x)^{2}x^{2}(-1+3x)^{2}}",
     "euler_factors": "euler_factors/order_3/3.4.2.json",
     "operator_relations": [],
@@ -8109,7 +8109,7 @@
       "49830433",
       "393466979"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 - 9 z\\right) \\left(1 + 3 z\\right) \\left(1 + 4 z + 8 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 - 9 z\\right) \\left(1 + 3 z\\right) \\left(1 + 4 z + 8 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1 - 2x + 41x^{2} + 876x^{3} + 3972x^{4} + 4896x^{5} + 756x^{6}}{4x^{2} - 16x^{3} - 328x^{4} - 560x^{5} + 8164x^{6} + 57120x^{7} + 171648x^{8} + 269568x^{9} + 186624x^{10}}",
     "euler_factors": "euler_factors/order_3/3.4.10.json",
     "operator_relations": [],
@@ -8271,7 +8271,7 @@
       "104321601",
       "882352923"
     ],
-    "yuk_alg_tex": "-\\frac{1}{z^{2} \\left(1 + z\\right) \\left(1 + 5 z\\right) \\left(1 - 8 z - 16 z^{2}\\right)}",
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\left(1 + z\\right) \\left(1 + 5 z\\right) \\left(1 - 8 z - 16 z^{2}\\right)}",
     "Q_x_tex": "\\frac{1 - 2x + 57x^{2} + 808x^{3} + 4248x^{4} + 7744x^{5} + 4832x^{6}}{4x^{2} - 16x^{3} - 456x^{4} - 144x^{5} + 15460x^{6} + 65472x^{7} + 111744x^{8} + 87040x^{9} + 25600x^{10}}",
     "euler_factors": "euler_factors/order_3/3.4.11.json",
     "operator_relations": [],
