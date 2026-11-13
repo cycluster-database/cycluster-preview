@@ -1,0 +1,50 @@
+{
+  "schema": "cycluster-page-definitions-v1",
+  "sections": [
+    {"id":"operator","title":"Differential operator","operator_fields":["operator_tex","pols_list"]},
+    {"id":"singularities","title":"Riemann symbol and discriminant","operator_fields":["riemann","discriminant_list","discriminant_tex"]},
+    {"id":"periods","title":"Normalized holomorphic period","operator_fields":["sol_explicit_tex","sol_list"]},
+    {"id":"mirror-map","title":"Mirror map","operator_fields":["qz_list","zq_list"]},
+    {"id":"yukawa","title":"Yukawa coupling and instanton numbers","operator_fields":["yuk_alg_tex","yuk_list","inst_list"]},
+    {"id":"second-order","title":"Associated second-order equation","operator_fields":["Q_x_tex"]},
+    {"id":"constant","title":"Rational Structure Constant","operator_fields":["rho"],"knowl":"rational_structure"},
+    {"id":"monodromy","title":"Monodromy matrices over algebraic numbers","coverage_field":"monodromies","file_fields":["coefficient_field","basis","singularities","singularities_tex","monodromy_matrices","path_diagram"]},
+    {"id":"euler-factors","title":"Euler factors","coverage_field":"euler_factors","file_fields":["coefficient_field","coefficient_basis","row_columns","polynomial","euler_factors"]},
+    {"id":"a-incarnations","title":"A-incarnations","coverage_field":"integral_monodromies","file_fields":["basis_change","singularities","bases"],"basis_fields":["description","parameters","epsilon","epsilon_tex","monodromy_matrices","geometric_invariants","references_list"],"knowl":"integral_parameters"},
+    {"id":"attractors","title":"Candidate attractor points","operator_fields":["attractor_points"]},
+    {"id":"invariants","title":"Invariants of an A-Incarnation","operator_fields":["c3","c2h","h3","dim_h","c4","c3h","h4","c2h2"]},
+    {"id":"elliptic-surfaces","title":"Extremal rational elliptic surfaces","operator_fields":["surfaces"]},
+    {"id":"modular-data","title":"Modular data","operator_fields":["monodromy_group","lian_yau_rows"]},
+    {"id":"geometry","title":"Geometric realization","orders":[1],"description":"A divisor of degree two in $\\mathbb{P}^1$."},
+    {"id":"relations","title":"Relations to other operators","operator_fields":["operator_relations"]},
+    {"id":"references","title":"References","sources":["references_list","description citation keys","attractor_points[].sources[].key","integral bases[].references_list","integral bases[].description citation keys","displayed knowl references"],"bibliography":"references.bib"}
+  ],
+  "rational_structure": {
+    "4": {
+      "frobenius_tex":"\\varpi(z)\\sim(1,\\log z,(\\log z)^2/2,(\\log z)^3/6)^t",
+      "period_basis_tex":"\\Pi_{\\mathbb{Q}}=\\begin{pmatrix}\\dfrac{\\rho}{(2\\pi i)^3}&0&0&\\dfrac{1}{(2\\pi i)^3}\\\\0&0&-\\dfrac{1}{(2\\pi i)^2}&0\\\\1&0&0&0\\\\0&\\dfrac{1}{2\\pi i}&0&0\\end{pmatrix}\\varpi",
+      "paragraphs":["At the MUM point, the Frobenius basis period vector satisfies","The constant $\\rho$ determines the rational basis period vector","In the integral-basis ansatz, $\\epsilon=\\kappa\\rho$."],
+      "convention":"A different displayed basis, when supplied, is specified by the basis matrix in the monodromy file."
+    },
+    "5": {
+      "frobenius_tex":"\\varpi(z)\\sim(1,\\log z,(\\log z)^2/2!,(\\log z)^3/3!,(\\log z)^4/4!)^t",
+      "period_basis_tex":"\\Pi_{\\mathbb{Q}}=\\begin{pmatrix}1&0&0&0&0\\\\0&-\\frac{1}{2\\pi i}&0&0&0\\\\0&0&\\frac{1}{(2\\pi i)^2}&0&0\\\\\\frac{\\rho}{(2\\pi i)^3}&0&0&-\\frac{1}{(2\\pi i)^3}&0\\\\0&-\\frac{\\rho}{(2\\pi i)^4}&0&0&\\frac{1}{(2\\pi i)^4}\\end{pmatrix}\\varpi",
+      "paragraphs":["At the MUM point, the Frobenius basis period vector satisfies","The constant $\\rho$ determines the rational basis period vector"]
+    }
+  },
+  "integral_parameters": {
+    "paragraphs":["With the Frobenius basis period vector at the MUM point","the integral basis period vector is","The rational structure constant satisfies $\\rho=\\epsilon/\\kappa$. For $N=1$, $b=c_2\\!\\cdot\\!H$ in the smooth geometric case."],
+    "period_basis_tex":"\\Pi_{\\mathbb{Z}}=\\begin{pmatrix}\\dfrac{N^2\\epsilon}{(2\\pi i)^3}+S&\\dfrac{Nb}{24(2\\pi i)}&0&\\dfrac{N^2\\kappa}{(2\\pi i)^3}\\\\\\dfrac{b}{24}&\\dfrac{N\\sigma}{2(2\\pi i)}&-\\dfrac{N\\kappa}{(2\\pi i)^2}&0\\\\1&0&0&0\\\\0&\\dfrac{N}{2\\pi i}&0&0\\end{pmatrix}\\varpi",
+    "parameter_domains":{"kappa":"positive integer","N":"positive integer","S":"rational modulo 1","b":"integer modulo 24","sigma":[0,1],"epsilon":"kappa*rho"},
+    "references":["Sch25","KS23","KKSS22"]
+  },
+  "display": {
+    "period_terms":7,
+    "euler_preview_primes":5,
+    "euler_rows_per_page":8,
+    "monodromy_matrices":"one row per integral basis, in the singularity order of its file",
+    "warnings":{"prefix":"Warning:","color":"red"},
+    "euler_factorization":{"rational_coefficients":"factor the polynomial given by polynomial and row_columns over Q","number_field_coefficients":"use coverage.euler_factorizations when present","prime_powers":"write each integer coefficient as u*p^v, where p does not divide u","rational_fibre":"reduce z=a/b to a*b^(-1) modulo p when p does not divide b"},
+    "hadamard_default":"each factor has an explicit expansion_points entry, aligned with operators"
+  }
+}

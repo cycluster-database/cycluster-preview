@@ -1,0 +1,201 @@
+{
+  "operator_id": "w2_4.2.17",
+  "coefficient_field": "Q",
+  "basis": {
+    "frobenius_asymptotics": [
+      "1",
+      "log(z)",
+      "log(z)^2/2",
+      "log(z)^3/6",
+      "log(z)^4/24"
+    ],
+    "period_column": "basis_matrix*varpi",
+    "basis_matrix": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-1/(2*pi*I)",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/(2*pi*I)^2",
+        "0",
+        "0"
+      ],
+      [
+        "rho/(2*pi*I)^3",
+        "0",
+        "0",
+        "-1/(2*pi*I)^3",
+        "0"
+      ],
+      [
+        "0",
+        "-rho/(2*pi*I)^4",
+        "0",
+        "0",
+        "1/(2*pi*I)^4"
+      ]
+    ],
+    "rho": "3*zeta(3)"
+  },
+  "singularities": [
+    "0",
+    "1/256",
+    "+Infinity"
+  ],
+  "monodromy_matrices": [
+    [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/2",
+        "-1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "-1/6",
+        "1/2",
+        "-1",
+        "1",
+        "0"
+      ],
+      [
+        "1/24",
+        "-1/6",
+        "1/2",
+        "-1",
+        "1"
+      ]
+    ],
+    [
+      [
+        "-4/9",
+        "0",
+        "32/3",
+        "32",
+        "128"
+      ],
+      [
+        "-1/36",
+        "-1",
+        "-4/3",
+        "0",
+        "32"
+      ],
+      [
+        "5/108",
+        "0",
+        "-1/9",
+        "-4/3",
+        "32/3"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "25/10368",
+        "0",
+        "5/108",
+        "-1/36",
+        "-4/9"
+      ]
+    ],
+    [
+      [
+        "-4/9",
+        "0",
+        "32/3",
+        "-32",
+        "128"
+      ],
+      [
+        "-5/12",
+        "-1",
+        "12",
+        "-32",
+        "96"
+      ],
+      [
+        "-4/27",
+        "-1",
+        "59/9",
+        "-44/3",
+        "128/3"
+      ],
+      [
+        "-1/72",
+        "-1/2",
+        "7/3",
+        "-5",
+        "16"
+      ],
+      [
+        "121/10368",
+        "-1/6",
+        "71/108",
+        "-59/36",
+        "44/9"
+      ]
+    ]
+  ],
+  "product_matrix_indices": [
+    2,
+    1,
+    0
+  ],
+  "exact_product_is_identity": true,
+  "path_diagram": "monodromy_paths/order_5/w2_4.2.17.html",
+  "source_monodromy_file": "monodromies/order_5/w2_4.2.17.json",
+  "source_type": "uploaded",
+  "source_comparison": "numerical agreement with the listed exact loop conjugations",
+  "source_loop_conjugations": [
+    {
+      "singularity": "0",
+      "uploaded_index": 0,
+      "conjugating_matrix": "identity",
+      "max_absolute_error": "9.24062322889403685092752022571067041910150440015064077360797742429621677266275994679623186460877286530074487546160e-101"
+    },
+    {
+      "singularity": "1/256",
+      "uploaded_index": 1,
+      "conjugating_matrix": "identity",
+      "max_absolute_error": "1.21693193953740054498148076424943000852458438842496023378587836046108969808789243531025505767686710261826913984862e-98"
+    },
+    {
+      "singularity": "+Infinity",
+      "uploaded_index": 2,
+      "conjugating_matrix": "identity",
+      "max_absolute_error": "1.21693193953739989526837041144322885037429809580581227884852869779417936453883379061514696086132873190675876789027e-98"
+    }
+  ],
+  "decimal_precision_of_analytic_continuation": 100
+}

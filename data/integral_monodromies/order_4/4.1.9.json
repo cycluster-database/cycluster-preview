@@ -1,0 +1,138 @@
+{
+  "operator_id": "4.1.9",
+  "rational_basis_file": "monodromies/order_4/4.1.9.json",
+  "basis_change_convention": "integral basis period vector = basis_change * rational basis period vector",
+  "basis_change": [
+    [
+      "N^2*kappa",
+      "0",
+      "S",
+      "N*b/24"
+    ],
+    [
+      "0",
+      "N*kappa",
+      "b/24",
+      "N*sigma/2"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "N"
+    ]
+  ],
+  "singularities": [
+    "0",
+    "1/2985984",
+    "+Infinity"
+  ],
+  "bases": [
+    {
+      "parameters": {
+        "kappa": 1,
+        "N": 1,
+        "S": 0,
+        "b": 22,
+        "sigma": 1
+      },
+      "epsilon": "-484*zeta(3)",
+      "epsilon_tex": "- 484 \\zeta\\!(3)",
+      "monodromy_matrices": [
+        [
+          [
+            "1",
+            "-1",
+            "2",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "-1"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "1"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "-1",
+            "0",
+            "1",
+            "-1"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "-2",
+            "1",
+            "-2",
+            "-3"
+          ],
+          [
+            "-2",
+            "1",
+            "-1",
+            "-1"
+          ],
+          [
+            "1",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "-1",
+            "0",
+            "-1",
+            "0"
+          ]
+        ]
+      ],
+      "description": "The singular weighted complete intersection $X(2,12)\\subset\\mathbb{P}^5(1,1,1,1,4,6)$. The associated variation of Hodge structure is realized by the mirror family in [CDLNT16]. [CDLNT16]",
+      "references_list": [
+        "CDLNT16"
+      ],
+      "geometric_invariants": {
+        "H3": 1,
+        "c2H": 46,
+        "chi": -484
+      }
+    }
+  ]
+}

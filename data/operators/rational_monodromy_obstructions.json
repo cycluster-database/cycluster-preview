@@ -1,0 +1,1018 @@
+[
+  {
+    "operator_id": "4.2.39",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(5))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(5))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "sqrt(5)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.2.42",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "(2)*sqrt(3)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.2.43",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "(2)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.2.44",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.2.45",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "sqrt(3)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.2.48",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(6))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(6))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "sqrt(6)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.2.49",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.2.67",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(-3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(-3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "1/108"
+          ],
+          "trace": "sqrt(-3) + 3"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.2.68",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(i)",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(i)",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "1/256"
+          ],
+          "trace": "2*i + 2"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.2.70",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(i)",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(i)",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "1/256"
+          ],
+          "trace": "2*i + 2"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.6",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(-2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(-2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "-1/512",
+            "1/784"
+          ],
+          "trace": "3*sqrt(-2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.12",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(i)",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(i)",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "1/1296",
+            "1/1728"
+          ],
+          "trace": "3*i"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.13",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(-3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(-3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "1/576",
+            "1/1600"
+          ],
+          "trace": "2*sqrt(-3)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.14",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(i)",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(i)",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "-1/64",
+            "1/1936"
+          ],
+          "trace": "5*i"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.21",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(-6))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(-6))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "1/4608",
+            "1/4624"
+          ],
+          "trace": "sqrt(-6)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.22",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(-3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(-3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "-1/108"
+          ],
+          "trace": "sqrt(-3) + 1"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.23",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(-3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(-3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "-1/864"
+          ],
+          "trace": "sqrt(-3) + 1"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.27",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(i)",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(i)",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "1/256"
+          ],
+          "trace": "2*i + 2"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.28",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(i)",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(i)",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "1/32"
+          ],
+          "trace": "-2*i + 2"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.29",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(i)",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(i)",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "1/32"
+          ],
+          "trace": "2*i + 2"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.3.30",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "(2)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.1",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/64"
+          ],
+          "trace": "(8)*sqrt(3)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.2",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(6))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(6))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "2.123160171779821?"
+          ],
+          "trace": "(10)*sqrt(6)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.3",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0.005401234567901235? - 0.004364856673991034?*I",
+            "0"
+          ],
+          "trace": "(6)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.4",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "0.0910691738241593?"
+          ],
+          "trace": "(12)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.8",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "1.258168990684339?"
+          ],
+          "trace": "(15)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.9",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(6))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(6))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0.003200731595793325? - 0.002586581732735428?*I",
+            "0"
+          ],
+          "trace": "(3)*sqrt(6)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.10",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(6))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(6))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "0.05396691782172398?"
+          ],
+          "trace": "(6)*sqrt(6)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.11",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "-0.02660124121455867?"
+          ],
+          "trace": "(6)*sqrt(3)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.12",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0.003259259259259260? - 0.0005925925925925926?*I",
+            "0"
+          ],
+          "trace": "(5)*sqrt(3)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.13",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(6))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(6))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/256"
+          ],
+          "trace": "(4)*sqrt(6)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.14",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "0.5307900429449553?"
+          ],
+          "trace": "(10)*sqrt(3)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.17",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "-0.011222398637391935?"
+          ],
+          "trace": "(6)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.18",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0.001375000000000000? - 0.0002500000000000000?*I",
+            "0"
+          ],
+          "trace": "(5)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.19",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/1728"
+          ],
+          "trace": "(4)*sqrt(3)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.20",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(6))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(6))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "0.0786355619177712?"
+          ],
+          "trace": "(5)*sqrt(6)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.21",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0.0002000457247370828? - 0.0001616613582959643?*I",
+            "0"
+          ],
+          "trace": "(3)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.22",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "0.003372932363857749?"
+          ],
+          "trace": "(6)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.25",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(39))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(39))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "-10.003702332976757?"
+          ],
+          "trace": "(10)*sqrt(39)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.26",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2), sqrt(23))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2), sqrt(23))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "sqrt(2)"
+        },
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/16"
+          ],
+          "trace": "(4)*sqrt(46)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.27",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2), sqrt(21))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2), sqrt(21))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/4"
+          ],
+          "trace": "(6)*sqrt(21)"
+        },
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/256"
+          ],
+          "trace": "sqrt(42)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.28",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(3), sqrt(7))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(3), sqrt(7))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "+Infinity"
+          ],
+          "trace": "(2)*sqrt(3)"
+        },
+        {
+          "loops_around_singularities": [
+            "0",
+            "-1/108"
+          ],
+          "trace": "(2)*sqrt(21)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.29",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "-1/256"
+          ],
+          "trace": "-(2)*sqrt(2)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.30",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(19))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(19))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "-0.01312000000000000? + 0.01216000000000000?*I"
+          ],
+          "trace": "(3)*sqrt(19)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.31",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(3), sqrt(11))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(3), sqrt(11))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/64"
+          ],
+          "trace": "(6)*sqrt(11)"
+        },
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/108"
+          ],
+          "trace": "(2)*sqrt(33)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.32",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2), sqrt(5))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2), sqrt(5))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/108"
+          ],
+          "trace": "(8)*sqrt(5)"
+        },
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/128"
+          ],
+          "trace": "(4)*sqrt(10)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.4.75",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(-3))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(-3))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 1,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "-0.01479289940828403? + 0.0005693789636978558?*I"
+          ],
+          "trace": "sqrt(-3) + 1"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.6.1",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(6), sqrt(10))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(6), sqrt(10))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/4"
+          ],
+          "trace": "(30)*sqrt(6)"
+        },
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/16"
+          ],
+          "trace": "(12)*sqrt(15)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  },
+  {
+    "operator_id": "4.6.2",
+    "obstruction": "non_rational_invariant_trace",
+    "coefficient_field": "Q(sqrt(2), sqrt(3), sqrt(5))",
+    "invariant_traces": {
+      "field_generated_by_tested_traces": "Q(sqrt(2), sqrt(3), sqrt(5))",
+      "generates_full_matrix_coefficient_field": true,
+      "maximum_word_length_needed": 2,
+      "witnesses": [
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/4"
+          ],
+          "trace": "(20)*sqrt(3)"
+        },
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/36"
+          ],
+          "trace": "(10)*sqrt(6)"
+        },
+        {
+          "loops_around_singularities": [
+            "0",
+            "1/100"
+          ],
+          "trace": "(2)*sqrt(30)"
+        }
+      ]
+    },
+    "identification_precision_decimal_digits": 150
+  }
+]

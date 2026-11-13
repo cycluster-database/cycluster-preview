@@ -1,0 +1,8322 @@
+[
+  {
+    "nn": "3.1.1",
+    "description": "AESZ/Almkvist label: A'=I*A. $\\mathrm{Sym}^{2}(2.2.3)$. Mirror maps and the K3 operator table: [LY95]. Hypergeometric third-order operator: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-8*(2*X+1)^3"
+    ],
+    "degz": 1,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -8 z \\left(2 \\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/64",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "1/2",
+          "1/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-64"
+    ],
+    "discriminant_tex": "1 - 64 z",
+    "sol_list": [
+      "1",
+      "8",
+      "216",
+      "8000",
+      "343000",
+      "16003008",
+      "788889024",
+      "40424237568",
+      "2131746903000",
+      "114933031928000",
+      "6306605327953216",
+      "351047164190381568",
+      "19774031697705428416"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-24",
+      "300",
+      "-2624",
+      "18126",
+      "-105504",
+      "538296",
+      "-2471424",
+      "10400997",
+      "-40674128",
+      "149343012",
+      "-519045888"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "24",
+      "852",
+      "35744",
+      "1645794",
+      "80415216",
+      "4094489992",
+      "214888573248",
+      "11542515402255",
+      "631467591949480",
+      "35063515239394764",
+      "1971043639046131296"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(64z-1)}",
+    "Q_x_tex": "\\frac{1-80x+4096x^{2}}{4(1-64x)^{2}x^{2}}",
+    "euler_factors": "euler_factors/order_3/3.1.1.json",
+    "operator_relations": [
+      {
+        "type": "hadamard_product",
+        "operators": [
+          "1.1.1",
+          "2.1.1"
+        ],
+        "expansion_points": [
+          {
+            "value": "0",
+            "tex": "0"
+          },
+          {
+            "value": "0",
+            "tex": "0"
+          }
+        ]
+      },
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.3"
+        ],
+        "coordinate_or_gauge_transformation_required": true
+      }
+    ],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "Kreuzer-Skarke Polytope (KS 23)"
+    ],
+    "genus0_group": "\\Gamma_0(4)+",
+    "lian_yau_rows": [
+      "p8-03",
+      "p8-04"
+    ],
+    "monodromy_group": "\\Gamma_0(4)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(2.2.3)",
+    "hadamard_product": "I*A",
+    "related_objects": [
+      "1.1.1",
+      "2.1.1"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.2.3"
+      ],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 80*x + 4096*x^2) / (4*x^2 - 512*x^3 + 16384*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-80",
+        "4096"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-512",
+        "16384"
+      ]
+    },
+    "references_list": [
+      "LY95",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.1.2",
+    "description": "AESZ/Almkvist label: B'=I*B. Mirror maps and the K3 operator table: [LY95]. Hypergeometric third-order operator: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-6*(3*X+2)*(2*X+1)*(3*X+1)"
+    ],
+    "degz": 1,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -6 z \\left(2 \\theta + 1\\right) \\left(3 \\theta + 1\\right) \\left(3 \\theta + 2\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/108",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "1/3",
+          "2/3"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-108"
+    ],
+    "discriminant_tex": "1 - 108 z",
+    "sol_list": [
+      "1",
+      "12",
+      "540",
+      "33600",
+      "2425500",
+      "190702512",
+      "15849497664",
+      "1369618398720",
+      "121821136479900",
+      "11079206239530000",
+      "1025579963180813040",
+      "96310511463483233280",
+      "9152842704012278107200"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-42",
+      "981",
+      "-16988",
+      "244230",
+      "-3089394",
+      "35579552",
+      "-381326952",
+      "3860626617",
+      "-37318157820",
+      "347151557964",
+      "-3126591616140"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "42",
+      "2547",
+      "181418",
+      "14147409",
+      "1169321202",
+      "100643939492",
+      "8924936952648",
+      "809787618416520",
+      "74819208058969680",
+      "7015285600198426251",
+      "665834722090404067674"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(108z-1)}",
+    "Q_x_tex": "\\frac{1-132x+11340x^{2}}{4(1-108x)^{2}x^{2}}",
+    "euler_factors": "euler_factors/order_3/3.1.2.json",
+    "operator_relations": [
+      {
+        "type": "hadamard_product",
+        "operators": [
+          "1.1.1",
+          "2.1.2"
+        ],
+        "expansion_points": [
+          {
+            "value": "0",
+            "tex": "0"
+          },
+          {
+            "value": "0",
+            "tex": "0"
+          }
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          2,
+          3
+        ]
+      ],
+      "Kreuzer-Skarke Polytope (KS 2)"
+    ],
+    "genus0_group": "\\Gamma_0(3)+",
+    "lian_yau_rows": [
+      "p8-02"
+    ],
+    "monodromy_group": "\\Gamma_0(3)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": "I*B",
+    "related_objects": [
+      "1.1.1",
+      "2.1.2"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 132*x + 11340*x^2) / (4*x^2 - 864*x^3 + 46656*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-132",
+        "11340"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-864",
+        "46656"
+      ]
+    },
+    "references_list": [
+      "LY95",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.1.3",
+    "description": "AESZ/Almkvist label: C'=I*C. Mirror maps and the K3 operator table: [LY95]. Hypergeometric third-order operator: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-8*(4*X+1)*(2*X+1)*(4*X+3)"
+    ],
+    "degz": 1,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -8 z \\left(2 \\theta + 1\\right) \\left(4 \\theta + 1\\right) \\left(4 \\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/256",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "1/4",
+          "3/4"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-256"
+    ],
+    "discriminant_tex": "1 - 256 z",
+    "sol_list": [
+      "1",
+      "24",
+      "2520",
+      "369600",
+      "63063000",
+      "11732745024",
+      "2308743493056",
+      "472518347558400",
+      "99561092450391000",
+      "21452752266265320000",
+      "4705360871073570227520",
+      "1047071828879079131681280",
+      "235809301462142612780721600"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-104",
+      "6444",
+      "-311744",
+      "13018830",
+      "-493025760",
+      "17411253944",
+      "-583472867840",
+      "18770817643749",
+      "-584450497233840",
+      "17716721171780388",
+      "-525192444572011776"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "104",
+      "15188",
+      "2585184",
+      "480222434",
+      "94395247376",
+      "19304070595976",
+      "4064960003568320",
+      "875470150835783183",
+      "191947530987669939928",
+      "42699876138705090352588",
+      "9613773583043391430693792"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(256z-1)}",
+    "Q_x_tex": "\\frac{1-304x+61440x^{2}}{4(1-256x)^{2}x^{2}}",
+    "euler_factors": "euler_factors/order_3/3.1.3.json",
+    "operator_relations": [
+      {
+        "type": "hadamard_product",
+        "operators": [
+          "1.1.1",
+          "2.1.3"
+        ],
+        "expansion_points": [
+          {
+            "value": "0",
+            "tex": "0"
+          },
+          {
+            "value": "0",
+            "tex": "0"
+          }
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          4
+        ]
+      ],
+      "Kreuzer-Skarke Polytope (KS 0)",
+      "Kreuzer-Skarke Polytope (KS 4)"
+    ],
+    "genus0_group": "\\Gamma_0(2)+",
+    "lian_yau_rows": [
+      "p8-01"
+    ],
+    "monodromy_group": "\\Gamma_0(2)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": "I*C",
+    "related_objects": [
+      "1.1.1",
+      "2.1.3"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 304*x + 61440*x^2) / (4*x^2 - 2048*x^3 + 262144*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-304",
+        "61440"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-2048",
+        "262144"
+      ]
+    },
+    "references_list": [
+      "LY95",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.1.4",
+    "description": "AESZ/Almkvist label: D'=I*D. Hypergeometric third-order operator: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-24*(6*X+5)*(2*X+1)*(6*X+1)"
+    ],
+    "degz": 1,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -24 z \\left(2 \\theta + 1\\right) \\left(6 \\theta + 1\\right) \\left(6 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/1728",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "1/6",
+          "5/6"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-1728"
+    ],
+    "discriminant_tex": "1 - 1728 z",
+    "sol_list": [
+      "1",
+      "120",
+      "83160",
+      "81681600",
+      "93699005400",
+      "117386113965120",
+      "155667030019300800",
+      "214804163196079142400",
+      "305240072216678400087000",
+      "443655767845074392936328000",
+      "656486312795713480715743268160",
+      "985646873056680684690542988249600",
+      "1497786250388951255453847206769124800"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-744",
+      "356652",
+      "-140361152",
+      "49336682190",
+      "-16114625669088",
+      "4999042477430456",
+      "-1492669384085015040",
+      "432762759484818142437",
+      "-122566701136436206749360",
+      "34058364214245581228710692",
+      "-9315629487329800685570383104"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "744",
+      "750420",
+      "872769632",
+      "1102652742882",
+      "1470561136292880",
+      "2037518752496883080",
+      "2904264865530359889600",
+      "4231393254051181981976079",
+      "6273346050902229242859370584",
+      "9433668720359866477436486024652",
+      "14354283113962706185538044113452448"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(1728z-1)}",
+    "Q_x_tex": "\\frac{1-1968x+2654208x^{2}}{4x^{2}-13824x^{3}+11943936x^{4}}",
+    "euler_factors": "euler_factors/order_3/3.1.4.json",
+    "operator_relations": [
+      {
+        "type": "hadamard_product",
+        "operators": [
+          "1.1.1",
+          "2.1.4"
+        ],
+        "expansion_points": [
+          {
+            "value": "0",
+            "tex": "0"
+          },
+          {
+            "value": "0",
+            "tex": "0"
+          }
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 131)",
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": "I*D",
+    "related_objects": [
+      "1.1.1",
+      "2.1.4"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 1968*x + 2654208*x^2) / (4*x^2 - 13824*x^3 + 11943936*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-1968",
+        "2654208"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-13824",
+        "11943936"
+      ]
+    },
+    "references_list": [
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.1",
+    "description": "$\\mathrm{Sym}^{2}(A)$ $\\mathrm{Sym}^{2}(2.1.1)$, $\\mathrm{Sym}^{2}(2.2.1)$. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-8*(2*X+1)*(2*X^2+2*X+1)",
+      "256*(X+1)^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -8 z \\left(2 \\theta + 1\\right) \\left(2 \\theta^{2} + 2 \\theta + 1\\right) +256 z^{2} \\left(\\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/16",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-32",
+      "256"
+    ],
+    "discriminant_tex": "\\left(1 - 16 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "8",
+      "88",
+      "1088",
+      "14296",
+      "195008",
+      "2728384",
+      "38879744",
+      "561787864",
+      "8206324928",
+      "120929313088",
+      "1794924383744",
+      "26802975999424"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-8",
+      "44",
+      "-192",
+      "718",
+      "-2400",
+      "7352",
+      "-20992",
+      "56549",
+      "-145008",
+      "356388",
+      "-844032"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "8",
+      "84",
+      "992",
+      "12514",
+      "164688",
+      "2232200",
+      "30920128",
+      "435506703",
+      "6215660600",
+      "89668182220",
+      "1305109502496"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(16z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-16x+256x^{2}}{4x^{2}(-1+16x)^{2}}",
+    "euler_factors": "euler_factors/order_3/3.2.1.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.1.1"
+        ]
+      },
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.1"
+        ],
+        "coordinate_or_gauge_transformation_required": true
+      }
+    ],
+    "h2": null,
+    "geometry": [],
+    "genus0_group": "\\Gamma_0(3)-",
+    "lian_yau_rows": [
+      "p9-10"
+    ],
+    "monodromy_group": "\\Gamma_0(3)-",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(A); Sym^2(2.1.1), Sym^2(2.2.1)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.1.1"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.1.1",
+        "2.2.1"
+      ],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 16*x + 256*x^2) / (4*x^2 - 128*x^3 + 1024*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-16",
+        "256"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-128",
+        "1024"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.2.2",
+    "description": "$\\mathrm{Sym}^{2}(B)$ $\\mathrm{Sym}^{2}(2.1.2)$. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-3*(2*X+1)*(9*X^2+9*X+4)",
+      "81*(3*X+2)*(3*X+4)*(X+1)"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -3 z \\left(2 \\theta + 1\\right) \\left(9 \\theta^{2} + 9 \\theta + 4\\right) +81 z^{2} \\left(\\theta + 1\\right) \\left(3 \\theta + 2\\right) \\left(3 \\theta + 4\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/27",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "2/3",
+          "4/3"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-54",
+      "729"
+    ],
+    "discriminant_tex": "\\left(1 - 27 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "12",
+      "216",
+      "4440",
+      "97560",
+      "2231712",
+      "52446744",
+      "1256623632",
+      "30550786200",
+      "751243864800",
+      "18642543993216",
+      "466104522940992",
+      "11726813377011096"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-15",
+      "171",
+      "-1679",
+      "15054",
+      "-126981",
+      "1024952",
+      "-8002191",
+      "60868665",
+      "-453390354",
+      "3319443876",
+      "-23954970501"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "15",
+      "279",
+      "5729",
+      "124554",
+      "2810718",
+      "65114402",
+      "1538182398",
+      "36887880105",
+      "895303119303",
+      "21943398532563",
+      "542209373589501"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(27z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-24x+648x^{2}}{4x^{2}(-1+27x)^{2}}",
+    "euler_factors": "euler_factors/order_3/3.2.2.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.1.2"
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [],
+    "genus0_group": "\\Gamma_0(2)-",
+    "lian_yau_rows": [
+      "p9-08"
+    ],
+    "monodromy_group": "\\Gamma_0(2)-",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(B); Sym^2(2.1.2)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.1.2"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.1.2"
+      ],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 24*x + 648*x^2) / (4*x^2 - 216*x^3 + 2916*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-24",
+        "648"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-216",
+        "2916"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.2.3",
+    "description": "$\\mathrm{Sym}^{2}(C)$ $\\mathrm{Sym}^{2}(2.1.3)$. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-8*(2*X+1)*(8*X^2+8*X+3)",
+      "1024*(2*X+3)*(2*X+1)*(X+1)"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -8 z \\left(2 \\theta + 1\\right) \\left(8 \\theta^{2} + 8 \\theta + 3\\right) +1024 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/64",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1/2",
+          "3/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-128",
+      "4096"
+    ],
+    "discriminant_tex": "\\left(1 - 64 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "24",
+      "984",
+      "47040",
+      "2421720",
+      "130261824",
+      "7212950976",
+      "407734119936",
+      "23407414481880",
+      "1360018077887040",
+      "79782104295077184",
+      "4717121726251823616",
+      "280731467180501378496"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-40",
+      "1324",
+      "-39872",
+      "1136334",
+      "-31239904",
+      "837328568",
+      "-22024018432",
+      "570919621861",
+      "-14629272883248",
+      "371340320978724",
+      "-9352290904474880"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "40",
+      "1876",
+      "95072",
+      "5045474",
+      "276107408",
+      "15444602248",
+      "878268335296",
+      "50588345910799",
+      "2944021398570264",
+      "172780225616034252",
+      "10211876493716693664"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(64z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-48x+3072x^{2}}{4x^{2}(-1+64x)^{2}}",
+    "euler_factors": "euler_factors/order_3/3.2.3.json",
+    "operator_relations": [
+      {
+        "type": "hadamard_product",
+        "operators": [
+          "1.1.1",
+          "2.2.1"
+        ],
+        "expansion_points": [
+          {
+            "value": "0",
+            "tex": "0"
+          },
+          {
+            "value": "0",
+            "tex": "0"
+          }
+        ]
+      },
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.1.3"
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [],
+    "genus0_group": "\\Gamma_0(3)-",
+    "lian_yau_rows": [
+      "p9-09"
+    ],
+    "monodromy_group": "\\Gamma_0(3)-",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(C); Sym^2(2.1.3)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.1.3"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.1.3"
+      ],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 48*x + 3072*x^2) / (4*x^2 - 512*x^3 + 16384*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-48",
+        "3072"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-512",
+        "16384"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.2.4",
+    "description": "$\\mathrm{Sym}^{2}(D)$ $\\mathrm{Sym}^{2}(2.1.4)$.",
+    "pols_list": [
+      "X^3",
+      "-24*(2*X+1)*(18*X^2+18*X+5)",
+      "20736*(3*X+5)*(3*X+1)*(X+1)"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -24 z \\left(2 \\theta + 1\\right) \\left(18 \\theta^{2} + 18 \\theta + 5\\right) +20736 z^{2} \\left(\\theta + 1\\right) \\left(3 \\theta + 1\\right) \\left(3 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/432",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1/3",
+          "5/3"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-864",
+      "186624"
+    ],
+    "discriminant_tex": "\\left(1 - 432 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "120",
+      "31320",
+      "9831360",
+      "3359303640",
+      "1205473389120",
+      "446624288510400",
+      "169239770763148800",
+      "65211611306061706200",
+      "25454091134869228603200",
+      "10038194013360814998016320",
+      "3992020402797719587336204800",
+      "1598649482828846267113166308800"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-312",
+      "87084",
+      "-23067968",
+      "5930898126",
+      "-1495818530208",
+      "372227721831608",
+      "-91714975889456640",
+      "22426994284202015973",
+      "-5451141739361408535312",
+      "1318505140039263508909092",
+      "-317628411161190829279725312"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "312",
+      "107604",
+      "39073568",
+      "14645965026",
+      "5609733423408",
+      "2182717163349896",
+      "859521859502348352",
+      "341679883727799750159",
+      "136868519056531319862408",
+      "55173969942211048781835468",
+      "22360181278518828446785034976"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(432z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-240x+103680x^{2}}{4x^{2}-3456x^{3}+746496x^{4}}",
+    "euler_factors": "euler_factors/order_3/3.2.4.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.1.4"
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": null,
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(D); Sym^2(2.1.4)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.1.4"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.1.4"
+      ],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 240*x + 103680*x^2) / (4*x^2 - 3456*x^3 + 746496*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-240",
+        "103680"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-3456",
+        "746496"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.2.5",
+    "description": "$\\mu$ $\\mathrm{Sym}^{2}(B)$ AESZ/Almkvist label: Almkvist: iota. $\\mathrm{Sym}^{2}(2.2.2)$. Third-order building blocks: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-3*(2*X+1)*(9*X^2+9*X+5)",
+      "729*(X+1)^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -3 z \\left(2 \\theta + 1\\right) \\left(9 \\theta^{2} + 9 \\theta + 5\\right) +729 z^{2} \\left(\\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/27",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "-1/3",
+          "1/3"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-54",
+      "729"
+    ],
+    "discriminant_tex": "\\left(1 - 27 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "15",
+      "297",
+      "6495",
+      "149481",
+      "3549015",
+      "86045625",
+      "2117846655",
+      "52722318825",
+      "1324182929415",
+      "33496116147297",
+      "852272490721095",
+      "21791242255255929"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-12",
+      "90",
+      "-508",
+      "2391",
+      "-9828",
+      "36428",
+      "-124188",
+      "395199",
+      "-1186344",
+      "3387252",
+      "-9257364"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "12",
+      "198",
+      "3748",
+      "76629",
+      "1646064",
+      "36597380",
+      "834586944",
+      "19406796498",
+      "458288351064",
+      "10958872614840",
+      "264789114539832"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(27z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-30x+729x^{2}}{4x^{2}-216x^{3}+2916x^{4}}",
+    "euler_factors": "euler_factors/order_3/3.2.5.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.2"
+        ],
+        "coordinate_or_gauge_transformation_required": true
+      }
+    ],
+    "h2": null,
+    "geometry": null,
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "\\mu Sym^2(B); Sym^2(2.2.2)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.1.2",
+      "3.2.2"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.2.2"
+      ],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 30*x + 729*x^2) / (4*x^2 - 216*x^3 + 2916*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-30",
+        "729"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-216",
+        "2916"
+      ]
+    },
+    "references_list": [
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.6",
+    "description": "$\\mu$ $\\mathrm{Sym}^{2}(D)$ AESZ/Almkvist label: Almkvist: kappa. $\\mathrm{Sym}^{2}(2.2.4)$. Third-order building blocks: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-24*(2*X+1)*(18*X^2+18*X+13)",
+      "186624*(X+1)^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -24 z \\left(2 \\theta + 1\\right) \\left(18 \\theta^{2} + 18 \\theta + 13\\right) +186624 z^{2} \\left(\\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/432",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "-2/3",
+          "2/3"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-864",
+      "186624"
+    ],
+    "discriminant_tex": "\\left(1 - 432 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "312",
+      "114264",
+      "44196288",
+      "17571260376",
+      "7102429365312",
+      "2902756971524544",
+      "1195767284675194368",
+      "495517287120629380056",
+      "206288841172365371349312",
+      "86197993139642883062739264",
+      "36126988632615966170624967168",
+      "15179622609889691139626940597696"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-120",
+      "4140",
+      "-166720",
+      "-6012210",
+      "-1165528224",
+      "-178811454280",
+      "-29512658112000",
+      "-5058663289037595",
+      "-894681704302719120",
+      "-162303230946073436124",
+      "-30068511207162012184320"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "120",
+      "24660",
+      "6322720",
+      "1828573410",
+      "570359919024",
+      "187363061411720",
+      "63912709875600960",
+      "22435028661922106895",
+      "8054358587135604281160",
+      "2944447009235280262373580",
+      "1092573128181901095608502240"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(432z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-624x+186624x^{2}}{4x^{2}-3456x^{3}+746496x^{4}}",
+    "euler_factors": "euler_factors/order_3/3.2.6.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.4"
+        ],
+        "coordinate_or_gauge_transformation_required": true
+      }
+    ],
+    "h2": null,
+    "geometry": null,
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "\\mu Sym^2(D); Sym^2(2.2.4)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.1.4",
+      "3.2.4"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.2.4"
+      ],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 624*x + 186624*x^2) / (4*x^2 - 3456*x^3 + 746496*x^4)",
+      "numerator_coeffs": [
+        "1",
+        "-624",
+        "186624"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-3456",
+        "746496"
+      ]
+    },
+    "references_list": [
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.7",
+    "description": "AESZ/Almkvist label: Almkvist: zeta. Third-order building blocks: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-3*(2*X+1)*(3*X^2+3*X+1)",
+      "-27*(X+1)^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -3 z \\left(2 \\theta + 1\\right) \\left(3 \\theta^{2} + 3 \\theta + 1\\right) -27 z^{2} \\left(\\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "z^2+2/3z-1/27",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-18",
+      "-27"
+    ],
+    "discriminant_tex": "1 - 18 z - 27 z^{2}",
+    "sol_list": [
+      "1",
+      "3",
+      "27",
+      "309",
+      "4059",
+      "57753",
+      "866349",
+      "13492251",
+      "216077787",
+      "3536145057",
+      "58875891777",
+      "994150929951",
+      "16984143140589"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-6",
+      "9",
+      "22",
+      "-102",
+      "108",
+      "221",
+      "-858",
+      "810",
+      "1476",
+      "-5262",
+      "4572"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "6",
+      "63",
+      "788",
+      "10893",
+      "160290",
+      "2462279",
+      "39029952",
+      "633649221",
+      "10482950718",
+      "176088675303",
+      "2995262133660"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(27z^{2}+18z-1)}",
+    "Q_x_tex": "\\frac{1-24x+378x^{2}+648x^{3}+729x^{4}}{4x^{2}-144x^{3}+1080x^{4}+3888x^{5}+2916x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.2.7.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": null,
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "twisted symmetric square of BZB",
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 24*x + 378*x^2 + 648*x^3 + 729*x^4) / (4*x^2 - 144*x^3 + 1080*x^4 + 3888*x^5 + 2916*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-24",
+        "378",
+        "648",
+        "729"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-144",
+        "1080",
+        "3888",
+        "2916"
+      ]
+    },
+    "references_list": [
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.8",
+    "description": "AESZ/Almkvist label: Almkvist: epsilon. Third-order building blocks: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-4*(2*X+1)*(3*X^2+3*X+1)",
+      "16*(X+1)^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -4 z \\left(2 \\theta + 1\\right) \\left(3 \\theta^{2} + 3 \\theta + 1\\right) +16 z^{2} \\left(\\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "z^2-3/2z+1/16",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-24",
+      "16"
+    ],
+    "discriminant_tex": "1 - 24 z + 16 z^{2}",
+    "sol_list": [
+      "1",
+      "4",
+      "40",
+      "544",
+      "8536",
+      "145504",
+      "2618176",
+      "48943360",
+      "941244376",
+      "18502137184",
+      "370091343040",
+      "7508629231360",
+      "154145664817600"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-8",
+      "28",
+      "-64",
+      "142",
+      "-352",
+      "792",
+      "-1536",
+      "2917",
+      "-5744",
+      "10868",
+      "-19200"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "8",
+      "100",
+      "1504",
+      "24994",
+      "442192",
+      "8166952",
+      "155645376",
+      "3038074767",
+      "60428319800",
+      "1220372498748",
+      "24957263037472"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(16z^{2}-24z+1)}",
+    "Q_x_tex": "\\frac{1-32x+608x^{2}-512x^{3}+256x^{4}}{4x^{2}-192x^{3}+2432x^{4}-3072x^{5}+1024x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.2.8.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": null,
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "twisted symmetric square of BZB",
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 32*x + 608*x^2 - 512*x^3 + 256*x^4) / (4*x^2 - 192*x^3 + 2432*x^4 - 3072*x^5 + 1024*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-32",
+        "608",
+        "-512",
+        "256"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-192",
+        "2432",
+        "-3072",
+        "1024"
+      ]
+    },
+    "references_list": [
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.9",
+    "description": "AESZ/Almkvist label: Almkvist: eta. Third-order building blocks: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-(2*X+1)*(11*X^2+11*X+5)",
+      "125*(X+1)^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(11 \\theta^{2} + 11 \\theta + 5\\right) +125 z^{2} \\left(\\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "z^2-22/125z+1/125",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-22",
+      "125"
+    ],
+    "discriminant_tex": "1 - 22 z + 125 z^{2}",
+    "sol_list": [
+      "1",
+      "5",
+      "35",
+      "275",
+      "2275",
+      "19255",
+      "163925",
+      "1385725",
+      "11483875",
+      "91781375",
+      "688658785",
+      "4581861025",
+      "22550427925"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-6",
+      "27",
+      "-98",
+      "315",
+      "-912",
+      "2456",
+      "-6210",
+      "14937",
+      "-34390",
+      "76317",
+      "-163896"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "6",
+      "45",
+      "368",
+      "3132",
+      "27120",
+      "235580",
+      "2030400",
+      "17172954",
+      "140568916",
+      "1089400902",
+      "7653426552"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(125z^{2}-22z+1)}",
+    "Q_x_tex": "\\frac{1-32x+458x^{2}-4000x^{3}+15625x^{4}}{4x^{2}-176x^{3}+2936x^{4}-22000x^{5}+62500x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.2.9.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": null,
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "twisted symmetric square of BZB",
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 32*x + 458*x^2 - 4000*x^3 + 15625*x^4) / (4*x^2 - 176*x^3 + 2936*x^4 - 22000*x^5 + 62500*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-32",
+        "458",
+        "-4000",
+        "15625"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-176",
+        "2936",
+        "-22000",
+        "62500"
+      ]
+    },
+    "references_list": [
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.10",
+    "description": "AESZ/Almkvist label: Almkvist: delta. Third-order building blocks: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-(2*X+1)*(7*X^2+7*X+3)",
+      "81*(X+1)^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(7 \\theta^{2} + 7 \\theta + 3\\right) +81 z^{2} \\left(\\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "z^2-14/81z+1/81",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-14",
+      "81"
+    ],
+    "discriminant_tex": "1 - 14 z + 81 z^{2}",
+    "sol_list": [
+      "1",
+      "3",
+      "9",
+      "3",
+      "-279",
+      "-2997",
+      "-19431",
+      "-65853",
+      "292329",
+      "7202523",
+      "69363009",
+      "407637387",
+      "702049401"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "18",
+      "-52",
+      "159",
+      "-396",
+      "1004",
+      "-2260",
+      "5103",
+      "-10680",
+      "22260",
+      "-44028"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "14",
+      "12",
+      "-403",
+      "-4784",
+      "-33244",
+      "-128576",
+      "338258",
+      "11469512",
+      "118660552",
+      "749836136"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(81z^{2}-14z+1)}",
+    "Q_x_tex": "\\frac{1-20x+150x^{2}-1620x^{3}+6561x^{4}}{4x^{2}-112x^{3}+1432x^{4}-9072x^{5}+26244x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.2.10.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": null,
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "twisted symmetric square of BZB",
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 20*x + 150*x^2 - 1620*x^3 + 6561*x^4) / (4*x^2 - 112*x^3 + 1432*x^4 - 9072*x^5 + 26244*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-20",
+        "150",
+        "-1620",
+        "6561"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-112",
+        "1432",
+        "-9072",
+        "26244"
+      ]
+    },
+    "references_list": [
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.11",
+    "description": "Verrill Surface '96, 3 Loop Banana Graph AESZ/Almkvist label: Almkvist: alpha. Mirror maps and the K3 operator table: [LY95]. Third-order building blocks: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-2*(2*X+1)*(5*X^2+5*X+2)",
+      "64*(X+1)^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(5 \\theta^{2} + 5 \\theta + 2\\right) +64 z^{2} \\left(\\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/16",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-20",
+      "64"
+    ],
+    "discriminant_tex": "\\left(1 - 16 z\\right) \\left(1 - 4 z\\right)",
+    "sol_list": [
+      "1",
+      "4",
+      "28",
+      "256",
+      "2716",
+      "31504",
+      "387136",
+      "4951552",
+      "65218204",
+      "878536624",
+      "12046924528",
+      "167595457792",
+      "2359613230144"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-6",
+      "21",
+      "-68",
+      "198",
+      "-510",
+      "1248",
+      "-2904",
+      "6393",
+      "-13604",
+      "28044",
+      "-55956"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "6",
+      "51",
+      "518",
+      "5841",
+      "70398",
+      "887908",
+      "11572728",
+      "154625928",
+      "2106521392",
+      "29149853835",
+      "408589170006"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z-1)(16z-1)}",
+    "Q_x_tex": "\\frac{1-28x+396x^{2}-1792x^{3}+4096x^{4}}{4(1-16x)^{2}(1-4x)^{2}x^{2}}",
+    "euler_factors": "euler_factors/order_3/3.2.11.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(12)+",
+    "lian_yau_rows": [
+      "p8-09",
+      "p8-12",
+      "p8-13",
+      "p9-03"
+    ],
+    "monodromy_group": "\\Gamma_0(12)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "twisted symmetric square of BZB",
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 28*x + 396*x^2 - 1792*x^3 + 4096*x^4) / (4*x^2 - 160*x^3 + 2112*x^4 - 10240*x^5 + 16384*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-28",
+        "396",
+        "-1792",
+        "4096"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-160",
+        "2112",
+        "-10240",
+        "16384"
+      ]
+    },
+    "references_list": [
+      "LY95",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.12",
+    "description": "AESZ/Almkvist label: Almkvist: gamma. Mirror maps and the K3 operator table: [LY95]. Third-order building blocks: [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-(2*X+1)*(17*X^2+17*X+5)",
+      "(X+1)^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(17 \\theta^{2} + 17 \\theta + 5\\right) +z^{2} \\left(\\theta + 1\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "z^2-34z+1",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-34",
+      "1"
+    ],
+    "discriminant_tex": "1 - 34 z + z^{2}",
+    "sol_list": [
+      "1",
+      "5",
+      "73",
+      "1445",
+      "33001",
+      "819005",
+      "21460825",
+      "584307365",
+      "16367912425",
+      "468690849005",
+      "13657436403073",
+      "403676083788125",
+      "12073365010564729"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-12",
+      "66",
+      "-220",
+      "495",
+      "-804",
+      "1068",
+      "-1596",
+      "3279",
+      "-6952",
+      "12276",
+      "-17844"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "12",
+      "222",
+      "4900",
+      "119133",
+      "3079152",
+      "83016292",
+      "2308425024",
+      "65723270226",
+      "1906379233880",
+      "56136119041128",
+      "1673703204901944"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(z^{2}-34z+1)}",
+    "Q_x_tex": "\\frac{1-44x+1206x^{2}-44x^{3}+x^{4}}{4x^{2}(1-34x+x^{2})^{2}}",
+    "euler_factors": "euler_factors/order_3/3.2.12.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(6)+6",
+    "lian_yau_rows": [
+      "p8-06"
+    ],
+    "monodromy_group": "\\Gamma_0(6)+6",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "twisted symmetric square of BZB",
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 44*x + 1206*x^2 - 44*x^3 + x^4) / (4*x^2 - 272*x^3 + 4632*x^4 - 272*x^5 + 4*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-44",
+        "1206",
+        "-44",
+        "1"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-272",
+        "4632",
+        "-272",
+        "4"
+      ]
+    },
+    "references_list": [
+      "LY95",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.13",
+    "description": "A-incarnation K3 complete intersection of four divisors of bidegree $(1,1)$ in $\\mathbb{P}^3\\times\\mathbb{P}^3$ Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-2*(2*X+1)*(3*X^2+3*X+1)",
+      "-4*(4*X+5)*(4*X+3)*(X+1)"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(3 \\theta^{2} + 3 \\theta + 1\\right) -4 z^{2} \\left(\\theta + 1\\right) \\left(4 \\theta + 3\\right) \\left(4 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/16",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "3/4",
+          "5/4"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-12",
+      "-64"
+    ],
+    "discriminant_tex": "\\left(1 - 16 z\\right) \\left(1 + 4 z\\right)",
+    "sol_list": [
+      "1",
+      "2",
+      "18",
+      "164",
+      "1810",
+      "21252",
+      "263844",
+      "3395016",
+      "44916498",
+      "607041380",
+      "8345319268",
+      "116335834056",
+      "1640651321764"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "-6",
+      "56",
+      "-45",
+      "-360",
+      "894",
+      "960",
+      "-6951",
+      "4660",
+      "32288",
+      "-71376"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "38",
+      "384",
+      "4409",
+      "53476",
+      "678226",
+      "8871120",
+      "118849608",
+      "1622452528",
+      "22488035188",
+      "315629692592"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z+1)(16z-1)}",
+    "Q_x_tex": "\\frac{1-16x+224x^{2}+976x^{3}+3840x^{4}}{4(-1-4x)^{2}x^{2}(-1+16x)^{2}}",
+    "euler_factors": "euler_factors/order_3/3.2.13.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(10)+",
+    "lian_yau_rows": [
+      "p8-10"
+    ],
+    "monodromy_group": "\\Gamma_0(10)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 16*x + 224*x^2 + 976*x^3 + 3840*x^4) / (4*x^2 - 96*x^3 + 64*x^4 + 6144*x^5 + 16384*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-16",
+        "224",
+        "976",
+        "3840"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-96",
+        "64",
+        "6144",
+        "16384"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.2.14",
+    "description": "A-incarnation K3 linear section of codimension six in $\\mathrm{Gr}(2,6)$. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-(2*X+1)*(13*X^2+13*X+4)",
+      "-3*(3*X+2)*(3*X+4)*(X+1)"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(13 \\theta^{2} + 13 \\theta + 4\\right) -3 z^{2} \\left(\\theta + 1\\right) \\left(3 \\theta + 2\\right) \\left(3 \\theta + 4\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/27",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "2/3",
+          "4/3"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-26",
+      "-27"
+    ],
+    "discriminant_tex": "\\left(1 - 27 z\\right) \\left(1 + z\\right)",
+    "sol_list": [
+      "1",
+      "4",
+      "48",
+      "760",
+      "13840",
+      "273504",
+      "5703096",
+      "123519792",
+      "2751843600",
+      "62659854400",
+      "1451780950048",
+      "34116354472512",
+      "811208174862904"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-9",
+      "30",
+      "-15",
+      "-240",
+      "978",
+      "-1463",
+      "-2361",
+      "18201",
+      "-42800",
+      "15624",
+      "227742"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "9",
+      "132",
+      "2310",
+      "44574",
+      "914790",
+      "19589099",
+      "432716025",
+      "9787969764",
+      "225581825864",
+      "5278178323233",
+      "125050693010547"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(z+1)(27z-1)}",
+    "Q_x_tex": "\\frac{1-34x+745x^{2}+840x^{3}+648x^{4}}{4(-1-x)^{2}x^{2}(-1+27x)^{2}}",
+    "euler_factors": "euler_factors/order_3/3.2.14.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(7)+",
+    "lian_yau_rows": [
+      "p8-08"
+    ],
+    "monodromy_group": "\\Gamma_0(7)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 34*x + 745*x^2 + 840*x^3 + 648*x^4) / (4*x^2 - 208*x^3 + 2488*x^4 + 5616*x^5 + 2916*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-34",
+        "745",
+        "840",
+        "648"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-208",
+        "2488",
+        "5616",
+        "2916"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.2.15",
+    "description": "A geometric realization is not specified in the source record. This is the third sporadic operator in Appendix B of [AvS23].",
+    "pols_list": [
+      "X^3",
+      "-2*(2*X+1)*(7*X^2+7*X+3)",
+      "12*(4*X+3)*(X+1)*(4*X+5)"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(7 \\theta^{2} + 7 \\theta + 3\\right) +12 z^{2} \\left(\\theta + 1\\right) \\left(4 \\theta + 3\\right) \\left(4 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/12",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/16",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "3/4",
+          "5/4"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-28",
+      "192"
+    ],
+    "discriminant_tex": "\\left(1 - 16 z\\right) \\left(1 - 12 z\\right)",
+    "sol_list": [
+      "1",
+      "6",
+      "54",
+      "564",
+      "6390",
+      "76356",
+      "948276",
+      "12132504",
+      "158984694",
+      "2124923460",
+      "28877309604",
+      "398046897144",
+      "5554209125556"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-8",
+      "48",
+      "-248",
+      "1152",
+      "-4992",
+      "20516",
+      "-80960",
+      "309312",
+      "-1150848",
+      "4188672",
+      "-14963712"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "8",
+      "80",
+      "888",
+      "10496",
+      "129536",
+      "1650908",
+      "21577760",
+      "287859776",
+      "3906163168",
+      "53774539264",
+      "749488018432"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(12z-1)(16z-1)}",
+    "Q_x_tex": "\\frac{1-40x+720x^{2}-7344x^{3}+34560x^{4}}{4x^{2}-224x^{3}+4672x^{4}-43008x^{5}+147456x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.2.15.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": null,
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 40*x + 720*x^2 - 7344*x^3 + 34560*x^4) / (4*x^2 - 224*x^3 + 4672*x^4 - 43008*x^5 + 147456*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-40",
+        "720",
+        "-7344",
+        "34560"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-224",
+        "4672",
+        "-43008",
+        "147456"
+      ]
+    },
+    "references_list": [
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "3.2.16",
+    "description": "Lian-Yau table rows p8-05, p8-11. Former label: 3.5.1. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-2*(1+2*X)*(3+10*X+10*X^2)",
+      "36*(X+1)*(1+2*X)*(3+2*X)"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(10 \\theta^{2} + 10 \\theta + 3\\right) +36 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/36",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1/2",
+          "3/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-40",
+      "144"
+    ],
+    "discriminant_tex": "\\left(1 - 36 z\\right) \\left(1 - 4 z\\right)",
+    "sol_list": [
+      "1",
+      "6",
+      "90",
+      "1860",
+      "44730",
+      "1172556",
+      "32496156",
+      "936369720",
+      "27770358330",
+      "842090474940",
+      "25989269017140",
+      "813689707488840",
+      "25780447171287900"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-14",
+      "117",
+      "-884",
+      "6630",
+      "-48294",
+      "341312",
+      "-2368376",
+      "16226649",
+      "-109967700",
+      "738429420",
+      "-4921284996"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "14",
+      "275",
+      "6414",
+      "164945",
+      "4512614",
+      "128831492",
+      "3794321432",
+      "114434716808",
+      "3516481768048",
+      "109705872375691",
+      "3465569839523614"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z-1)(36z-1)}",
+    "Q_x_tex": "\\frac{1-52x+1500x^{2}-6048x^{3}+15552x^{4}}{4(1-36x)^{2}(1-4x)^{2}x^{2}}",
+    "euler_factors": "euler_factors/order_3/3.2.16.json",
+    "operator_relations": [
+      {
+        "type": "hadamard_product",
+        "operators": [
+          "1.1.1",
+          "2.2.9"
+        ],
+        "expansion_points": [
+          {
+            "value": "0",
+            "tex": "0"
+          },
+          {
+            "value": "0",
+            "tex": "0"
+          }
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          2
+        ],
+        [
+          2
+        ],
+        [
+          2
+        ]
+      ],
+      "Kreuzer-Skarke Polytope (KS 106)"
+    ],
+    "genus0_group": "\\Gamma_0(6)+",
+    "lian_yau_rows": [
+      "p8-05",
+      "p8-11"
+    ],
+    "monodromy_group": "\\Gamma_0(6)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 52*x + 1500*x^2 - 6048*x^3 + 15552*x^4) / (4*x^2 - 320*x^3 + 7552*x^4 - 46080*x^5 + 82944*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-52",
+        "1500",
+        "-6048",
+        "15552"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-320",
+        "7552",
+        "-46080",
+        "82944"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.2.17",
+    "description": "Lian-Yau table rows p8-07. Former label: 3.5.2. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-2*(1+2*X)*(2+7*X+7*X^2)",
+      "-32*(X+1)*(1+2*X)*(3+2*X)"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(7 \\theta^{2} + 7 \\theta + 2\\right) -32 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/32",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1/2",
+          "3/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-28",
+      "-128"
+    ],
+    "discriminant_tex": "\\left(1 - 32 z\\right) \\left(1 + 4 z\\right)",
+    "sol_list": [
+      "1",
+      "4",
+      "60",
+      "1120",
+      "24220",
+      "567504",
+      "14030016",
+      "360222720",
+      "9513014940",
+      "256758913840",
+      "7051260776560",
+      "196403499277440",
+      "5535202897806400"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-10",
+      "21",
+      "228",
+      "-1850",
+      "3246",
+      "31968",
+      "-240360",
+      "399609",
+      "3779780",
+      "-27501172",
+      "44511156"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "10",
+      "179",
+      "3722",
+      "85393",
+      "2080850",
+      "52879716",
+      "1385742024",
+      "37177510536",
+      "1016092640592",
+      "28190763160715",
+      "791893635531322"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z+1)(32z-1)}",
+    "Q_x_tex": "\\frac{1-36x+972x^{2}+3712x^{3}+12288x^{4}}{4(-1-4x)^{2}x^{2}(-1+32x)^{2}}",
+    "euler_factors": "euler_factors/order_3/3.2.17.json",
+    "operator_relations": [
+      {
+        "type": "hadamard_product",
+        "operators": [
+          "1.1.1",
+          "2.2.8"
+        ],
+        "expansion_points": [
+          {
+            "value": "0",
+            "tex": "0"
+          },
+          {
+            "value": "0",
+            "tex": "0"
+          }
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "Kreuzer-Skarke Polytope (KS 104)"
+    ],
+    "genus0_group": "\\Gamma_0(6)+",
+    "lian_yau_rows": [
+      "p8-07"
+    ],
+    "monodromy_group": "\\Gamma_0(6)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 36*x + 972*x^2 + 3712*x^3 + 12288*x^4) / (4*x^2 - 224*x^3 + 2112*x^4 + 28672*x^5 + 65536*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-36",
+        "972",
+        "3712",
+        "12288"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-224",
+        "2112",
+        "28672",
+        "65536"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.2.18",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-6 - 34*X - 66*X^2 - 44*X^3",
+      "-12 - 44*X - 48*X^2 - 16*X^3"
+    ],
+    "degz": 2,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(11 \\theta^{2} + 11 \\theta + 3\\right) -4 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "z^2+11/4z-1/16",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1/2",
+          "3/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-44",
+      "-16"
+    ],
+    "discriminant_tex": "1 - 44 z - 16 z^{2}",
+    "sol_list": [
+      "1",
+      "6",
+      "114",
+      "2940",
+      "87570",
+      "2835756",
+      "96982116",
+      "3446781624",
+      "126047377170",
+      "4712189770860",
+      "179275447715364",
+      "6918537571788024",
+      "270178056420497316"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-16",
+      "122",
+      "-568",
+      "1555",
+      "-224",
+      "-24450",
+      "159648",
+      "-630119",
+      "1530320",
+      "-146272",
+      "-21486128"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "16",
+      "390",
+      "11288",
+      "359257",
+      "12144832",
+      "428062482",
+      "15556709880",
+      "578757656040",
+      "21933363843600",
+      "843753060863476",
+      "32862276595561856"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(16z^{2}+44z-1)}",
+    "Q_x_tex": "\\frac{1 - 56x + 2000x^{2} + 720x^{3} + 192x^{4}}{4x^{2} - 352x^{3} + 7616x^{4} + 5632x^{5} + 1024x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.2.18.json",
+    "operator_relations": [
+      {
+        "type": "hadamard_product",
+        "operators": [
+          "1.1.1",
+          "2.2.7"
+        ],
+        "expansion_points": [
+          {
+            "value": "0",
+            "tex": "0"
+          },
+          {
+            "value": "0",
+            "tex": "0"
+          }
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 658)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-015"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 56*x + 2000*x^2 + 720*x^3 + 192*x^4) / (4*x^2 - 352*x^3 + 7616*x^4 + 5632*x^5 + 1024*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-56",
+        "2000",
+        "720",
+        "192"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-352",
+        "7616",
+        "5632",
+        "1024"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.1",
+    "description": "Lian-Yau table rows p8-14. Former label: 3.5.3. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-(1+2*X)*(5+11*X+11*X^2)",
+      "(X+1)*(141+242*X+121*X^2)",
+      "-98*(X+1)*(X+2)*(2*X+3)"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(11 \\theta^{2} + 11 \\theta + 5\\right) +z^{2} \\left(\\theta + 1\\right) \\left(121 \\theta^{2} + 242 \\theta + 141\\right) -98 z^{3} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(2 \\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^2-18/49z+1/49",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "2",
+          "3/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-22",
+      "121",
+      "-196"
+    ],
+    "discriminant_tex": "\\left(1 - 4 z\\right) \\left(1 - 18 z + 49 z^{2}\\right)",
+    "sol_list": [
+      "1",
+      "5",
+      "33",
+      "269",
+      "2545",
+      "26565",
+      "295785",
+      "3441765",
+      "41336145",
+      "508419125",
+      "6370849633",
+      "81036019245",
+      "1043553629209"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-6",
+      "25",
+      "-104",
+      "412",
+      "-1578",
+      "5936",
+      "-21940",
+      "80062",
+      "-289176",
+      "1035505",
+      "-3681692"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "6",
+      "47",
+      "434",
+      "4451",
+      "48898",
+      "563092",
+      "6707788",
+      "81966341",
+      "1021656578",
+      "12938343126",
+      "166002388228"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z-1)(49z^{2}-18z+1)}",
+    "Q_x_tex": "\\frac{1-32x+482x^{2}-3332x^{3}+12553x^{4}-27636x^{5}+28812x^{6}}{4x^{2}(-1+4x)^{2}(-1+18x-49x^{2})^{2}}",
+    "euler_factors": "euler_factors/order_3/3.3.1.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(14)+",
+    "lian_yau_rows": [
+      "p8-14"
+    ],
+    "monodromy_group": "\\Gamma_0(14)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 32*x + 482*x^2 - 3332*x^3 + 12553*x^4 - 27636*x^5 + 28812*x^6) / (4*x^2 - 176*x^3 + 2904*x^4 - 22864*x^5 + 93060*x^6 - 189728*x^7 + 153664*x^8)",
+      "numerator_coeffs": [
+        "1",
+        "-32",
+        "482",
+        "-3332",
+        "12553",
+        "-27636",
+        "28812"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-176",
+        "2904",
+        "-22864",
+        "93060",
+        "-189728",
+        "153664"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.3.2",
+    "description": "Lian-Yau table rows p8-15, p9-04. Former label: 3.5.4. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-6*(1+2*X)*(1+2*X+2*X^2)",
+      "4*(X+1)*(51+88*X+44*X^2)",
+      "-192*(X+1)*(X+2)*(2*X+3)"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -6 z \\left(2 \\theta + 1\\right) \\left(2 \\theta^{2} + 2 \\theta + 1\\right) +4 z^{2} \\left(\\theta + 1\\right) \\left(44 \\theta^{2} + 88 \\theta + 51\\right) -192 z^{3} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(2 \\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/12",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "2",
+          "3/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-24",
+      "176",
+      "-384"
+    ],
+    "discriminant_tex": "\\left(1 - 12 z\\right) \\left(1 - 8 z\\right) \\left(1 - 4 z\\right)",
+    "sol_list": [
+      "1",
+      "6",
+      "42",
+      "324",
+      "2682",
+      "23436",
+      "213756",
+      "2018232",
+      "19602234",
+      "194886972",
+      "1975613652",
+      "20356174152",
+      "212646827484"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-6",
+      "29",
+      "-132",
+      "574",
+      "-2430",
+      "10056",
+      "-40920",
+      "164353",
+      "-653220",
+      "2573908",
+      "-10068948"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "6",
+      "43",
+      "342",
+      "2921",
+      "26286",
+      "246172",
+      "2378760",
+      "23570056",
+      "238367664",
+      "2451664843",
+      "25573623510"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z-1)(8z-1)(12z-1)}",
+    "Q_x_tex": "\\frac{1-36x+572x^{2}-5088x^{3}+26688x^{4}-78336x^{5}+110592x^{6}}{4(1-8x)^{2}x^{2}(-1+4x)^{2}(-1+12x)^{2}}",
+    "euler_factors": "euler_factors/order_3/3.3.2.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          1,
+          0
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(12|2)+",
+    "lian_yau_rows": [
+      "p8-15",
+      "p9-04"
+    ],
+    "monodromy_group": "\\Gamma_0(12|2)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 36*x + 572*x^2 - 5088*x^3 + 26688*x^4 - 78336*x^5 + 110592*x^6) / (4*x^2 - 192*x^3 + 3712*x^4 - 36864*x^5 + 197632*x^6 - 540672*x^7 + 589824*x^8)",
+      "numerator_coeffs": [
+        "1",
+        "-36",
+        "572",
+        "-5088",
+        "26688",
+        "-78336",
+        "110592"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-192",
+        "3712",
+        "-36864",
+        "197632",
+        "-540672",
+        "589824"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.3.3",
+    "description": "Lian-Yau table rows p9-01. Former label: 3.5.5. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-(1+2*X)*(3+7*X+7*X^2)",
+      "(X+1)*(33+58*X+29*X^2)",
+      "-30*(X+1)*(X+2)*(2*X+3)"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(7 \\theta^{2} + 7 \\theta + 3\\right) +z^{2} \\left(\\theta + 1\\right) \\left(29 \\theta^{2} + 58 \\theta + 33\\right) -30 z^{3} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(2 \\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/12",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^2-2/5z+1/5",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "2",
+          "3/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-14",
+      "29",
+      "-60"
+    ],
+    "discriminant_tex": "\\left(1 - 12 z\\right) \\left(1 - 2 z + 5 z^{2}\\right)",
+    "sol_list": [
+      "1",
+      "3",
+      "15",
+      "105",
+      "855",
+      "7533",
+      "69909",
+      "673515",
+      "6673095",
+      "67565445",
+      "696024945",
+      "7271827335",
+      "76868300925"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "8",
+      "-22",
+      "70",
+      "-182",
+      "441",
+      "-1110",
+      "2839",
+      "-7030",
+      "17027",
+      "-41426"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "24",
+      "182",
+      "1546",
+      "14014",
+      "132759",
+      "1298862",
+      "13022997",
+      "133113300",
+      "1381888573",
+      "14530308866"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(12z-1)(5z^{2}-2z+1)}",
+    "Q_x_tex": "\\frac{1-20x+206x^{2}-336x^{3}+57x^{4}-1980x^{5}+2700x^{6}}{4x^{2}(-1+12x)^{2}(-1+2x-5x^{2})^{2}}",
+    "euler_factors": "euler_factors/order_3/3.3.3.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(15)+",
+    "lian_yau_rows": [
+      "p9-01"
+    ],
+    "monodromy_group": "\\Gamma_0(15)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 20*x + 206*x^2 - 336*x^3 + 57*x^4 - 1980*x^5 + 2700*x^6) / (4*x^2 - 112*x^3 + 1016*x^4 - 3728*x^5 + 10084*x^6 - 13920*x^7 + 14400*x^8)",
+      "numerator_coeffs": [
+        "1",
+        "-20",
+        "206",
+        "-336",
+        "57",
+        "-1980",
+        "2700"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-112",
+        "1016",
+        "-3728",
+        "10084",
+        "-13920",
+        "14400"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.3.4",
+    "description": "Lian-Yau table rows p9-02, p9-05. Former label: 3.5.6. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-4*(1+2*X)*(1+2*X+2*X^2)",
+      "16*(X+1)*(5+8*X+4*X^2)",
+      "-8*(2*X+3)^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -4 z \\left(2 \\theta + 1\\right) \\left(2 \\theta^{2} + 2 \\theta + 1\\right) +16 z^{2} \\left(\\theta + 1\\right) \\left(4 \\theta^{2} + 8 \\theta + 5\\right) -8 z^{3} \\left(2 \\theta + 3\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^2-3/4z+1/16",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "3/2",
+          "3/2",
+          "3/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-16",
+      "64",
+      "-64"
+    ],
+    "discriminant_tex": "\\left(1 - 4 z\\right) \\left(1 - 12 z + 16 z^{2}\\right)",
+    "sol_list": [
+      "1",
+      "4",
+      "20",
+      "120",
+      "820",
+      "6128",
+      "48712",
+      "404480",
+      "3467380",
+      "30449680",
+      "272490096",
+      "2475669984",
+      "22773747400"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "10",
+      "-24",
+      "51",
+      "-104",
+      "206",
+      "-384",
+      "697",
+      "-1228",
+      "2112",
+      "-3568"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "22",
+      "144",
+      "1049",
+      "8196",
+      "67202",
+      "570528",
+      "4971880",
+      "44216080",
+      "399653364",
+      "3660544816"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z-1)(16z^{2}-12z+1)}",
+    "Q_x_tex": "\\frac{1-24x+272x^{2}-1488x^{3}+4352x^{4}-6144x^{5}+4096x^{6}}{4x^{2}(-1+4x)^{2}(-1+12x-16x^{2})^{2}}",
+    "euler_factors": "euler_factors/order_3/3.3.4.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          1,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(20)+",
+    "lian_yau_rows": [
+      "p9-02",
+      "p9-05"
+    ],
+    "monodromy_group": "\\Gamma_0(20)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 24*x + 272*x^2 - 1488*x^3 + 4352*x^4 - 6144*x^5 + 4096*x^6) / (4*x^2 - 128*x^3 + 1536*x^4 - 8704*x^5 + 24576*x^6 - 32768*x^7 + 16384*x^8)",
+      "numerator_coeffs": [
+        "1",
+        "-24",
+        "272",
+        "-1488",
+        "4352",
+        "-6144",
+        "4096"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-128",
+        "1536",
+        "-8704",
+        "24576",
+        "-32768",
+        "16384"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.3.5",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-2*X - 6*X^2 - 4*X^3",
+      "-288 - 1056*X - 1152*X^2 - 384*X^3",
+      "-4320 - 13248*X - 10368*X^2 - 2304*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\theta \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) -96 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -288 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "-1/12",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/24",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-4",
+      "-384",
+      "-2304"
+    ],
+    "discriminant_tex": "\\left(1 - 24 z\\right) \\left(1 + 8 z\\right) \\left(1 + 12 z\\right)",
+    "sol_list": [
+      "1",
+      "0",
+      "36",
+      "240",
+      "6300",
+      "90720",
+      "1884960",
+      "34594560",
+      "705404700",
+      "14130916800",
+      "293458301136",
+      "6120581987520",
+      "129739390837056"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-2",
+      "-75",
+      "-44",
+      "5286",
+      "18006",
+      "-335488",
+      "-2243144",
+      "18229401",
+      "214033908",
+      "-734774484",
+      "-17636332188"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "2",
+      "83",
+      "834",
+      "18641",
+      "302762",
+      "6156740",
+      "117561704",
+      "2405192840",
+      "48981636880",
+      "1023940650379",
+      "21547259276914"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(8z+1)(12z+1)(24z-1)}",
+    "Q_x_tex": "\\frac{1 - 4x + 492x^{2} + 14400x^{3} + 89856x^{4}}{4x^{2} - 32x^{3} - 3008x^{4} - 6144x^{5} + 663552x^{6} + 7077888x^{7} + 21233664x^{8}}",
+    "euler_factors": "euler_factors/order_3/3.3.5.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 14)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-003"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 4*x + 492*x^2 + 14400*x^3 + 89856*x^4) / (4*x^2 - 32*x^3 - 3008*x^4 - 6144*x^5 + 663552*x^6 + 7077888*x^7 + 21233664*x^8)",
+      "numerator_coeffs": [
+        "1",
+        "-4",
+        "492",
+        "14400",
+        "89856"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-32",
+        "-3008",
+        "-6144",
+        "663552",
+        "7077888",
+        "21233664"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.6",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-18*X - 54*X^2 - 36*X^3",
+      "-2592 - 9504*X - 10368*X^2 - 3456*X^3",
+      "-90720 - 278208*X - 217728*X^2 - 48384*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -18 z \\theta \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) -864 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -6048 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/24",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "-1/6",
+          "1/6"
+        ]
+      },
+      {
+        "sing": "1/84",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-36",
+      "-3456",
+      "-48384"
+    ],
+    "discriminant_tex": "\\left(1 - 84 z\\right) \\left(1 + 24 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "0",
+      "324",
+      "9840",
+      "691740",
+      "40007520",
+      "2660787360",
+      "178404145920",
+      "12411157859100",
+      "879611915582400",
+      "63474612766188624",
+      "4643699105251926720",
+      "343729987939521158976"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-18",
+      "-459",
+      "13684",
+      "203814",
+      "-9597690",
+      "-70546432",
+      "6317585784",
+      "7247652633",
+      "-3933855420012",
+      "18086085714348",
+      "2319993912785796"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "18",
+      "1107",
+      "56786",
+      "3543057",
+      "226212858",
+      "15196875332",
+      "1048137783336",
+      "74028315606408",
+      "5321964665039760",
+      "388274918795877771",
+      "28671869575008024066"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(24z+1)^{2}(84z-1)}",
+    "Q_x_tex": "\\frac{1 - 84x + 8748x^{2}}{4x^{2} - 480x^{3} - 1728x^{4} + 967680x^{5} + 16257024x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.3.6.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 27)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-005"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 84*x + 8748*x^2) / (4*x^2 - 480*x^3 - 1728*x^4 + 967680*x^5 + 16257024*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-84",
+        "8748"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-480",
+        "-1728",
+        "967680",
+        "16257024"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.7",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-8*X - 24*X^2 - 16*X^3",
+      "-960 - 3520*X - 3840*X^2 - 1280*X^3",
+      "-23040 - 70656*X - 55296*X^2 - 12288*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -8 z \\theta \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) -320 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -1536 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/16",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/48",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-16",
+      "-1280",
+      "-12288"
+    ],
+    "discriminant_tex": "\\left(1 - 48 z\\right) \\left(1 + 16 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "0",
+      "120",
+      "1920",
+      "83160",
+      "2661120",
+      "102970560",
+      "3920716800",
+      "156430474200",
+      "6331304179200",
+      "261307786259520",
+      "10926053621683200",
+      "462316139787902400"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-8",
+      "-212",
+      "1856",
+      "48846",
+      "-428384",
+      "-11271496",
+      "98856448",
+      "2601059557",
+      "-22812571248",
+      "-600232422108",
+      "5264333635328"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "8",
+      "340",
+      "9184",
+      "339170",
+      "12174160",
+      "469662088",
+      "18454040000",
+      "744970389007",
+      "30579215365176",
+      "1274469059553228",
+      "53757970811009568"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(16z+1)^{2}(48z-1)}",
+    "Q_x_tex": "\\frac{1 - 48x + 3072x^{2}}{4x^{2} - 256x^{3} - 2048x^{4} + 196608x^{5} + 2359296x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.3.7.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 33)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-007"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 48*x + 3072*x^2) / (4*x^2 - 256*x^3 - 2048*x^4 + 196608*x^5 + 2359296*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-48",
+        "3072"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-256",
+        "-2048",
+        "196608",
+        "2359296"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.8",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-4*X - 12*X^2 - 8*X^3",
+      "-480 - 1760*X - 1920*X^2 - 640*X^3",
+      "-9000 - 27600*X - 21600*X^2 - 4800*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -4 z \\theta \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) -160 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -600 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/12",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^2+1/20z-1/400",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-8",
+      "-640",
+      "-4800"
+    ],
+    "discriminant_tex": "\\left(1 + 12 z\\right) \\left(1 - 20 z - 400 z^{2}\\right)",
+    "sol_list": [
+      "1",
+      "0",
+      "60",
+      "600",
+      "18900",
+      "393120",
+      "10487400",
+      "266666400",
+      "7211704500",
+      "196444248000",
+      "5473185878160",
+      "154269301586400",
+      "4402635166729800"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "-118",
+      "248",
+      "14515",
+      "-488",
+      "-1727154",
+      "-3397440",
+      "198599737",
+      "801388340",
+      "-22014543808",
+      "-139349539664"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "150",
+      "2432",
+      "64537",
+      "1514980",
+      "39920130",
+      "1050613200",
+      "28655833704",
+      "791876176944",
+      "22254341688052",
+      "632590991957168"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(12z+1)(400z^{2}+20z-1)}",
+    "Q_x_tex": "\\frac{1 - 8x + 848x^{2} + 31440x^{3} + 220800x^{4}}{4x^{2} - 64x^{3} - 4864x^{4} + 2560x^{5} + 1945600x^{6} + 24576000x^{7} + 92160000x^{8}}",
+    "euler_factors": "euler_factors/order_3/3.3.8.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 176)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-012"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 8*x + 848*x^2 + 31440*x^3 + 220800*x^4) / (4*x^2 - 64*x^3 - 4864*x^4 + 2560*x^5 + 1945600*x^6 + 24576000*x^7 + 92160000*x^8)",
+      "numerator_coeffs": [
+        "1",
+        "-8",
+        "848",
+        "31440",
+        "220800"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-64",
+        "-4864",
+        "2560",
+        "1945600",
+        "24576000",
+        "92160000"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.9",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-2 - 12*X - 24*X^2 - 16*X^3",
+      "-228 - 836*X - 912*X^2 - 304*X^3",
+      "-1680 - 5152*X - 4032*X^2 - 896*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right)^{3} -76 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -112 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "-1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/28",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-16",
+      "-304",
+      "-896"
+    ],
+    "discriminant_tex": "\\left(1 - 28 z\\right) \\left(1 + 4 z\\right) \\left(1 + 8 z\\right)",
+    "sol_list": [
+      "1",
+      "2",
+      "42",
+      "620",
+      "12250",
+      "249732",
+      "5434044",
+      "122237544",
+      "2829739770",
+      "66905738900",
+      "1609323973972",
+      "39253295938584",
+      "968624268721564"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-6",
+      "-43",
+      "380",
+      "1798",
+      "-21246",
+      "-74848",
+      "1175848",
+      "2853049",
+      "-64008228",
+      "-91118772",
+      "3425526316"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "6",
+      "115",
+      "1990",
+      "40721",
+      "865726",
+      "19299492",
+      "442765496",
+      "10402204296",
+      "248891128880",
+      "6044857349771",
+      "148631578608470"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z+1)(8z+1)(28z-1)}",
+    "Q_x_tex": "\\frac{1 - 20x + 636x^{2} + 10016x^{3} + 40640x^{4}}{4x^{2} - 128x^{3} - 1408x^{4} + 31744x^{5} + 484352x^{6} + 2179072x^{7} + 3211264x^{8}}",
+    "euler_factors": "euler_factors/order_3/3.3.9.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 14)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T001"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 20*x + 636*x^2 + 10016*x^3 + 40640*x^4) / (4*x^2 - 128*x^3 - 1408*x^4 + 31744*x^5 + 484352*x^6 + 2179072*x^7 + 3211264*x^8)",
+      "numerator_coeffs": [
+        "1",
+        "-20",
+        "636",
+        "10016",
+        "40640"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-128",
+        "-1408",
+        "31744",
+        "484352",
+        "2179072",
+        "3211264"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.10",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-2 - 28*X - 72*X^2 - 48*X^3",
+      "-2340 - 8580*X - 9360*X^2 - 3120*X^3",
+      "-66000 - 202400*X - 158400*X^2 - 35200*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(12 \\theta^{2} + 12 \\theta + 1\\right) -780 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -4400 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/20",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "-1/6",
+          "1/6"
+        ]
+      },
+      {
+        "sing": "1/88",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-48",
+      "-3120",
+      "-35200"
+    ],
+    "discriminant_tex": "\\left(1 - 88 z\\right) \\left(1 + 20 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "2",
+      "330",
+      "13100",
+      "852250",
+      "53835012",
+      "3687758844",
+      "260276788200",
+      "18924687574650",
+      "1405373302404500",
+      "106189477175035540",
+      "8136903418460969880",
+      "630829268335226806300"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-22",
+      "-299",
+      "15132",
+      "26630",
+      "-8774734",
+      "66944672",
+      "4320004328",
+      "-78074099783",
+      "-1705512332420",
+      "59929126865484",
+      "401499307050060"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "22",
+      "1267",
+      "70998",
+      "4562769",
+      "306892302",
+      "21553369252",
+      "1558127400568",
+      "115254549007240",
+      "8680183855023280",
+      "663382111158170251",
+      "51317217920254452454"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(20z+1)^{2}(88z-1)}",
+    "Q_x_tex": "\\frac{1 - 92x + 9100x^{2}}{4x^{2} - 544x^{3} + 4416x^{4} + 957440x^{5} + 12390400x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.3.10.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 27)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T002"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 92*x + 9100*x^2) / (4*x^2 - 544*x^3 + 4416*x^4 + 957440*x^5 + 12390400*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-92",
+        "9100"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-544",
+        "4416",
+        "957440",
+        "12390400"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.11",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-4 - 38*X - 90*X^2 - 60*X^3",
+      "-2016 - 7392*X - 8064*X^2 - 2688*X^3",
+      "-44160 - 135424*X - 105984*X^2 - 23552*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(15 \\theta^{2} + 15 \\theta + 2\\right) -672 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -2944 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/16",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "-1/6",
+          "1/6"
+        ]
+      },
+      {
+        "sing": "1/92",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-60",
+      "-2688",
+      "-23552"
+    ],
+    "discriminant_tex": "\\left(1 - 92 z\\right) \\left(1 + 16 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "4",
+      "348",
+      "16480",
+      "1059100",
+      "70966224",
+      "5053747776",
+      "373100462592",
+      "28336645768860",
+      "2199239822494000",
+      "173665681582767088",
+      "13908532072670132352",
+      "1127043157908794211904"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-26",
+      "-107",
+      "14468",
+      "-132282",
+      "-5633186",
+      "139485280",
+      "1063461080",
+      "-84398253959",
+      "545586389092",
+      "35783041651980",
+      "-736598043023404"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "26",
+      "1459",
+      "87322",
+      "5826257",
+      "410347426",
+      "30109731044",
+      "2275622190472",
+      "175956421649288",
+      "13853212928311760",
+      "1106781129250796683",
+      "89504114088437508554"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(16z+1)^{2}(92z-1)}",
+    "Q_x_tex": "\\frac{1 - 100x + 9484x^{2}}{4x^{2} - 608x^{3} + 11328x^{4} + 894976x^{5} + 8667136x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.3.11.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 27)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T003"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 100*x + 9484*x^2) / (4*x^2 - 608*x^3 + 11328*x^4 + 894976*x^5 + 8667136*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-100",
+        "9484"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-608",
+        "11328",
+        "894976",
+        "8667136"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.12",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-6 - 48*X - 108*X^2 - 72*X^3",
+      "-1620 - 5940*X - 6480*X^2 - 2160*X^3",
+      "-25920 - 79488*X - 62208*X^2 - 13824*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -6 z \\left(2 \\theta + 1\\right) \\left(6 \\theta^{2} + 6 \\theta + 1\\right) -540 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -1728 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/12",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "-1/6",
+          "1/6"
+        ]
+      },
+      {
+        "sing": "1/96",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-72",
+      "-2160",
+      "-13824"
+    ],
+    "discriminant_tex": "\\left(1 - 96 z\\right) \\left(1 + 12 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "6",
+      "378",
+      "20100",
+      "1314810",
+      "92255436",
+      "6840749916",
+      "526714870968",
+      "41717830289850",
+      "3377125924552380",
+      "278178421077367668",
+      "23240946044286596808",
+      "1964700879430131555804"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-30",
+      "117",
+      "11308",
+      "-236058",
+      "-1197558",
+      "124453184",
+      "-1486362552",
+      "-31256979111",
+      "1168428245580",
+      "-5049644949012",
+      "-437934166362468"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "30",
+      "1683",
+      "106142",
+      "7370385",
+      "541812150",
+      "41473909508",
+      "3270436751832",
+      "263845761148296",
+      "21674291217554160",
+      "1806804824434320267",
+      "152458709068398184110"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(12z+1)^{2}(96z-1)}",
+    "Q_x_tex": "\\frac{1 - 108x + 9900x^{2}}{4x^{2} - 672x^{3} + 19008x^{4} + 774144x^{5} + 5308416x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.3.12.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 27)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T004"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 108*x + 9900*x^2) / (4*x^2 - 672*x^3 + 19008*x^4 + 774144*x^5 + 5308416*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-108",
+        "9900"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-672",
+        "19008",
+        "774144",
+        "5308416"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.13",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-2 - 18*X - 42*X^2 - 28*X^3",
+      "-828 - 3036*X - 3312*X^2 - 1104*X^3",
+      "-14040 - 43056*X - 33696*X^2 - 7488*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(7 \\theta^{2} + 7 \\theta + 1\\right) -276 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -936 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/12",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/52",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-28",
+      "-1104",
+      "-7488"
+    ],
+    "discriminant_tex": "\\left(1 - 52 z\\right) \\left(1 + 12 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "2",
+      "126",
+      "3140",
+      "118510",
+      "4450572",
+      "180033084",
+      "7514710632",
+      "322967978190",
+      "14177032529660",
+      "633143041412596",
+      "28674110286326232",
+      "1313826857787745756"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-12",
+      "-132",
+      "2848",
+      "15630",
+      "-618000",
+      "-846120",
+      "124889856",
+      "-284774811",
+      "-23590654376",
+      "141437704596",
+      "4139170597248"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "12",
+      "420",
+      "13712",
+      "521058",
+      "20655864",
+      "856357096",
+      "36544682784",
+      "1596185155599",
+      "70992395974228",
+      "3204444754602684",
+      "146417370960149616"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(12z+1)^{2}(52z-1)}",
+    "Q_x_tex": "\\frac{1 - 56x + 3280x^{2}}{4x^{2} - 320x^{3} + 1408x^{4} + 199680x^{5} + 1557504x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.3.13.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 33)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T005"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 56*x + 3280*x^2) / (4*x^2 - 320*x^3 + 1408*x^4 + 199680*x^5 + 1557504*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-56",
+        "3280"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-320",
+        "1408",
+        "199680",
+        "1557504"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.14",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-4 - 28*X - 60*X^2 - 40*X^3",
+      "-624 - 2288*X - 2496*X^2 - 832*X^3",
+      "-6720 - 20608*X - 16128*X^2 - 3584*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -4 z \\left(2 \\theta + 1\\right) \\left(5 \\theta^{2} + 5 \\theta + 1\\right) -208 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -448 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/8",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/56",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-40",
+      "-832",
+      "-3584"
+    ],
+    "discriminant_tex": "\\left(1 - 56 z\\right) \\left(1 + 8 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "4",
+      "144",
+      "4480",
+      "171640",
+      "7033824",
+      "304609536",
+      "13692197376",
+      "632996895960",
+      "29905435811680",
+      "1437503824941184",
+      "70079704854921216",
+      "3456729361820652736"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-16",
+      "-20",
+      "2688",
+      "-15922",
+      "-316096",
+      "4773432",
+      "16677888",
+      "-879081755",
+      "3552088864",
+      "115089250660",
+      "-1379698192896"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "16",
+      "532",
+      "19392",
+      "784098",
+      "33556128",
+      "1496393736",
+      "68762473344",
+      "3233467067919",
+      "154847052015728",
+      "7525901454533132",
+      "370276450782822464"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(8z+1)^{2}(56z-1)}",
+    "Q_x_tex": "\\frac{1 - 64x + 3520x^{2}}{4x^{2} - 384x^{3} + 5632x^{4} + 172032x^{5} + 802816x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.3.14.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 33)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T006"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 64*x + 3520*x^2) / (4*x^2 - 384*x^3 + 5632*x^4 + 172032*x^5 + 802816*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-64",
+        "3520"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-384",
+        "5632",
+        "172032",
+        "802816"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.15",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-6 - 38*X - 78*X^2 - 52*X^3",
+      "-348 - 1276*X - 1392*X^2 - 464*X^3",
+      "-1800 - 5520*X - 4320*X^2 - 960*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(13 \\theta^{2} + 13 \\theta + 3\\right) -116 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -120 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/4",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/60",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-52",
+      "-464",
+      "-960"
+    ],
+    "discriminant_tex": "\\left(1 - 60 z\\right) \\left(1 + 4 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "6",
+      "174",
+      "6060",
+      "245070",
+      "10751076",
+      "497822556",
+      "23946941304",
+      "1185056588430",
+      "59943696358260",
+      "3085468375444884",
+      "161090104228175304",
+      "8510214202228003356"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-20",
+      "124",
+      "992",
+      "-24306",
+      "133264",
+      "1421528",
+      "-29573888",
+      "137315941",
+      "1980168168",
+      "-35686288236",
+      "135521536640"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "20",
+      "676",
+      "26608",
+      "1149794",
+      "52702792",
+      "2516891368",
+      "123878404064",
+      "6239741999119",
+      "320094213331596",
+      "16665795026193852",
+      "878411869418800656"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z+1)^{2}(60z-1)}",
+    "Q_x_tex": "\\frac{1 - 72x + 3792x^{2}}{4x^{2} - 448x^{3} + 10624x^{4} + 107520x^{5} + 230400x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.3.15.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 33)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T007"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 72*x + 3792*x^2) / (4*x^2 - 448*x^3 + 10624*x^4 + 107520*x^5 + 230400*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-72",
+        "3792"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-448",
+        "10624",
+        "107520",
+        "230400"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.16",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-2 - 14*X - 30*X^2 - 20*X^3",
+      "-396 - 1452*X - 1584*X^2 - 528*X^3",
+      "-4560 - 13984*X - 10944*X^2 - 2432*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(5 \\theta^{2} + 5 \\theta + 1\\right) -132 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -304 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^2+7/76z-1/304",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-20",
+      "-528",
+      "-2432"
+    ],
+    "discriminant_tex": "\\left(1 + 8 z\\right) \\left(1 - 28 z - 304 z^{2}\\right)",
+    "sol_list": [
+      "1",
+      "2",
+      "66",
+      "1220",
+      "31570",
+      "834372",
+      "23572164",
+      "688531272",
+      "20694586770",
+      "635347246820",
+      "19843714669636",
+      "628490483085192",
+      "20138364038133796"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-8",
+      "-70",
+      "872",
+      "5139",
+      "-90256",
+      "-336450",
+      "9022048",
+      "16985497",
+      "-874859672",
+      "-178209248",
+      "82455109648"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "8",
+      "198",
+      "4488",
+      "119129",
+      "3296984",
+      "95486162",
+      "2847120392",
+      "86903119336",
+      "2701371887824",
+      "85228089711348",
+      "2722124523681184"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(8z+1)(304z^{2}+28z-1)}",
+    "Q_x_tex": "\\frac{1 - 24x + 1040x^{2} + 24016x^{3} + 109376x^{4}}{4x^{2} - 160x^{3} - 2624x^{4} + 65024x^{5} + 1504256x^{6} + 10272768x^{7} + 23658496x^{8}}",
+    "euler_factors": "euler_factors/order_3/3.3.16.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 176)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T008"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 24*x + 1040*x^2 + 24016*x^3 + 109376*x^4) / (4*x^2 - 160*x^3 - 2624*x^4 + 65024*x^5 + 1504256*x^6 + 10272768*x^7 + 23658496*x^8)",
+      "numerator_coeffs": [
+        "1",
+        "-24",
+        "1040",
+        "24016",
+        "109376"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-160",
+        "-2624",
+        "65024",
+        "1504256",
+        "10272768",
+        "23658496"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.17",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-4 - 24*X - 48*X^2 - 32*X^3",
+      "-240 - 880*X - 960*X^2 - 320*X^3",
+      "-1320 - 4048*X - 3168*X^2 - 704*X^3"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -4 z \\left(2 \\theta + 1\\right)^{3} -80 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) -88 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^2+9/44z-1/176",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-32",
+      "-320",
+      "-704"
+    ],
+    "discriminant_tex": "\\left(1 + 4 z\\right) \\left(1 - 36 z - 176 z^{2}\\right)",
+    "sol_list": [
+      "1",
+      "4",
+      "84",
+      "1960",
+      "53620",
+      "1585584",
+      "49465416",
+      "1602359616",
+      "53384322420",
+      "1817618442640",
+      "62966419660144",
+      "2212304411999136",
+      "78645568962358216"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-12",
+      "10",
+      "728",
+      "-4301",
+      "-25656",
+      "405198",
+      "-355328",
+      "-24400967",
+      "144128412",
+      "859847232",
+      "-13577075344"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "12",
+      "278",
+      "7312",
+      "212249",
+      "6535628",
+      "209762946",
+      "6940084544",
+      "235021137000",
+      "8106543077744",
+      "283815111666676",
+      "10059697393927312"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z+1)(176z^{2}+36z-1)}",
+    "Q_x_tex": "\\frac{1 - 40x + 1424x^{2} + 14288x^{3} + 31744x^{4}}{4x^{2} - 256x^{3} + 1536x^{4} + 76288x^{5} + 589824x^{6} + 1802240x^{7} + 1982464x^{8}}",
+    "euler_factors": "euler_factors/order_3/3.3.17.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 176)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T009"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 40*x + 1424*x^2 + 14288*x^3 + 31744*x^4) / (4*x^2 - 256*x^3 + 1536*x^4 + 76288*x^5 + 589824*x^6 + 1802240*x^7 + 1982464*x^8)",
+      "numerator_coeffs": [
+        "1",
+        "-40",
+        "1424",
+        "14288",
+        "31744"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-256",
+        "1536",
+        "76288",
+        "589824",
+        "1802240",
+        "1982464"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.18",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-6*X^3 - 9*X^2 - 5*X - 1",
+      "-244*X^3 - 732*X^2 - 671*X - 183",
+      "504*X^3 + 2268*X^2 + 2898*X + 945"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(3 \\theta^{2} + 3 \\theta + 1\\right) -61 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) +63 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/2",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "-1/14",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/18",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-6",
+      "-244",
+      "504"
+    ],
+    "discriminant_tex": "\\left(1 - 18 z\\right) \\left(1 - 2 z\\right) \\left(1 + 14 z\\right)",
+    "sol_list": [
+      "1",
+      "1",
+      "51/2",
+      "245/2",
+      "23555/8",
+      "191583/8",
+      "7965111/16",
+      "85670013/16",
+      "12947020515/128",
+      "164252374715/128",
+      "5864791785853/256",
+      "82385923371843/256",
+      "5701570558270951/1024"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-2",
+      "-48",
+      "200",
+      "1262",
+      "-11256",
+      "-7840",
+      "443712",
+      "-1328475",
+      "-11931164",
+      "94565232",
+      "110062176"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "2",
+      "56",
+      "320",
+      "7506",
+      "66612",
+      "1355072",
+      "15334944",
+      "285794895",
+      "3741192590",
+      "66289887608",
+      "949964808608"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\cdot \\left(2 z - 1\\right) \\left(14 z + 1\\right) \\left(18 z - 1\\right)}",
+    "Q_x_tex": "\\frac{50448 x^{4} - 1312 x^{3} + 344 x^{2} - 8 x + 1}{1016064 x^{8} - 983808 x^{7} + 213952 x^{6} + 15744 x^{5} - 1808 x^{4} - 48 x^{3} + 4 x^{2}}",
+    "euler_factors": "euler_factors/order_3/3.3.18.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 321)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T010"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(50448*x^4 - 1312*x^3 + 344*x^2 - 8*x + 1)/(1016064*x^8 - 983808*x^7 + 213952*x^6 + 15744*x^5 - 1808*x^4 - 48*x^3 + 4*x^2)",
+      "numerator_coeffs": [
+        "1",
+        "-8",
+        "344",
+        "-1312",
+        "50448"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-48",
+        "-1808",
+        "15744",
+        "213952",
+        "-983808",
+        "1016064"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.19",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-12*X^3 - 18*X^2 - 10*X - 2",
+      "-208*X^3 - 624*X^2 - 572*X - 156",
+      "960*X^3 + 4320*X^2 + 5520*X + 1800"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(3 \\theta^{2} + 3 \\theta + 1\\right) -52 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) +120 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "-1/12",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/20",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-12",
+      "-208",
+      "960"
+    ],
+    "discriminant_tex": "\\left(1 - 20 z\\right) \\left(1 - 4 z\\right) \\left(1 + 12 z\\right)",
+    "sol_list": [
+      "1",
+      "2",
+      "30",
+      "260",
+      "4270",
+      "55692",
+      "924924",
+      "14225640",
+      "241093710",
+      "4005364220",
+      "69421143220",
+      "1202017329240",
+      "21249866283100"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "-36",
+      "352",
+      "-370",
+      "-13488",
+      "98456",
+      "33024",
+      "-4796571",
+      "27141320",
+      "61299636",
+      "-1628201856"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "68",
+      "688",
+      "11490",
+      "159144",
+      "2669864",
+      "42220896",
+      "721847055",
+      "12170878492",
+      "212475020060",
+      "3711957611344"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\cdot \\left(4 z - 1\\right) \\left(12 z + 1\\right) \\left(20 z - 1\\right)}",
+    "Q_x_tex": "\\frac{54528 x^{4} - 2816 x^{3} + 416 x^{2} - 16 x + 1}{3686400 x^{8} - 1597440 x^{7} + 80896 x^{6} + 27648 x^{5} - 1088 x^{4} - 96 x^{3} + 4 x^{2}}",
+    "euler_factors": "euler_factors/order_3/3.3.19.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 321)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T011"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(54528*x^4 - 2816*x^3 + 416*x^2 - 16*x + 1)/(3686400*x^8 - 1597440*x^7 + 80896*x^6 + 27648*x^5 - 1088*x^4 - 96*x^3 + 4*x^2)",
+      "numerator_coeffs": [
+        "1",
+        "-16",
+        "416",
+        "-2816",
+        "54528"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-96",
+        "-1088",
+        "27648",
+        "80896",
+        "-1597440",
+        "3686400"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.3.20",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-18*X^3 - 27*X^2 - 15*X - 3",
+      "-148*X^3 - 444*X^2 - 407*X - 111",
+      "1320*X^3 + 5940*X^2 + 7590*X + 2475"
+    ],
+    "degz": 3,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -3 z \\left(2 \\theta + 1\\right) \\left(3 \\theta^{2} + 3 \\theta + 1\\right) -37 z^{2} \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) +165 z^{3} \\left(2 \\theta + 1\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/6",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "-1/10",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/22",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-18",
+      "-148",
+      "1320"
+    ],
+    "discriminant_tex": "\\left(1 - 22 z\\right) \\left(1 - 6 z\\right) \\left(1 + 10 z\\right)",
+    "sol_list": [
+      "1",
+      "3",
+      "75/2",
+      "855/2",
+      "53235/8",
+      "831789/8",
+      "28535199/16",
+      "500108895/16",
+      "72745570755/128",
+      "1347320525265/128",
+      "50876209143045/256",
+      "973627715572785/256",
+      "75443613727584375/1024"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-6",
+      "-16",
+      "408",
+      "-2450",
+      "-1512",
+      "145056",
+      "-1103424",
+      "1172389",
+      "49810860",
+      "-468843824",
+      "1140842016"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "6",
+      "88",
+      "1152",
+      "18770",
+      "307356",
+      "5396224",
+      "96617184",
+      "1781930575",
+      "33409266858",
+      "636776998360",
+      "12284458964256"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2} \\cdot \\left(6 z - 1\\right) \\left(10 z + 1\\right) \\left(22 z - 1\\right)}",
+    "Q_x_tex": "\\frac{61968 x^{4} - 4704 x^{3} + 536 x^{2} - 24 x + 1}{6969600 x^{8} - 1562880 x^{7} - 102464 x^{6} + 31872 x^{5} + 112 x^{4} - 144 x^{3} + 4 x^{2}}",
+    "euler_factors": "euler_factors/order_3/3.3.20.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 321)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-T012"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(61968*x^4 - 4704*x^3 + 536*x^2 - 24*x + 1)/(6969600*x^8 - 1562880*x^7 - 102464*x^6 + 31872*x^5 + 112*x^4 - 144*x^3 + 4*x^2)",
+      "numerator_coeffs": [
+        "1",
+        "-24",
+        "536",
+        "-4704",
+        "61968"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-144",
+        "112",
+        "31872",
+        "-102464",
+        "-1562880",
+        "6969600"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.4.1",
+    "description": "Degree-3 operator with z-degree 4.",
+    "pols_list": [
+      "625*X^3",
+      "-250*(2*X+1)*(17*X^2+17*X+6)",
+      "-1400*(X+1)*(11*X^2+22*X+12)",
+      "-630*(2*X+3)*(X+2)*(X+1)",
+      "-1504*(X+3)*(X+2)*(X+1)"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "625 \\theta^{3} -250 z \\left(2 \\theta + 1\\right) \\left(17 \\theta^{2} + 17 \\theta + 6\\right) -1400 z^{2} \\left(\\theta + 1\\right) \\left(11 \\theta^{2} + 22 \\theta + 12\\right) -630 z^{3} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(2 \\theta + 3\\right) -1504 z^{4} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(\\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-5/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^3+10/47z^2+475/47z-125/188",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "625",
+      "-8500",
+      "-15400",
+      "-1260",
+      "-1504"
+    ],
+    "discriminant_tex": "\\left(5 + 8 z\\right) \\left(125 - 1900 z - 40 z^{2} - 188 z^{3}\\right)",
+    "sol_list": [
+      "1",
+      "12/5",
+      "444/25",
+      "20028/125",
+      "1037436/625",
+      "58082832/3125",
+      "3426035484/15625",
+      "209708223408/78125",
+      "13196408324796/390625",
+      "848422503196752/1953125",
+      "55488346595110224/9765625",
+      "3680098850842628688/48828125",
+      "246924581065728520956/244140625"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-22/5",
+      "59/25",
+      "2302/125",
+      "-21719/625",
+      "-32282/3125",
+      "1423654/15625",
+      "-3636288/78125",
+      "-57818114/390625",
+      "76411658/1953125",
+      "6777567349/9765625",
+      "-31381957078/48828125"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "22/5",
+      "909/25",
+      "44448/125",
+      "2408206/625",
+      "138956382/3125",
+      "8373350654/15625",
+      "520769893488/78125",
+      "33177735944511/390625",
+      "2154149972359942/1953125",
+      "142020363299106174/9765625",
+      "9482108310414073078/48828125"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(8z+5)(188z^{3}+40z^{2}+1900z-125)}",
+    "Q_x_tex": "\\frac{390625-7187500x+88437500x^{2}+192937500x^{3}+256775000x^{4}-51024000x^{5}-43026900x^{6}}{1562500x^{2}-42500000x^{3}+212000000x^{4}+1040900000x^{5}+1026800000x^{6}+257504000x^{7}+191643200x^{8}+15160320x^{9}+9048064x^{10}}",
+    "euler_factors": "euler_factors/order_3/3.4.1.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": null,
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(390625 - 7187500*x + 88437500*x^2 + 192937500*x^3 + 256775000*x^4 - 51024000*x^5 - 43026900*x^6) / (1562500*x^2 - 42500000*x^3 + 212000000*x^4 + 1040900000*x^5 + 1026800000*x^6 + 257504000*x^7 + 191643200*x^8 + 15160320*x^9 + 9048064*x^10)",
+      "numerator_coeffs": [
+        "390625",
+        "-7187500",
+        "88437500",
+        "192937500",
+        "256775000",
+        "-51024000",
+        "-43026900"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "1562500",
+        "-42500000",
+        "212000000",
+        "1040900000",
+        "1026800000",
+        "257504000",
+        "191643200",
+        "15160320",
+        "9048064"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.4.2",
+    "description": "Lian-Yau table rows p9-06. Former label: 3.5.7. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-(1+2*X)*(4+7*X+7*X^2)",
+      "(X+1)*(72+106*X+53*X^2)",
+      "-14*(X+1)*(X+2)*(2*X+3)",
+      "-24*(X+2)*(2*X+3)*(2*X+5)"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(7 \\theta^{2} + 7 \\theta + 4\\right) +z^{2} \\left(\\theta + 1\\right) \\left(53 \\theta^{2} + 106 \\theta + 72\\right) -14 z^{3} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(2 \\theta + 3\\right) -24 z^{4} \\left(\\theta + 2\\right) \\left(2 \\theta + 3\\right) \\left(2 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/3",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "2",
+          "3/2",
+          "5/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-14",
+      "53",
+      "-28",
+      "-96"
+    ],
+    "discriminant_tex": "\\left(1 - 8 z\\right) \\left(1 - 4 z\\right) \\left(1 - 3 z\\right) \\left(1 + z\\right)",
+    "sol_list": [
+      "1",
+      "4",
+      "18",
+      "88",
+      "466",
+      "2640",
+      "15804",
+      "98832",
+      "639522",
+      "4250104",
+      "28845532",
+      "199096704",
+      "1393130764"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-3",
+      "5",
+      "-5",
+      "-5",
+      "33",
+      "-84",
+      "137",
+      "-119",
+      "-105",
+      "704",
+      "-1705"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "3",
+      "13",
+      "65",
+      "359",
+      "2123",
+      "13190",
+      "84994",
+      "563054",
+      "3811110",
+      "26241129",
+      "183210705"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(z+1)(3z-1)(4z-1)(8z-1)}",
+    "Q_x_tex": "\\frac{1-22x+225x^{2}-1292x^{3}+4436x^{4}-8304x^{5}+5124x^{6}+2016x^{7}+6912x^{8}}{4(1-8x)^{2}(1-4x)^{2}(-1-x)^{2}x^{2}(-1+3x)^{2}}",
+    "euler_factors": "euler_factors/order_3/3.4.2.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(30)+",
+    "lian_yau_rows": [
+      "p9-06"
+    ],
+    "monodromy_group": "\\Gamma_0(30)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 22*x + 225*x^2 - 1292*x^3 + 4436*x^4 - 8304*x^5 + 5124*x^6 + 2016*x^7 + 6912*x^8) / (4*x^2 - 112*x^3 + 1208*x^4 - 6160*x^5 + 13604*x^6 - 1120*x^7 - 37568*x^8 + 21504*x^9 + 36864*x^10)",
+      "numerator_coeffs": [
+        "1",
+        "-22",
+        "225",
+        "-1292",
+        "4436",
+        "-8304",
+        "5124",
+        "2016",
+        "6912"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-112",
+        "1208",
+        "-6160",
+        "13604",
+        "-1120",
+        "-37568",
+        "21504",
+        "36864"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.4.3",
+    "description": "Lian-Yau table rows p9-07. Former label: 3.5.8. Mirror maps and the K3 operator table: [LY95].",
+    "pols_list": [
+      "X^3",
+      "-(1+2*X)*(4+7*X+7*X^2)",
+      "(X+1)*(88+122*X+61*X^2)",
+      "-8*(2*X+3)*(18+21*X+7*X^2)",
+      "64*(X+2)^3"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(7 \\theta^{2} + 7 \\theta + 4\\right) +z^{2} \\left(\\theta + 1\\right) \\left(61 \\theta^{2} + 122 \\theta + 88\\right) -8 z^{3} \\left(2 \\theta + 3\\right) \\left(7 \\theta^{2} + 21 \\theta + 18\\right) +64 z^{4} \\left(\\theta + 2\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^2-5/8z+1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "2",
+          "2",
+          "2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-14",
+      "61",
+      "-112",
+      "64"
+    ],
+    "discriminant_tex": "\\left(1 - 8 z\\right) \\left(1 - z\\right) \\left(1 - 5 z + 8 z^{2}\\right)",
+    "sol_list": [
+      "1",
+      "4",
+      "16",
+      "72",
+      "368",
+      "2080",
+      "12600",
+      "79952",
+      "523984",
+      "3516992",
+      "24048160",
+      "166910400",
+      "1172850488"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-3",
+      "6",
+      "-13",
+      "24",
+      "-42",
+      "73",
+      "-123",
+      "201",
+      "-320",
+      "504",
+      "-774"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "3",
+      "12",
+      "58",
+      "318",
+      "1890",
+      "11835",
+      "76803",
+      "511572",
+      "3476584",
+      "24008673",
+      "167996433"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(z-1)(8z-1)(8z^{2}-5z+1)}",
+    "Q_x_tex": "\\frac{1-22x+225x^{2}-1224x^{3}+4168x^{4}-9792x^{5}+14400x^{6}-11264x^{7}+4096x^{8}}{4(1-8x)^{2}(1-x)^{2}x^{2}(1-5x+8x^{2})^{2}}",
+    "euler_factors": "euler_factors/order_3/3.4.3.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": [
+      [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0
+        ]
+      ]
+    ],
+    "genus0_group": "\\Gamma_0(28)+",
+    "lian_yau_rows": [
+      "p9-07"
+    ],
+    "monodromy_group": "\\Gamma_0(28)+",
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": null,
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 22*x + 225*x^2 - 1224*x^3 + 4168*x^4 - 9792*x^5 + 14400*x^6 - 11264*x^7 + 4096*x^8) / (4*x^2 - 112*x^3 + 1272*x^4 - 7728*x^5 + 27940*x^6 - 61824*x^7 + 81408*x^8 - 57344*x^9 + 16384*x^10)",
+      "numerator_coeffs": [
+        "1",
+        "-22",
+        "225",
+        "-1224",
+        "4168",
+        "-9792",
+        "14400",
+        "-11264",
+        "4096"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-112",
+        "1272",
+        "-7728",
+        "27940",
+        "-61824",
+        "81408",
+        "-57344",
+        "16384"
+      ]
+    },
+    "references_list": [
+      "LY95"
+    ]
+  },
+  {
+    "nn": "3.4.4",
+    "description": "Symmetric square operator from Sym2_Operators.nb source 2.2.5. $\\mathrm{Sym}^{2}(2.2.5)$.",
+    "pols_list": [
+      "X^3",
+      "-(6+21*X+27*X^2+18*X^3)",
+      "216+486*X+405*X^2+135*X^3",
+      "-(1944+3483*X+2187*X^2+486*X^3)",
+      "5832+8748*X+4374*X^2+729*X^3"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -3 z \\left(2 \\theta + 1\\right) \\left(3 \\theta^{2} + 3 \\theta + 2\\right) +27 z^{2} \\left(\\theta + 1\\right) \\left(5 \\theta^{2} + 10 \\theta + 8\\right) -81 z^{3} \\left(2 \\theta + 3\\right) \\left(3 \\theta^{2} + 9 \\theta + 8\\right) +729 z^{4} \\left(\\theta + 2\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "z^2-1/3z+1/27",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "2",
+          "2",
+          "2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-18",
+      "135",
+      "-486",
+      "729"
+    ],
+    "discriminant_tex": "\\left(1 - 9 z + 27 z^{2}\\right)^{2}",
+    "sol_list": [
+      "1",
+      "6",
+      "27",
+      "96",
+      "225",
+      "-162",
+      "-6021",
+      "-45360",
+      "-238383",
+      "-944850",
+      "-2383821",
+      "2086560",
+      "74048697"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-3",
+      "9",
+      "-22",
+      "51",
+      "-108",
+      "221",
+      "-429",
+      "810",
+      "-1476",
+      "2631",
+      "-4572"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "3",
+      "9",
+      "22",
+      "21",
+      "-207",
+      "-1903",
+      "-10560",
+      "-44343",
+      "-133461",
+      "-132111",
+      "1810350"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(27z^{2}-9z+1)^{2}}",
+    "Q_x_tex": "\\frac{1-12x+54x^{2}-324x^{3}+729x^{4}}{4x^{2}-72x^{3}+540x^{4}-1944x^{5}+2916x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.4.4.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.5"
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [],
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(2.2.5)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.2.5"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.2.5"
+      ],
+      "representative_from_sym2": true
+    },
+    "Q_x_computed": {
+      "text": "(1 - 12*x + 54*x^2 - 324*x^3 + 729*x^4) / (4*x^2 - 72*x^3 + 540*x^4 - 1944*x^5 + 2916*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-12",
+        "54",
+        "-324",
+        "729"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-72",
+        "540",
+        "-1944",
+        "2916"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.4.5",
+    "description": "Symmetric square operator from Sym2_Operators.nb source 2.2.6. $\\mathrm{Sym}^{2}(2.2.6)$.",
+    "pols_list": [
+      "X^3",
+      "-(8+28*X+36*X^2+24*X^3)",
+      "320+736*X+624*X^2+208*X^3",
+      "-(3072+5504*X+3456*X^2+768*X^3)",
+      "8192+12288*X+6144*X^2+1024*X^3"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -4 z \\left(2 \\theta + 1\\right) \\left(3 \\theta^{2} + 3 \\theta + 2\\right) +16 z^{2} \\left(\\theta + 1\\right) \\left(13 \\theta^{2} + 26 \\theta + 20\\right) -128 z^{3} \\left(2 \\theta + 3\\right) \\left(3 \\theta^{2} + 9 \\theta + 8\\right) +1024 z^{4} \\left(\\theta + 2\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/8",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "2",
+          "2",
+          "2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-24",
+      "208",
+      "-768",
+      "1024"
+    ],
+    "discriminant_tex": "\\left(1 - 8 z\\right)^{2} \\left(1 - 4 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "8",
+      "56",
+      "384",
+      "2648",
+      "18496",
+      "131008",
+      "940032",
+      "6821848",
+      "49985984",
+      "369258560",
+      "2746629120",
+      "20549693888"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "12",
+      "-32",
+      "78",
+      "-176",
+      "376",
+      "-768",
+      "1509",
+      "-2872",
+      "5316",
+      "-9600"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "20",
+      "112",
+      "674",
+      "4264",
+      "27976",
+      "188640",
+      "1299087",
+      "9096220",
+      "64549324",
+      "463108496"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(4z-1)^{2}(8z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-16x+128x^{2}-512x^{3}+1024x^{4}}{4x^{2}-96x^{3}+832x^{4}-3072x^{5}+4096x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.4.5.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.6"
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [],
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(2.2.6)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.2.6"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.2.6"
+      ],
+      "representative_from_sym2": true
+    },
+    "Q_x_computed": {
+      "text": "(1 - 16*x + 128*x^2 - 512*x^3 + 1024*x^4) / (4*x^2 - 96*x^3 + 832*x^4 - 3072*x^5 + 4096*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-16",
+        "128",
+        "-512",
+        "1024"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-96",
+        "832",
+        "-3072",
+        "4096"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.4.6",
+    "description": "Symmetric square operator from Sym2_Operators.nb source 2.2.7. $\\mathrm{Sym}^{2}(2.2.7)$.",
+    "pols_list": [
+      "X^3",
+      "-(6+23*X+33*X^2+22*X^3)",
+      "128+366*X+357*X^2+119*X^3",
+      "84+155*X+99*X^2+22*X^3",
+      "8+12*X+6*X^2+X^3"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(11 \\theta^{2} + 11 \\theta + 6\\right) +z^{2} \\left(\\theta + 1\\right) \\left(119 \\theta^{2} + 238 \\theta + 128\\right) +z^{3} \\left(2 \\theta + 3\\right) \\left(11 \\theta^{2} + 33 \\theta + 28\\right) +z^{4} \\left(\\theta + 2\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "z^2+11z-1",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "2",
+          "2",
+          "2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-22",
+      "119",
+      "22",
+      "1"
+    ],
+    "discriminant_tex": "\\left(1 - 11 z - z^{2}\\right)^{2}",
+    "sol_list": [
+      "1",
+      "6",
+      "47",
+      "408",
+      "3745",
+      "35598",
+      "346583",
+      "3433776",
+      "34475449",
+      "349777470",
+      "3578856599",
+      "36874355064",
+      "382159956673"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-5",
+      "15",
+      "-30",
+      "40",
+      "-26",
+      "-30",
+      "125",
+      "-220",
+      "245",
+      "-124",
+      "-180"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "5",
+      "35",
+      "280",
+      "2410",
+      "21726",
+      "202220",
+      "1926790",
+      "18690145",
+      "183874215",
+      "1829742205",
+      "18380461760"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(z^{2}+11z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-12x+134x^{2}+12x^{3}+x^{4}}{4x^{2}-88x^{3}+476x^{4}+88x^{5}+4x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.4.6.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.7"
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [],
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(2.2.7)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.2.7"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.2.7"
+      ],
+      "representative_from_sym2": true
+    },
+    "Q_x_computed": {
+      "text": "(1 - 12*x + 134*x^2 + 12*x^3 + x^4) / (4*x^2 - 88*x^3 + 476*x^4 + 88*x^5 + 4*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-12",
+        "134",
+        "12",
+        "1"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-88",
+        "476",
+        "88",
+        "4"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.4.7",
+    "description": "Symmetric square operator from Sym2_Operators.nb source 2.2.8. $\\mathrm{Sym}^{2}(2.2.8)$.",
+    "pols_list": [
+      "X^3",
+      "-(4+15*X+21*X^2+14*X^3)",
+      "24+90*X+99*X^2+33*X^3",
+      "432+792*X+504*X^2+112*X^3",
+      "512+768*X+384*X^2+64*X^3"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(7 \\theta^{2} + 7 \\theta + 4\\right) +3 z^{2} \\left(\\theta + 1\\right) \\left(11 \\theta^{2} + 22 \\theta + 8\\right) +8 z^{3} \\left(2 \\theta + 3\\right) \\left(7 \\theta^{2} + 21 \\theta + 18\\right) +64 z^{4} \\left(\\theta + 2\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/8",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "2",
+          "2",
+          "2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-14",
+      "33",
+      "112",
+      "64"
+    ],
+    "discriminant_tex": "\\left(1 - 8 z\\right)^{2} \\left(1 + z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "4",
+      "24",
+      "152",
+      "1016",
+      "7008",
+      "49432",
+      "354448",
+      "2573784",
+      "18876704",
+      "139571840",
+      "1038918720",
+      "7777075864"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-3",
+      "3",
+      "5",
+      "-18",
+      "15",
+      "24",
+      "-75",
+      "57",
+      "86",
+      "-252",
+      "183"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "3",
+      "15",
+      "85",
+      "522",
+      "3366",
+      "22450",
+      "153462",
+      "1068873",
+      "7555451",
+      "54047019",
+      "390438177"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(z+1)^{2}(8z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-8x+72x^{2}+64x^{3}+64x^{4}}{4x^{2}-56x^{3}+132x^{4}+448x^{5}+256x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.4.7.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.8"
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [],
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(2.2.8)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.2.8"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.2.8"
+      ],
+      "representative_from_sym2": true
+    },
+    "Q_x_computed": {
+      "text": "(1 - 8*x + 72*x^2 + 64*x^3 + 64*x^4) / (4*x^2 - 56*x^3 + 132*x^4 + 448*x^5 + 256*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-8",
+        "72",
+        "64",
+        "64"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-56",
+        "132",
+        "448",
+        "256"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.4.8",
+    "description": "Symmetric square operator from Sym2_Operators.nb source 2.2.9. $\\mathrm{Sym}^{2}(2.2.9)$.",
+    "pols_list": [
+      "X^3",
+      "-(6+22*X+30*X^2+20*X^3)",
+      "156+392*X+354*X^2+118*X^3",
+      "-(702+1278*X+810*X^2+180*X^3)",
+      "648+972*X+486*X^2+81*X^3"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -2 z \\left(2 \\theta + 1\\right) \\left(5 \\theta^{2} + 5 \\theta + 3\\right) +2 z^{2} \\left(\\theta + 1\\right) \\left(59 \\theta^{2} + 118 \\theta + 78\\right) -18 z^{3} \\left(2 \\theta + 3\\right) \\left(5 \\theta^{2} + 15 \\theta + 13\\right) +81 z^{4} \\left(\\theta + 2\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/9",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "2",
+          "2",
+          "2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-20",
+      "118",
+      "-180",
+      "81"
+    ],
+    "discriminant_tex": "\\left(1 - 9 z\\right)^{2} \\left(1 - z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "6",
+      "39",
+      "276",
+      "2061",
+      "15930",
+      "126075",
+      "1015128",
+      "8281377",
+      "68259246",
+      "567331623",
+      "4747838508",
+      "39963064725"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "10",
+      "-20",
+      "39",
+      "-76",
+      "140",
+      "-244",
+      "415",
+      "-696",
+      "1140",
+      "-1820"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "22",
+      "140",
+      "965",
+      "6992",
+      "52420",
+      "402880",
+      "3155410",
+      "25083336",
+      "201799512",
+      "1639625832"
+    ],
+    "yuk_alg_tex": "\\frac{1}{(z-1)^{2}z^{2}(9z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-12x+102x^{2}-108x^{3}+81x^{4}}{4x^{2}-80x^{3}+472x^{4}-720x^{5}+324x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.4.8.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.9"
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [],
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(2.2.9)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.2.9"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.2.9"
+      ],
+      "representative_from_sym2": true
+    },
+    "Q_x_computed": {
+      "text": "(1 - 12*x + 102*x^2 - 108*x^3 + 81*x^4) / (4*x^2 - 80*x^3 + 472*x^4 - 720*x^5 + 324*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-12",
+        "102",
+        "-108",
+        "81"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-80",
+        "472",
+        "-720",
+        "324"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.4.9",
+    "description": "Symmetric square operator from Sym2_Operators.nb source 2.2.10. $\\mathrm{Sym}^{2}(2.2.10)$.",
+    "pols_list": [
+      "X^3",
+      "-(12+41*X+51*X^2+34*X^3)",
+      "696+1562*X+1299*X^2+433*X^3",
+      "-(9936+17640*X+11016*X^2+2448*X^3)",
+      "41472+62208*X+31104*X^2+5184*X^3"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\left(2 \\theta + 1\\right) \\left(17 \\theta^{2} + 17 \\theta + 12\\right) +z^{2} \\left(\\theta + 1\\right) \\left(433 \\theta^{2} + 866 \\theta + 696\\right) -72 z^{3} \\left(2 \\theta + 3\\right) \\left(17 \\theta^{2} + 51 \\theta + 46\\right) +5184 z^{4} \\left(\\theta + 2\\right)^{3}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/8",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/9",
+        "mult": "2",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "2",
+          "2",
+          "2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-34",
+      "433",
+      "-2448",
+      "5184"
+    ],
+    "discriminant_tex": "\\left(1 - 9 z\\right)^{2} \\left(1 - 8 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "12",
+      "120",
+      "1128",
+      "10296",
+      "92448",
+      "821784",
+      "7257456",
+      "63812952",
+      "559412832",
+      "4893985152",
+      "42754898880",
+      "373172193432"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-5",
+      "19",
+      "-61",
+      "174",
+      "-455",
+      "1112",
+      "-2573",
+      "5689",
+      "-12102",
+      "24900",
+      "-49759"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "5",
+      "31",
+      "211",
+      "1514",
+      "11242",
+      "85522",
+      "662522",
+      "5205961",
+      "41381133",
+      "332091387",
+      "2686797927"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(8z-1)^{2}(9z-1)^{2}}",
+    "Q_x_tex": "\\frac{1-24x+264x^{2}-1728x^{3}+5184x^{4}}{4x^{2}-136x^{3}+1732x^{4}-9792x^{5}+20736x^{6}}",
+    "euler_factors": "euler_factors/order_3/3.4.9.json",
+    "operator_relations": [
+      {
+        "type": "symmetric_square",
+        "operators": [
+          "2.2.10"
+        ]
+      }
+    ],
+    "h2": null,
+    "geometry": [],
+    "genus0_group": null,
+    "lian_yau_rows": null,
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": "Sym^2(2.2.10)",
+    "hadamard_product": null,
+    "related_objects": [
+      "2.2.10"
+    ],
+    "sym2_info": {
+      "has_sym2": true,
+      "source_labels": [
+        "2.2.10"
+      ],
+      "representative_from_sym2": true
+    },
+    "Q_x_computed": {
+      "text": "(1 - 24*x + 264*x^2 - 1728*x^3 + 5184*x^4) / (4*x^2 - 136*x^3 + 1732*x^4 - 9792*x^5 + 20736*x^6)",
+      "numerator_coeffs": [
+        "1",
+        "-24",
+        "264",
+        "-1728",
+        "5184"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-136",
+        "1732",
+        "-9792",
+        "20736"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.4.10",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-X - 3*X^2 - 2*X^3",
+      "-48 - 134*X - 129*X^2 - 43*X^3",
+      "-468 - 1014*X - 702*X^2 - 156*X^3",
+      "-1296 - 2376*X - 1296*X^2 - 216*X^3"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\theta \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) -z^{2} \\left(\\theta + 1\\right) \\left(43 \\theta^{2} + 86 \\theta + 48\\right) -78 z^{3} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(2 \\theta + 3\\right) -216 z^{4} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(\\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1/3",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "1/9",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^2+1/2z+1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-2",
+      "-43",
+      "-156",
+      "-216"
+    ],
+    "discriminant_tex": "\\left(1 - 9 z\\right) \\left(1 + 3 z\\right) \\left(1 + 4 z + 8 z^{2}\\right)",
+    "sol_list": [
+      "1",
+      "0",
+      "6",
+      "24",
+      "162",
+      "1080",
+      "7620",
+      "55440",
+      "415170",
+      "3166800",
+      "24570756",
+      "193152960",
+      "1535529996"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-1",
+      "-7",
+      "-7",
+      "43",
+      "139",
+      "-120",
+      "-1245",
+      "-1259",
+      "7517",
+      "22880",
+      "-19379"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "1",
+      "9",
+      "47",
+      "307",
+      "2101",
+      "14994",
+      "110322",
+      "832038",
+      "6389610",
+      "49830433",
+      "393466979"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(3z+1)(9z-1)(8z^{2}+4z+1)}",
+    "Q_x_tex": "\\frac{1 - 2x + 41x^{2} + 876x^{3} + 3972x^{4} + 4896x^{5} + 756x^{6}}{4x^{2} - 16x^{3} - 328x^{4} - 560x^{5} + 8164x^{6} + 57120x^{7} + 171648x^{8} + 269568x^{9} + 186624x^{10}}",
+    "euler_factors": "euler_factors/order_3/3.4.10.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 120)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-010"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 2*x + 41*x^2 + 876*x^3 + 3972*x^4 + 4896*x^5 + 756*x^6) / (4*x^2 - 16*x^3 - 328*x^4 - 560*x^5 + 8164*x^6 + 57120*x^7 + 171648*x^8 + 269568*x^9 + 186624*x^10)",
+      "numerator_coeffs": [
+        "1",
+        "-2",
+        "41",
+        "876",
+        "3972",
+        "4896",
+        "756"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-16",
+        "-328",
+        "-560",
+        "8164",
+        "57120",
+        "171648",
+        "269568",
+        "186624"
+      ]
+    },
+    "references_list": []
+  },
+  {
+    "nn": "3.4.11",
+    "description": "Toric construction",
+    "pols_list": [
+      "X^3",
+      "-X - 3*X^2 - 2*X^3",
+      "-64 - 182*X - 177*X^2 - 59*X^3",
+      "-408 - 884*X - 612*X^2 - 136*X^3",
+      "-480 - 880*X - 480*X^2 - 80*X^3"
+    ],
+    "degz": 4,
+    "degtheta": 3,
+    "operator_tex": "\\theta^{3} -z \\theta \\left(\\theta + 1\\right) \\left(2 \\theta + 1\\right) -z^{2} \\left(\\theta + 1\\right) \\left(59 \\theta^{2} + 118 \\theta + 64\\right) -68 z^{3} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(2 \\theta + 3\\right) -80 z^{4} \\left(\\theta + 1\\right) \\left(\\theta + 2\\right) \\left(\\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "-1/5",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "z^2+1/2z-1/16",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "1",
+          "1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-2",
+      "-59",
+      "-136",
+      "-80"
+    ],
+    "discriminant_tex": "\\left(1 + z\\right) \\left(1 + 5 z\\right) \\left(1 - 8 z - 16 z^{2}\\right)",
+    "sol_list": [
+      "1",
+      "0",
+      "8",
+      "24",
+      "240",
+      "1440",
+      "11960",
+      "89040",
+      "731920",
+      "5913600",
+      "49519008",
+      "416095680",
+      "3554134584"
+    ],
+    "sol_explicit_tex": null,
+    "zq_list": [
+      "0",
+      "1",
+      "-1",
+      "-10",
+      "1",
+      "72",
+      "82",
+      "-439",
+      "-1145",
+      "1897",
+      "10784",
+      "-1000",
+      "-81442"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "1",
+      "12",
+      "54",
+      "446",
+      "2998",
+      "24027",
+      "185393",
+      "1517596",
+      "12428808",
+      "104321601",
+      "882352923"
+    ],
+    "yuk_alg_tex": "\\frac{1}{z^{2}(z+1)(5z+1)(16z^{2}+8z-1)}",
+    "Q_x_tex": "\\frac{1 - 2x + 57x^{2} + 808x^{3} + 4248x^{4} + 7744x^{5} + 4832x^{6}}{4x^{2} - 16x^{3} - 456x^{4} - 144x^{5} + 15460x^{6} + 65472x^{7} + 111744x^{8} + 87040x^{9} + 25600x^{10}}",
+    "euler_factors": "euler_factors/order_3/3.4.11.json",
+    "operator_relations": [],
+    "h2": null,
+    "geometry": "Kreuzer-Skarke Polytope (KS 401)",
+    "genus0_group": null,
+    "lian_yau_rows": [],
+    "monodromy_group": null,
+    "monodromies": [],
+    "antisymmetric_product": null,
+    "symmetric_product": null,
+    "hadamard_product": null,
+    "related_objects": [
+      "K3-D3-014"
+    ],
+    "sym2_info": {
+      "has_sym2": false,
+      "source_labels": [],
+      "representative_from_sym2": false
+    },
+    "Q_x_computed": {
+      "text": "(1 - 2*x + 57*x^2 + 808*x^3 + 4248*x^4 + 7744*x^5 + 4832*x^6) / (4*x^2 - 16*x^3 - 456*x^4 - 144*x^5 + 15460*x^6 + 65472*x^7 + 111744*x^8 + 87040*x^9 + 25600*x^10)",
+      "numerator_coeffs": [
+        "1",
+        "-2",
+        "57",
+        "808",
+        "4248",
+        "7744",
+        "4832"
+      ],
+      "denominator_coeffs": [
+        "0",
+        "0",
+        "4",
+        "-16",
+        "-456",
+        "-144",
+        "15460",
+        "65472",
+        "111744",
+        "87040",
+        "25600"
+      ]
+    },
+    "references_list": []
+  }
+]

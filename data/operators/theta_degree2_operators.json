@@ -1,0 +1,2310 @@
+[
+  {
+    "nn": "2.1.1",
+    "aesz": "A",
+    "description": "Hypergeometric Operator A, Legendre Operator Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-16(X+1/2)^2"
+    ],
+    "degz": 1,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -4 z \\left(2 \\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/16",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2",
+          "1/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-16"
+    ],
+    "discriminant_tex": "1 - 16 z",
+    "sol_list": [
+      "1",
+      "4",
+      "36",
+      "400",
+      "4900",
+      "63504",
+      "853776",
+      "11778624",
+      "165636900",
+      "2363904400",
+      "34134779536",
+      "497634306624",
+      "7312459672336"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=1+ \\sum_{n=1}^{\\infty} \\frac{(2n)!^2}{(n!)^4} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-8",
+      "44",
+      "-192",
+      "718",
+      "-2400",
+      "7352",
+      "-20992",
+      "56549",
+      "-145008",
+      "356388",
+      "-844032"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "8",
+      "84",
+      "992",
+      "12514",
+      "164688",
+      "2232200",
+      "30920128",
+      "435506703",
+      "6215660600",
+      "89668182220",
+      "1305109502496"
+    ],
+    "euler_factors": "euler_factors/order_2/2.1.1.json",
+    "operator_relations": [
+      {
+        "type": "hadamard_product",
+        "operators": [
+          "1.1.1",
+          "1.1.1"
+        ],
+        "expansion_points": [
+          {
+            "value": "0",
+            "tex": "0"
+          },
+          {
+            "value": "0",
+            "tex": "0"
+          }
+        ]
+      }
+    ],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_2 I_2 I_2^*",
+        "pencil_eq": "X_{222}",
+        "mordell_weil": "(\\mathbb{Z}/2)^2",
+        "monodromy": {
+          "name": "\\Gamma(2)",
+          "gens": [
+            [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-2",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "-2"
+              ],
+              [
+                "2",
+                "-3"
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "kodaira_fibres": "I_1 I_1 I_4^*",
+        "pencil_eq": "X_{114}",
+        "mordell_weil": "\\mathbb{Z}/2",
+        "monodromy": {
+          "name": "\\overline{\\Gamma_0(4)}",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "1"
+              ],
+              [
+                "-4",
+                "3"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "0"
+              ],
+              [
+                "4",
+                "-1"
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "kodaira_fibres": "I_1 I_4 I_1^*",
+        "pencil_eq": "X_{141}",
+        "mordell_weil": "\\mathbb{Z}/4",
+        "monodromy": {
+          "name": "\\Gamma_0(4)",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-4",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-3",
+                "-1"
+              ],
+              [
+                "4",
+                "1"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.1.2",
+    "aesz": "B",
+    "description": "Hypergeometric Operator B Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-3(3X+1)(3X+2)"
+    ],
+    "degz": 1,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -3 z \\left(3 \\theta + 1\\right) \\left(3 \\theta + 2\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/27",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/3",
+          "2/3"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-27"
+    ],
+    "discriminant_tex": "1 - 27 z",
+    "sol_list": [
+      "1",
+      "6",
+      "90",
+      "1680",
+      "34650",
+      "756756",
+      "17153136",
+      "399072960",
+      "9465511770",
+      "227873431500",
+      "5550996791340",
+      "136526995463040",
+      "3384731762521200"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\frac{(3n)!}{(n!)^3} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-15",
+      "171",
+      "-1679",
+      "15054",
+      "-126981",
+      "1024952",
+      "-8002191",
+      "60868665",
+      "-453390354",
+      "3319443876",
+      "-23954970501"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "15",
+      "279",
+      "5729",
+      "124554",
+      "2810718",
+      "65114402",
+      "1538182398",
+      "36887880105",
+      "895303119303",
+      "21943398532563",
+      "542209373589501"
+    ],
+    "euler_factors": "euler_factors/order_2/2.1.2.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_1 I_3 IV^*",
+        "pencil_eq": "X_{134}",
+        "mordell_weil": "\\mathbb{Z}/3",
+        "monodromy": {
+          "name": "\\Gamma_0(3)",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-3",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "-1"
+              ],
+              [
+                "3",
+                "-2"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.1.3",
+    "aesz": "C",
+    "description": "Hypergeometric Operator C Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-4(4X+1)(4X+3)"
+    ],
+    "degz": 1,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -4 z \\left(4 \\theta + 1\\right) \\left(4 \\theta + 3\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/64",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/4",
+          "3/4"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-64"
+    ],
+    "discriminant_tex": "1 - 64 z",
+    "sol_list": [
+      "1",
+      "12",
+      "420",
+      "18480",
+      "900900",
+      "46558512",
+      "2498640144",
+      "137680171200",
+      "7735904619300",
+      "441233078286000",
+      "25467973278667920",
+      "1484298740174927040",
+      "87202550985276963600"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\frac{(4n)!}{(n!)^2 (2n)!} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-40",
+      "1324",
+      "-39872",
+      "1136334",
+      "-31239904",
+      "837328568",
+      "-22024018432",
+      "570919621861",
+      "-14629272883248",
+      "371340320978724",
+      "-9352290904474880"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "40",
+      "1876",
+      "95072",
+      "5045474",
+      "276107408",
+      "15444602248",
+      "878268335296",
+      "50588345910799",
+      "2944021398570264",
+      "172780225616034252",
+      "10211876493716693664"
+    ],
+    "euler_factors": "euler_factors/order_2/2.1.3.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_1 I_2 III^*",
+        "pencil_eq": "X_{123}",
+        "mordell_weil": "\\mathbb{Z}/2",
+        "monodromy": {
+          "name": "\\Gamma_0(2)",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-2",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "-1"
+              ],
+              [
+                "2",
+                "-1"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.1.4",
+    "aesz": "D",
+    "description": "Hypergeometric Operator D Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-12(6X+1)(6X+5)"
+    ],
+    "degz": 1,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -12 z \\left(6 \\theta + 1\\right) \\left(6 \\theta + 5\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/432",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/6",
+          "5/6"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-432"
+    ],
+    "discriminant_tex": "1 - 432 z",
+    "sol_list": [
+      "1",
+      "60",
+      "13860",
+      "4084080",
+      "1338557220",
+      "465817912560",
+      "168470811709200",
+      "62588625639883200",
+      "23717177328413240100",
+      "9124964373613212524400",
+      "3553261127084984957001360",
+      "1397224499394244497967972800",
+      "553883078634868423069470550800"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\frac{(6n)!}{n!(2n)!(3n)!} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-312",
+      "87084",
+      "-23067968",
+      "5930898126",
+      "-1495818530208",
+      "372227721831608",
+      "-91714975889456640",
+      "22426994284202015973",
+      "-5451141739361408535312",
+      "1318505140039263508909092",
+      "-317628411161190829279725312"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "312",
+      "107604",
+      "39073568",
+      "14645965026",
+      "5609733423408",
+      "2182717163349896",
+      "859521859502348352",
+      "341679883727799750159",
+      "136868519056531319862408",
+      "55173969942211048781835468",
+      "22360181278518828446785034976"
+    ],
+    "euler_factors": "euler_factors/order_2/2.1.4.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_1 I_1 II^*",
+        "pencil_eq": "X_{112}",
+        "mordell_weil": "\\mathbb{Z}/1",
+        "monodromy": {
+          "name": "\\Gamma_0(1)",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-1",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "-1"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.1",
+    "aesz": "e",
+    "description": "Möbius transformed hypergeometric operator $\\mu(A)$ Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-4(3+8X+8X^2)",
+      "256(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -4 z \\left(8 \\theta^{2} + 8 \\theta + 3\\right) +256 z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/16",
+        "mult": "2",
+        "lexp": [
+          "-1/2",
+          "-1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-32",
+      "256"
+    ],
+    "discriminant_tex": "\\left(1 - 16 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "12",
+      "164",
+      "2352",
+      "34596",
+      "516912",
+      "7806224",
+      "118803648",
+      "1818757924",
+      "27972399792",
+      "431824158864",
+      "6686855325888",
+      "103814819552016"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\sum_{k=0}^n 16^n (-1)^{n+k} \\binom{-1/2}{k}^2 \\binom{-1/2}{n-k} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-8",
+      "44",
+      "-192",
+      "718",
+      "-2400",
+      "7352",
+      "-20992",
+      "56549",
+      "-145008",
+      "356388",
+      "-844032"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "8",
+      "84",
+      "992",
+      "12514",
+      "164688",
+      "2232200",
+      "30920128",
+      "435506703",
+      "6215660600",
+      "89668182220",
+      "1305109502496"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.1.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_2 I_2 I_2^*",
+        "pencil_eq": "X_{222}",
+        "mordell_weil": "(\\mathbb{Z}/2)^2",
+        "monodromy": {
+          "name": "\\Gamma(2)",
+          "gens": [
+            [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "0"
+              ],
+              [
+                "2",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "2"
+              ],
+              [
+                "-2",
+                "3"
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "kodaira_fibres": "I_1 I_1 I_4^*",
+        "pencil_eq": "X_{114}",
+        "mordell_weil": "\\mathbb{Z}/2",
+        "monodromy": {
+          "name": "\\overline{\\Gamma_0(4)}",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "0"
+              ],
+              [
+                "4",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "1"
+              ],
+              [
+                "-4",
+                "3"
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "kodaira_fibres": "I_1 I_4 I_1^*",
+        "pencil_eq": "X_{141}",
+        "mordell_weil": "\\mathbb{Z}/4",
+        "monodromy": {
+          "name": "\\Gamma_0(4)",
+          "gens": [
+            [
+              [
+                "1",
+                "4"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "0"
+              ],
+              [
+                "1",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "4"
+              ],
+              [
+                "-1",
+                "3"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.2",
+    "aesz": "h",
+    "description": "Möbius transformed hypergeometric operator $\\mu(B)$ Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-54X^2-54X-21",
+      "729*(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -3 z \\left(18 \\theta^{2} + 18 \\theta + 7\\right) +729 z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/27",
+        "mult": "2",
+        "lexp": [
+          "-2/3",
+          "-1/3"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-54",
+      "729"
+    ],
+    "discriminant_tex": "\\left(1 - 27 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "21",
+      "495",
+      "12171",
+      "305919",
+      "7794171",
+      "200412801",
+      "5187646485",
+      "134959966911",
+      "3524983657419",
+      "92361941457345",
+      "2426431606623045",
+      "63884757373175025"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\sum_{k=0}^n 27^n (-1)^{n+k} \\binom{-1/3}{k}^2 \\binom{-2/3}{n-k} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-12",
+      "90",
+      "-508",
+      "2391",
+      "-9828",
+      "36428",
+      "-124188",
+      "395199",
+      "-1186344",
+      "3387252",
+      "-9257364"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "12",
+      "198",
+      "3748",
+      "76629",
+      "1646064",
+      "36597380",
+      "834586944",
+      "19406796498",
+      "458288351064",
+      "10958872614840",
+      "264789114539832"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.2.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_1 I_3 IV^*",
+        "pencil_eq": "X_{134}",
+        "mordell_weil": "\\mathbb{Z}/3",
+        "monodromy": {
+          "name": "\\Gamma_0(3)",
+          "gens": [
+            [
+              [
+                "-1",
+                "4"
+              ],
+              [
+                "-1",
+                "3"
+              ]
+            ],
+            [
+              [
+                "0",
+                "-1"
+              ],
+              [
+                "1",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "-2",
+                "3"
+              ],
+              [
+                "-3",
+                "4"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.3",
+    "aesz": "i",
+    "description": "Möbius transformed hypergeometric operator $\\mu(C)$ Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-128*X^2-128*X-52",
+      "4096*(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -4 z \\left(32 \\theta^{2} + 32 \\theta + 13\\right) +4096 z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/64",
+        "mult": "2",
+        "lexp": [
+          "-3/4",
+          "-1/4"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-128",
+      "4096"
+    ],
+    "discriminant_tex": "\\left(1 - 64 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "52",
+      "2980",
+      "176848",
+      "10686244",
+      "652902352",
+      "40189571344",
+      "2487237225280",
+      "154556953742116",
+      "9634809038248528",
+      "602157223058676880",
+      "37712959456186980160",
+      "2366114462500053744400"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\sum_{k=0}^n 64^n (-1)^{n+k} \\binom{-1/4}{k}^2 \\binom{-3/4}{n-k} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-24",
+      "300",
+      "-2624",
+      "18126",
+      "-105504",
+      "538296",
+      "-2471424",
+      "10400997",
+      "-40674128",
+      "149343012",
+      "-519045888"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "24",
+      "852",
+      "35744",
+      "1645794",
+      "80415216",
+      "4094489992",
+      "214888573248",
+      "11542515402255",
+      "631467591949480",
+      "35063515239394764",
+      "1971043639046131296"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.3.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_1 I_2 III^*",
+        "pencil_eq": "X_{123}",
+        "mordell_weil": "\\mathbb{Z}/2",
+        "monodromy": {
+          "name": "\\Gamma_0(2)",
+          "gens": [
+            [
+              [
+                "-1",
+                "4"
+              ],
+              [
+                "-1",
+                "3"
+              ]
+            ],
+            [
+              [
+                "1",
+                "-2"
+              ],
+              [
+                "1",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "-1",
+                "2"
+              ],
+              [
+                "-2",
+                "3"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.4",
+    "aesz": "j",
+    "description": "Möbius transformed hypergeometric operator $\\mu(D)$ Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-864X^2-864X-372",
+      "186624(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -12 z \\left(72 \\theta^{2} + 72 \\theta + 31\\right) +186624 z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/432",
+        "mult": "2",
+        "lexp": [
+          "-5/6",
+          "-1/6"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-864",
+      "186624"
+    ],
+    "discriminant_tex": "\\left(1 - 432 z\\right)^{2}",
+    "sol_list": [
+      "1",
+      "372",
+      "148644",
+      "60907728",
+      "25280259876",
+      "10575105841872",
+      "4447030619917584",
+      "1877136216966773568",
+      "794616311191696116516",
+      "337119677970902288257872",
+      "143279822479755708062208144",
+      "60984728465076733497914818368",
+      "25988880184223516709734917118736"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\sum_{k=0}^n 432^n (-1)^{n+k} \\binom{-1/6}{k}^2 \\binom{-5/6}{n-k} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-120",
+      "4140",
+      "-166720",
+      "-6012210",
+      "-1165528224",
+      "-178811454280",
+      "-29512658112000",
+      "-5058663289037595",
+      "-894681704302719120",
+      "-162303230946073436124",
+      "-30068511207162012184320"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "120",
+      "24660",
+      "6322720",
+      "1828573410",
+      "570359919024",
+      "187363061411720",
+      "63912709875600960",
+      "22435028661922106895",
+      "8054358587135604281160",
+      "2944447009235280262373580",
+      "1092573128181901095608502240"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.4.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_1 I_1 II^*",
+        "pencil_eq": "X_{112}",
+        "mordell_weil": "\\mathbb{Z}/1",
+        "monodromy": {
+          "name": "\\Gamma_0(1)",
+          "gens": [
+            [
+              [
+                "-1",
+                "4"
+              ],
+              [
+                "-1",
+                "3"
+              ]
+            ],
+            [
+              [
+                "2",
+                "-3"
+              ],
+              [
+                "1",
+                "-1"
+              ]
+            ],
+            [
+              [
+                "0",
+                "1"
+              ],
+              [
+                "-1",
+                "2"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.5",
+    "aesz": "f",
+    "description": "One of the Beukers-Zagier-Beauville operators. Beukers-Zagier label: B. Almkvist-Zudilin label: f Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-9X^2-9X-3",
+      "27(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -3 z \\left(3 \\theta^{2} + 3 \\theta + 1\\right) +27 z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1 - 9z + 27z^2",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-9",
+      "27"
+    ],
+    "discriminant_tex": "1 - 9 z + 27 z^{2}",
+    "sol_list": [
+      "1",
+      "3",
+      "9",
+      "21",
+      "9",
+      "-297",
+      "-2421",
+      "-12933",
+      "-52407",
+      "-145293",
+      "-35091",
+      "2954097",
+      "25228971"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty}\\left(\\sum_{k=0}^{\\lfloor n/3\\rfloor}(-1)^k3^{n-3k}\\binom{n}{3k}\\frac{(3k)!}{(k!)^3}\\right)z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-3",
+      "9",
+      "-22",
+      "51",
+      "-108",
+      "221",
+      "-429",
+      "810",
+      "-1476",
+      "2631",
+      "-4572"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "3",
+      "9",
+      "22",
+      "21",
+      "-207",
+      "-1903",
+      "-10560",
+      "-44343",
+      "-133461",
+      "-132111",
+      "1810350"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.5.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_9 I_1 I_1 I_1",
+        "pencil_eq": "X_{9111}",
+        "mordell_weil": "\\mathbb{Z}/3",
+        "monodromy": {
+          "name": "\\Gamma_0(9) \\cap \\Gamma_1(3)",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-5",
+                "4"
+              ],
+              [
+                "-9",
+                "7"
+              ]
+            ],
+            [
+              [
+                "-2",
+                "1"
+              ],
+              [
+                "-9",
+                "4"
+              ]
+            ],
+            [
+              [
+                "-17",
+                "9"
+              ],
+              [
+                "-36",
+                "19"
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "kodaira_fibres": "I_3 I_3 I_3 I_3",
+        "pencil_eq": "X_{3333}",
+        "mordell_weil": "(\\mathbb{Z}/3)^2",
+        "monodromy": {
+          "name": "\\Gamma(3)",
+          "gens": [
+            [
+              [
+                "1",
+                "3"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-2",
+                "3"
+              ],
+              [
+                "-3",
+                "4"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-3",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-5",
+                "3"
+              ],
+              [
+                "-12",
+                "7"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.6",
+    "aesz": "d",
+    "description": "One of the Beukers-Zagier-Beauville operators. Beukers-Zagier label: E. Almkvist-Zudilin label: d Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-12X^2-12X-4",
+      "32(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -4 z \\left(3 \\theta^{2} + 3 \\theta + 1\\right) +32 z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-12",
+      "32"
+    ],
+    "discriminant_tex": "\\left(1 - 8 z\\right) \\left(1 - 4 z\\right)",
+    "sol_list": [
+      "1",
+      "4",
+      "20",
+      "112",
+      "676",
+      "4304",
+      "28496",
+      "194240",
+      "1353508",
+      "9593104",
+      "68906320",
+      "500281280",
+      "3664176400"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\sum_{k=0}^n \\binom{n}{k} \\binom{2k}{k} \\binom{2n-2k}{n-k} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "12",
+      "-32",
+      "78",
+      "-176",
+      "376",
+      "-768",
+      "1509",
+      "-2872",
+      "5316",
+      "-9600"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "20",
+      "112",
+      "674",
+      "4264",
+      "27976",
+      "188640",
+      "1299087",
+      "9096220",
+      "64549324",
+      "463108496"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.6.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_8 I_2 I_1 I_1",
+        "pencil_eq": "X_{8211}",
+        "mordell_weil": "\\mathbb{Z}/4",
+        "monodromy": {
+          "name": "\\Gamma_0(8) \\cap \\Gamma_1(4)",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-8",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-3",
+                "1"
+              ],
+              [
+                "-16",
+                "5"
+              ]
+            ],
+            [
+              [
+                "-3",
+                "2"
+              ],
+              [
+                "-8",
+                "5"
+              ]
+            ]
+          ]
+        }
+      },
+      {
+        "kodaira_fibres": "I_4 I_4 I_2 I_2",
+        "pencil_eq": "X_{4422}",
+        "mordell_weil": "\\mathbb{Z}/4 \\times \\mathbb{Z}/2",
+        "monodromy": {
+          "name": "\\Gamma_1(4) \\cap \\Gamma(2)",
+          "gens": [
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-4",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-3",
+                "4"
+              ],
+              [
+                "-4",
+                "5"
+              ]
+            ],
+            [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-3",
+                "2"
+              ],
+              [
+                "-8",
+                "5"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.7",
+    "aesz": "b",
+    "description": "One of the Beukers-Zagier-Beauville operators. Beukers-Zagier label: D. Almkvist-Zudilin label: b Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-11X^2-11X-3",
+      "-(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -z \\left(11 \\theta^{2} + 11 \\theta + 3\\right) -z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1 - 11z - z^2",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-11",
+      "-1"
+    ],
+    "discriminant_tex": "1 - 11 z - z^{2}",
+    "sol_list": [
+      "1",
+      "3",
+      "19",
+      "147",
+      "1251",
+      "11253",
+      "104959",
+      "1004307",
+      "9793891",
+      "96918753",
+      "970336269",
+      "9807518757",
+      "99912156111"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\sum_{k=0}^n \\binom{n}{k}^2 \\binom{n+k}{k} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-5",
+      "15",
+      "-30",
+      "40",
+      "-26",
+      "-30",
+      "125",
+      "-220",
+      "245",
+      "-124",
+      "-180"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "5",
+      "35",
+      "280",
+      "2410",
+      "21726",
+      "202220",
+      "1926790",
+      "18690145",
+      "183874215",
+      "1829742205",
+      "18380461760"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.7.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_5 I_5 I_1 I_1",
+        "pencil_eq": "X_{5511}",
+        "mordell_weil": "\\mathbb{Z}/5",
+        "monodromy": {
+          "name": "\\Gamma_1(5)",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-5",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-9",
+                "5"
+              ],
+              [
+                "-20",
+                "11"
+              ]
+            ],
+            [
+              [
+                "-9",
+                "4"
+              ],
+              [
+                "-25",
+                "11"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.8",
+    "aesz": "a",
+    "description": "One of the Beukers-Zagier-Beauville operators. Beukers-Zagier label: A. Almkvist-Zudilin label: a Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-7X^2-7X-2",
+      "-8(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -z \\left(7 \\theta^{2} + 7 \\theta + 2\\right) -8 z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "-1",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-7",
+      "-8"
+    ],
+    "discriminant_tex": "\\left(1 - 8 z\\right) \\left(1 + z\\right)",
+    "sol_list": [
+      "1",
+      "2",
+      "10",
+      "56",
+      "346",
+      "2252",
+      "15184",
+      "104960",
+      "739162",
+      "5280932",
+      "38165260",
+      "278415920",
+      "2046924400"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\sum_{k=0}^n \\binom{n}{k}^3 z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-3",
+      "3",
+      "5",
+      "-18",
+      "15",
+      "24",
+      "-75",
+      "57",
+      "86",
+      "-252",
+      "183"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "3",
+      "15",
+      "85",
+      "522",
+      "3366",
+      "22450",
+      "153462",
+      "1068873",
+      "7555451",
+      "54047019",
+      "390438177"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.8.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_6 I_3 I_2 I_1",
+        "pencil_eq": "X_{6321}",
+        "mordell_weil": "\\mathbb{Z}/6",
+        "monodromy": {
+          "name": "\\Gamma_0(6)",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-6",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-5",
+                "3"
+              ],
+              [
+                "-12",
+                "7"
+              ]
+            ],
+            [
+              [
+                "-5",
+                "2"
+              ],
+              [
+                "-18",
+                "7"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.9",
+    "aesz": "c",
+    "description": "One of the Beukers-Zagier-Beauville operators. Beukers-Zagier label: C. Almkvist-Zudilin label: c Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-10X^2-10X-3",
+      "9(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -z \\left(10 \\theta^{2} + 10 \\theta + 3\\right) +9 z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/9",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-10",
+      "9"
+    ],
+    "discriminant_tex": "\\left(1 - 9 z\\right) \\left(1 - z\\right)",
+    "sol_list": [
+      "1",
+      "3",
+      "15",
+      "93",
+      "639",
+      "4653",
+      "35169",
+      "272835",
+      "2157759",
+      "17319837",
+      "140668065",
+      "1153462995",
+      "9533639025"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\sum_{k=0}^n \\binom{n}{k}^2 \\binom{2k}{k} z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-4",
+      "10",
+      "-20",
+      "39",
+      "-76",
+      "140",
+      "-244",
+      "415",
+      "-696",
+      "1140",
+      "-1820"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "4",
+      "22",
+      "140",
+      "965",
+      "6992",
+      "52420",
+      "402880",
+      "3155410",
+      "25083336",
+      "201799512",
+      "1639625832"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.9.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_6 I_3 I_2 I_1",
+        "pencil_eq": "X_{6321}",
+        "mordell_weil": "\\mathbb{Z}/6",
+        "monodromy": {
+          "name": "\\Gamma_0(6)",
+          "gens": [
+            [
+              [
+                "1",
+                "1"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-6",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-5",
+                "2"
+              ],
+              [
+                "-18",
+                "7"
+              ]
+            ],
+            [
+              [
+                "-5",
+                "3"
+              ],
+              [
+                "-12",
+                "7"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  },
+  {
+    "nn": "2.2.10",
+    "aesz": "g",
+    "description": "One of the Beukers-Zagier-Beauville operators. Beukers-Zagier label: F. Almkvist-Zudilin label: g Elliptic-surface classification: [MP86]. Operator formulas and Hadamard constructions: [AvS23].",
+    "pols_list": [
+      "X^2",
+      "-17X^2-17X-6",
+      "72(X+1)^2"
+    ],
+    "degz": 2,
+    "degtheta": 2,
+    "operator_tex": "\\theta^{2} -z \\left(17 \\theta^{2} + 17 \\theta + 6\\right) +72 z^{2} \\left(\\theta + 1\\right)^{2}",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/9",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "1/8",
+        "mult": "1",
+        "lexp": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-17",
+      "72"
+    ],
+    "discriminant_tex": "\\left(1 - 9 z\\right) \\left(1 - 8 z\\right)",
+    "sol_list": [
+      "1",
+      "6",
+      "42",
+      "312",
+      "2394",
+      "18756",
+      "149136",
+      "1199232",
+      "9729882",
+      "79527084",
+      "654089292",
+      "5408896752",
+      "44941609584"
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=\\sum_{n=0}^{\\infty} \\sum_{j,k=0}^n (-1)^j 8^{n-j} \\binom{n}{j} \\binom{j}{k}^3 z^n",
+    "zq_list": [
+      "0",
+      "1",
+      "-5",
+      "19",
+      "-61",
+      "174",
+      "-455",
+      "1112",
+      "-2573",
+      "5689",
+      "-12102",
+      "24900",
+      "-49759"
+    ],
+    "qz_list": [
+      "0",
+      "1",
+      "5",
+      "31",
+      "211",
+      "1514",
+      "11242",
+      "85522",
+      "662522",
+      "5205961",
+      "41381133",
+      "332091387",
+      "2686797927"
+    ],
+    "euler_factors": "euler_factors/order_2/2.2.10.json",
+    "operator_relations": [],
+    "surfaces": [
+      {
+        "kodaira_fibres": "I_6 I_3 I_2 I_1",
+        "pencil_eq": "X_{6321}",
+        "mordell_weil": "\\mathbb{Z}/6",
+        "monodromy": {
+          "name": "\\Gamma_0(6)",
+          "gens": [
+            [
+              [
+                "-1",
+                "2"
+              ],
+              [
+                "-2",
+                "3"
+              ]
+            ],
+            [
+              [
+                "1",
+                "0"
+              ],
+              [
+                "-6",
+                "1"
+              ]
+            ],
+            [
+              [
+                "-3",
+                "1"
+              ],
+              [
+                "-16",
+                "5"
+              ]
+            ],
+            [
+              [
+                "-5",
+                "3"
+              ],
+              [
+                "-12",
+                "7"
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "references_list": [
+      "MP86",
+      "AvS23"
+    ]
+  }
+]

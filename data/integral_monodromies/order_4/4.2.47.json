@@ -1,0 +1,130 @@
+{
+  "operator_id": "4.2.47",
+  "rational_basis_file": "monodromies/order_4/4.2.47.json",
+  "basis_change_convention": "integral basis period vector = basis_change * rational basis period vector",
+  "basis_change": [
+    [
+      "N^2*kappa",
+      "0",
+      "S",
+      "N*b/24"
+    ],
+    [
+      "0",
+      "N*kappa",
+      "b/24",
+      "N*sigma/2"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "N"
+    ]
+  ],
+  "singularities": [
+    "0",
+    "1/16384",
+    "+Infinity"
+  ],
+  "bases": [
+    {
+      "parameters": {
+        "kappa": 1,
+        "N": 2,
+        "S": 0,
+        "b": 2,
+        "sigma": 0
+      },
+      "epsilon": "76*zeta(3)",
+      "epsilon_tex": "76 \\zeta\\!(3)",
+      "monodromy_matrices": [
+        [
+          [
+            "1",
+            "-2",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "-1",
+            "-1"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "2",
+            "1"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "-1"
+          ]
+        ],
+        [
+          [
+            "2",
+            "-1",
+            "-1",
+            "-1"
+          ],
+          [
+            "1",
+            "0",
+            "-1",
+            "-1"
+          ],
+          [
+            "0",
+            "-1",
+            "1",
+            "0"
+          ],
+          [
+            "1",
+            "2",
+            "-2",
+            "-1"
+          ]
+        ]
+      ],
+      "description": ""
+    }
+  ]
+}

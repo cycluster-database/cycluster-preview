@@ -1,0 +1,167 @@
+{
+  "operator_id": "4.4.8",
+  "coefficient_field": "Q(sqrt(2))",
+  "basis": {
+    "frobenius_asymptotics": [
+      "1",
+      "log(z)",
+      "log(z)^2/2",
+      "log(z)^3/6"
+    ],
+    "period_column": "basis_matrix*varpi",
+    "basis_matrix": [
+      [
+        "rho/(2*pi*I)^3",
+        "0",
+        "0",
+        "1/(2*pi*I)^3"
+      ],
+      [
+        "0",
+        "0",
+        "-1/(2*pi*I)^2",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/(2*pi*I)",
+        "0",
+        "0"
+      ]
+    ],
+    "rho": "65/3*zeta(3)"
+  },
+  "singularities": [
+    "0",
+    "1.258168990684339?",
+    "0.001090268574920720?",
+    "+Infinity"
+  ],
+  "monodromy_matrices": [
+    [
+      [
+        "1",
+        "-1",
+        "1/6",
+        "1/2"
+      ],
+      [
+        "0",
+        "1",
+        "-1/2",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1"
+      ]
+    ],
+    [
+      [
+        "(25/8)*sqrt(2)",
+        "-(2)*sqrt(2)",
+        "0",
+        "(35/192)*sqrt(2)"
+      ],
+      [
+        "(6)*sqrt(2)",
+        "-(25/8)*sqrt(2)",
+        "-(35/192)*sqrt(2)",
+        "0"
+      ],
+      [
+        "0",
+        "-(15)*sqrt(2)",
+        "(25/8)*sqrt(2)",
+        "(6)*sqrt(2)"
+      ],
+      [
+        "(15)*sqrt(2)",
+        "0",
+        "-(2)*sqrt(2)",
+        "-(25/8)*sqrt(2)"
+      ]
+    ],
+    [
+      [
+        "(5/8)*sqrt(2)",
+        "0",
+        "0",
+        "(7/192)*sqrt(2)"
+      ],
+      [
+        "0",
+        "-(5/8)*sqrt(2)",
+        "-(7/192)*sqrt(2)",
+        "0"
+      ],
+      [
+        "0",
+        "-(3)*sqrt(2)",
+        "(5/8)*sqrt(2)",
+        "0"
+      ],
+      [
+        "(3)*sqrt(2)",
+        "0",
+        "0",
+        "-(5/8)*sqrt(2)"
+      ]
+    ],
+    [
+      [
+        "7/2",
+        "-7/2",
+        "13/48",
+        "13/16"
+      ],
+      [
+        "21/2",
+        "-7",
+        "0",
+        "13/16"
+      ],
+      [
+        "-36",
+        "0",
+        "5",
+        "15/2"
+      ],
+      [
+        "36",
+        "-12",
+        "-5/2",
+        "-5/2"
+      ]
+    ]
+  ],
+  "monodromy_matrices_tex": [
+    "\\left(\\begin{array}{rrrr}\n1 & -1 & \\frac{1}{6} & \\frac{1}{2} \\\\\n0 & 1 & -\\frac{1}{2} & -1 \\\\\n0 & 0 & 1 & 0 \\\\\n0 & 0 & 1 & 1\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{25}{8} \\, \\sqrt{2} & -2 \\, \\sqrt{2} & 0 & \\frac{35}{192} \\, \\sqrt{2} \\\\\n6 \\, \\sqrt{2} & -\\frac{25}{8} \\, \\sqrt{2} & -\\frac{35}{192} \\, \\sqrt{2} & 0 \\\\\n0 & -15 \\, \\sqrt{2} & \\frac{25}{8} \\, \\sqrt{2} & 6 \\, \\sqrt{2} \\\\\n15 \\, \\sqrt{2} & 0 & -2 \\, \\sqrt{2} & -\\frac{25}{8} \\, \\sqrt{2}\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{5}{8} \\, \\sqrt{2} & 0 & 0 & \\frac{7}{192} \\, \\sqrt{2} \\\\\n0 & -\\frac{5}{8} \\, \\sqrt{2} & -\\frac{7}{192} \\, \\sqrt{2} & 0 \\\\\n0 & -3 \\, \\sqrt{2} & \\frac{5}{8} \\, \\sqrt{2} & 0 \\\\\n3 \\, \\sqrt{2} & 0 & 0 & -\\frac{5}{8} \\, \\sqrt{2}\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{7}{2} & -\\frac{7}{2} & \\frac{13}{48} & \\frac{13}{16} \\\\\n\\frac{21}{2} & -7 & 0 & \\frac{13}{16} \\\\\n-36 & 0 & 5 & \\frac{15}{2} \\\\\n36 & -12 & -\\frac{5}{2} & -\\frac{5}{2}\n\\end{array}\\right)"
+  ],
+  "product_matrix_indices": [
+    3,
+    1,
+    2,
+    0
+  ],
+  "exact_product_is_identity": true,
+  "decimal_precision_of_analytic_continuation": 150,
+  "path_diagram": "monodromy_paths/order_4/4.4.8.html"
+}

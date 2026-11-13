@@ -1,0 +1,167 @@
+{
+  "operator_id": "4.4.31",
+  "coefficient_field": "Q(sqrt(3), sqrt(11))",
+  "basis": {
+    "frobenius_asymptotics": [
+      "1",
+      "log(z)",
+      "log(z)^2/2",
+      "log(z)^3/6"
+    ],
+    "period_column": "basis_matrix*varpi",
+    "basis_matrix": [
+      [
+        "rho/(2*pi*I)^3",
+        "0",
+        "0",
+        "1/(2*pi*I)^3"
+      ],
+      [
+        "0",
+        "0",
+        "-1/(2*pi*I)^2",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/(2*pi*I)",
+        "0",
+        "0"
+      ]
+    ],
+    "rho": "60/11*zeta(3)"
+  },
+  "singularities": [
+    "0",
+    "1/64",
+    "1/108",
+    "+Infinity"
+  ],
+  "monodromy_matrices": [
+    [
+      [
+        "1",
+        "-1",
+        "1/6",
+        "1/2"
+      ],
+      [
+        "0",
+        "1",
+        "-1/2",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1"
+      ]
+    ],
+    [
+      [
+        "(1/2)*sqrt(11)",
+        "-(2/11)*sqrt(11)",
+        "0",
+        "(1/264)*sqrt(11)"
+      ],
+      [
+        "sqrt(11)",
+        "-(1/2)*sqrt(11)",
+        "-(1/264)*sqrt(11)",
+        "0"
+      ],
+      [
+        "0",
+        "-(6)*sqrt(11)",
+        "(1/2)*sqrt(11)",
+        "sqrt(11)"
+      ],
+      [
+        "(6)*sqrt(11)",
+        "0",
+        "-(2/11)*sqrt(11)",
+        "-(1/2)*sqrt(11)"
+      ]
+    ],
+    [
+      [
+        "(1/6)*sqrt(33)",
+        "0",
+        "0",
+        "(1/792)*sqrt(33)"
+      ],
+      [
+        "0",
+        "-(1/6)*sqrt(33)",
+        "-(1/792)*sqrt(33)",
+        "0"
+      ],
+      [
+        "0",
+        "-(2)*sqrt(33)",
+        "(1/6)*sqrt(33)",
+        "0"
+      ],
+      [
+        "(2)*sqrt(33)",
+        "0",
+        "0",
+        "-(1/6)*sqrt(33)"
+      ]
+    ],
+    [
+      [
+        "(17/6)*sqrt(3)",
+        "-(4/3)*sqrt(3)",
+        "-(1/396)*sqrt(3)",
+        "(13/72)*sqrt(3)"
+      ],
+      [
+        "(55/6)*sqrt(3)",
+        "-(3)*sqrt(3)",
+        "-(1/6)*sqrt(3)",
+        "(5/72)*sqrt(3)"
+      ],
+      [
+        "-(22)*sqrt(3)",
+        "0",
+        "sqrt(3)",
+        "(11/6)*sqrt(3)"
+      ],
+      [
+        "(22)*sqrt(3)",
+        "-(4)*sqrt(3)",
+        "-(2/3)*sqrt(3)",
+        "-(5/6)*sqrt(3)"
+      ]
+    ]
+  ],
+  "monodromy_matrices_tex": [
+    "\\left(\\begin{array}{rrrr}\n1 & -1 & \\frac{1}{6} & \\frac{1}{2} \\\\\n0 & 1 & -\\frac{1}{2} & -1 \\\\\n0 & 0 & 1 & 0 \\\\\n0 & 0 & 1 & 1\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{1}{2} \\, \\sqrt{11} & -\\frac{2}{11} \\, \\sqrt{11} & 0 & \\frac{1}{264} \\, \\sqrt{11} \\\\\n\\sqrt{11} & -\\frac{1}{2} \\, \\sqrt{11} & -\\frac{1}{264} \\, \\sqrt{11} & 0 \\\\\n0 & -6 \\, \\sqrt{11} & \\frac{1}{2} \\, \\sqrt{11} & \\sqrt{11} \\\\\n6 \\, \\sqrt{11} & 0 & -\\frac{2}{11} \\, \\sqrt{11} & -\\frac{1}{2} \\, \\sqrt{11}\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{1}{6} \\, \\sqrt{33} & 0 & 0 & \\frac{1}{792} \\, \\sqrt{33} \\\\\n0 & -\\frac{1}{6} \\, \\sqrt{33} & -\\frac{1}{792} \\, \\sqrt{33} & 0 \\\\\n0 & -2 \\, \\sqrt{33} & \\frac{1}{6} \\, \\sqrt{33} & 0 \\\\\n2 \\, \\sqrt{33} & 0 & 0 & -\\frac{1}{6} \\, \\sqrt{33}\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{17}{6} \\, \\sqrt{3} & -\\frac{4}{3} \\, \\sqrt{3} & -\\frac{1}{396} \\, \\sqrt{3} & \\frac{13}{72} \\, \\sqrt{3} \\\\\n\\frac{55}{6} \\, \\sqrt{3} & -3 \\, \\sqrt{3} & -\\frac{1}{6} \\, \\sqrt{3} & \\frac{5}{72} \\, \\sqrt{3} \\\\\n-22 \\, \\sqrt{3} & 0 & \\sqrt{3} & \\frac{11}{6} \\, \\sqrt{3} \\\\\n22 \\, \\sqrt{3} & -4 \\, \\sqrt{3} & -\\frac{2}{3} \\, \\sqrt{3} & -\\frac{5}{6} \\, \\sqrt{3}\n\\end{array}\\right)"
+  ],
+  "product_matrix_indices": [
+    3,
+    1,
+    2,
+    0
+  ],
+  "exact_product_is_identity": true,
+  "decimal_precision_of_analytic_continuation": 150,
+  "path_diagram": "monodromy_paths/order_4/4.4.31.html"
+}

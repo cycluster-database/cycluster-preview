@@ -1,0 +1,67 @@
+[
+  {
+    "nn": "1.1.1",
+    "aesz": "I",
+    "description": "Calabi-Yau zerofold $\\mathbb{P}^1[2]$. Finite-field periods: [CORV00]. Zerofold interpretation: [KM25].",
+    "pols_list": [
+      "X",
+      "-2(2X+1)"
+    ],
+    "degz": 1,
+    "degtheta": 1,
+    "operator_tex": "\\theta -2 z \\left(2 \\theta + 1\\right)",
+    "riemann": [
+      {
+        "sing": "0",
+        "mult": "1",
+        "lexp": [
+          "0"
+        ]
+      },
+      {
+        "sing": "1/4",
+        "mult": "1",
+        "lexp": [
+          "-1/2"
+        ]
+      },
+      {
+        "sing": "infinity",
+        "mult": "1",
+        "lexp": [
+          "1/2"
+        ]
+      }
+    ],
+    "discriminant_list": [
+      "1",
+      "-4"
+    ],
+    "discriminant_tex": "1 - 4 z",
+    "sol_list": [
+      1,
+      2,
+      6,
+      20,
+      70,
+      252,
+      924,
+      3432,
+      12870,
+      48620,
+      184756,
+      705432,
+      2704156
+    ],
+    "sol_explicit_tex": "\\varpi_0(z)=1/ \\sqrt{1-4z}",
+    "euler_factors": "euler_factors/order_1/1.1.1.json",
+    "operator_relations": [],
+    "surfaces": [
+      "$x_1^2+x_2^2+2z x_1 x_2 =0 $ in $P^1$"
+    ],
+    "references_list": [
+      "CORV00",
+      "KM25"
+    ]
+  }
+]

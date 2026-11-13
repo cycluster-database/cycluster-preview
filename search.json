@@ -1,0 +1,221 @@
+[
+  {
+    "objectID": "operator.html",
+    "href": "operator.html",
+    "title": "Operator details",
+    "section": "",
+    "text": "New search"
+  },
+  {
+    "objectID": "contributors.html",
+    "href": "contributors.html",
+    "title": "Contributors",
+    "section": "",
+    "text": "The original AESZ database is/was hosted at Uni Mainz. The data for the AESZ database originates from the work of Gert Almkvist, Christian van Enckevort, Duco van Straten, Wadim Zudilin in https://arxiv.org/abs/math/0507430. The original online database was created by Pavel Metelitsyn.\nThe AESZ database has now been ported to the Max Planck Institute for Mathematics in Bonn within the CYCluster project.\nContributors to the port of AESZ in CYCluster are:\n\nPaul Blesse (Uni. Bonn)\nJanis Duecker (Uni. Bonn)\nNutsa Gegelia (JGU Mainz)\nAbhiram Kidambi (MPI-MiS Leipzig)\nAlbrecht Klemm (Uni. Bonn & Uni. Sheffield)\nPyry Kuusela (Uni. Sheffield)\nEric Pichon-Pharabod (MPI-MiS Leipzig)\nDuco van Straten (JGU Mainz)\nJohn Voight (U. Sydney)\nAlex Weisse (MPIM-Bonn)\n\nWe also acknowledge advise from Vasily Golyshev."
+  },
+  {
+    "objectID": "api.html",
+    "href": "api.html",
+    "title": "Database API",
+    "section": "",
+    "text": "This web site offers an application programming interface (API) which can be used to retrieve data programmatically with other programs for further processing. The API is based on PostgREST and documented in detail here.",
+    "crumbs": [
+      "Database API"
+    ]
+  },
+  {
+    "objectID": "api.html#basic-usage",
+    "href": "api.html#basic-usage",
+    "title": "Database API",
+    "section": "Basic usage",
+    "text": "Basic usage\nThe API can be accessed over HTTPS and the basic structure of the URL is\n/api/&lt;table&gt;?select=&lt;field list&gt;&&lt;filter&gt;\nThe only table available so far is operators, the list of Calabi-Yau operators (AESZ). The select part determines the columns to be shown in the output, the filter can be a combination of column names and conditions to narrow the set of displayed results.\nWhen you search the AESZ table using the online form you can see (and copy) the corresponding API URL with filter at the foot of the results table.\nWithout the select part, all details about an operator are returned. Without the filter, all operators are returned.\nFor instance, /api/operators?nn=eq.4.3.1 returns all details about the operator with new number 4.3.1.\nThe query /api/operators?select=nn,operator_tex&degtheta=eq.2 lists new number and operator TeX of all operators with \\theta-degree=2.\n\nWith curl in the terminal\nA convenient way to access the API from a terminal and to store data locally to files, is using the curl download tool and optionally the jq JSON processor.\nFor instance, retrieve all details for the operator with new number 4.3.1 and save to a file:\ncurl '/api/operators?nn=eq.4.3.1' \\\n    | jq &gt; op-4-3-1.json\nHere jq will only pretty print the JSON data, but it could also be used for complicated filtering, processing and rewriting of the data.\n\n\nWith Python\nIn Python the requests library offers a simple way to retrieve JSON data, which can be processed with sympy:\nimport requests\nimport sympy\n\njson = (requests\n        .get(\"/api/operators?nn=eq.4.3.1\")\n        .json()[0])\n\nz, theta, x = sympy.symbols(\"z theta X\")\n\nop = sum([ z**i * sympy.parse_expr(p, transformations='all')\n           for i, p in enumerate(json['pols_list']) ])\n\nprint(op.subs(x,theta))\n    \n\n\nWith Pari/GP\nPari cannot connect to web APIs directly, but we can call curl and jq as external programs. For instance, we can load the coefficients of the mirror map z(q) for operator 4.3.1 with:\nzq = eval(externstr( \\\n   \"curl -s '/api/operators?nn=eq.4.3.1' | \" \\\n   \"jq -r '.[0].zq_list | \\\"[\\\" + join(\\\", \\\") + \\\"]\\\"' \")[1])\nHere jq is used to transform JSON data into a Pari compatible string that can be evaluated.\n\n\nWith Mathematica\nIn a Mathematica notebook run\noperator = Association @ \n    Import[\"/api/operators?nn=eq.4.3.1\"];\n\nL = Total[MapIndexed[z^(#2[[1]] - 1)*#1 &, \n    ToExpression[operator[\"pols_list\"]]]] /. X -&gt; \\[Theta]\n    \ninstantons = ToExpression /@ operator[\"inst_list\"]\nto get a specific CY operator L. Other data can be accessed from the corresponding keyword, e.g., the list of instanton numbers.",
+    "crumbs": [
+      "Database API"
+    ]
+  },
+  {
+    "objectID": "api.html#swagger-interface",
+    "href": "api.html#swagger-interface",
+    "title": "Database API",
+    "section": "Swagger Interface",
+    "text": "Swagger Interface\nYou can explore the API and all tables and columns using the Swagger User Interface:",
+    "crumbs": [
+      "Database API"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CYCluster",
+    "section": "",
+    "text": "Search the AESZ database of Calabi–Yau differential operators and explore the data associated with each record.\n\nSearch the operator database"
+  },
+  {
+    "objectID": "index.html#explore-calabiyau-operators",
+    "href": "index.html#explore-calabiyau-operators",
+    "title": "CYCluster",
+    "section": "",
+    "text": "Search the AESZ database of Calabi–Yau differential operators and explore the data associated with each record.\n\nSearch the operator database"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "CYCluster",
+    "section": "About",
+    "text": "About\nThe new AESZ database provides arithmetic, algebraic, and enumerative information that complements the list of one-parameter Calabi–Yau operators compiled by Gert Almkvist, Christian van Enckevort, Duco van Straten, and Wadim Zudilin [1, 2].\nThe main additions are Euler factors of the Hasse–Weil zeta function, calculated following [3] to identify rank-two attractor points and test Langlands-type conjectures. Further additions include rational and integral monodromy structures."
+  },
+  {
+    "objectID": "index.html#supporting-resources",
+    "href": "index.html#supporting-resources",
+    "title": "CYCluster",
+    "section": "Supporting resources",
+    "text": "Supporting resources\n\n\nDatabase API\nRetrieve data for your own computations, with examples for Python, PARI/GP, and Mathematica.\nRead the API guide\n\n\nBibliography\nFind references on Calabi–Yau geometry, arithmetic, differential operators, and connections to physics.\nBrowse references"
+  },
+  {
+    "objectID": "index.html#latest-updates",
+    "href": "index.html#latest-updates",
+    "title": "CYCluster",
+    "section": "Latest updates",
+    "text": "Latest updates\n\n\n\n\n\n\n\nNote23 September 2026 — Homepage update\n\n\n\nOperator search is now the main entry point on the homepage, with supporting links to API documentation and the bibliography. The event archive has been reorganized by date, with links to the original programmes."
+  },
+  {
+    "objectID": "index.html#related-databases-and-software",
+    "href": "index.html#related-databases-and-software",
+    "title": "CYCluster",
+    "section": "Related databases and software",
+    "text": "Related databases and software\nResources for the study of Calabi–Yau and Fano varieties.\n\nDatabases\n\nOriginal AESZ database. The earlier database of Calabi–Yau differential operators.\nL-functions and Modular Forms Database (LMFDB). Data on L-functions, modular forms, and related arithmetic objects.\nHigher-genus invariants and Calabi–Yau data. Albrecht Klemm’s collection of data on Calabi–Yau threefolds and their enumerative invariants.\nQuantum periods of four-dimensional Fano varieties. Data from Tom Coates and Alexander M. Kasprzyk.\nKreuzer–Skarke Calabi–Yau data. Max Kreuzer and Harald Skarke’s collections of 4,319 reflexive polytopes in dimension three and 473,800,776 in dimension four, including 30,108 distinct Hodge pairs for Calabi–Yau threefold hypersurface families.\n\n\n\nSoftware tools\n\nCYTools. Software from the Liam McAllister Group for studying Calabi–Yau manifolds, including triangulations and intersection numbers.\nore_algebra. Tools for analytic continuation of solutions of differential equations and computation of monodromy matrices."
+  },
+  {
+    "objectID": "index.html#events-archive",
+    "href": "index.html#events-archive",
+    "title": "CYCluster",
+    "section": "Events archive",
+    "text": "Events archive\nPast schools and workshops connected to the themes of CYCluster. Follow the event links for programme details and any materials made available by the organizers.\n\n2025\n\n\n\n\nDates\nEvent\nLocation\n\n\n\n\n17–28 November\nWinter School on Number Theory and Physics\nICTP, Trieste\n\n\n7–11 July\nLuCANT\nICERM, Providence\n\n\n7–11 July\nWorkshop on Explicit Arithmetic Geometry\nICTP, Trieste\n\n\n30 June–4 July\nSchool on Explicit Arithmetic Geometry\nICTP, Trieste\n\n\n17–28 March\nThe Arithmetic of Calabi–Yau Manifolds\nMITP, Mainz\n\n\n\n\n\n\n2024\n\n\n\n\nDates\nEvent\nLocation\n\n\n\n\n11–15 November\nMurmurations in Arithmetic Geometry and Related Topics\nSimons Center, Stony Brook\n\n\n24–28 June\nWorkshop on Number Theory and Physics\nICTP, Trieste\n\n\n17–21 June\nSchool on Number Theory and Physics\nICTP, Trieste\n\n\n\n\n\n\nContribute\nTo contribute data or software, contact cycluster-l at mpim-bonn dot mpg dot de.\n\n\nSpotted an issue?\nReport a problem and follow its progress on the GitHub issue tracker. Please include the relevant page or operator identifier and, where applicable, the steps needed to reproduce the issue."
+  },
+  {
+    "objectID": "datenschutz.html",
+    "href": "datenschutz.html",
+    "title": "Datenschutzhinweis",
+    "section": "",
+    "text": "Die Max-Planck-Gesellschaft zur Förderung der Wissenschaften e.V. (MPG) nimmt den Schutz Ihrer personenbezogenen Daten sehr ernst. Wir verarbeiten personenbezogene Daten, die beim Besuch unserer Webseiten erhoben werden, unter Beachtung der geltenden datenschutzrechtlichen Bestimmungen und grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Ihre Daten werden von uns weder veröffentlicht, noch unberechtigt an Dritte weitergegeben. Im Folgenden erläutern wir, welche Daten wir während Ihres Besuches auf unseren Webseiten erfassen und wie genau diese verwendet werden:"
+  },
+  {
+    "objectID": "datenschutz.html#bereitstellung-der-website",
+    "href": "datenschutz.html#bereitstellung-der-website",
+    "title": "Datenschutzhinweis",
+    "section": "Bereitstellung der Website",
+    "text": "Bereitstellung der Website\n\nAufruf der Website\n\nArt der Daten\nBei jedem Aufruf unserer Webseite erfassen unsere Server und Applikationen automatisiert Daten und Informationen vom System des aufrufenden Geräts.\nFolgende Daten werden vorübergehend erhoben:\n\nIhre IP-Adresse\nDatum und Uhrzeit Ihres Zugriffs auf die Seite\nAdresse der aufgerufenen Seite\nAdresse der zuvor besuchten Webseite (Referrer)\nName und Version Ihres Browsers/Betriebssystems (sofern übertragen)\n\nDie Daten werden in den Logfiles unserer Systeme gespeichert. Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten der Nutzer*innen findet nicht statt.\n\n\nRechtsgrundlage\nRechtsgrundlage für die vorübergehende Speicherung der Daten und der Logfiles ist Art. 6 Abs. 1 lit. f DSGVO. Die Speicherung in Logfiles erfolgt, um die Funktionsfähigkeit der Website sicherzustellen. Zudem dienen die Daten zur Optimierung der Webseiten, zur Störungsbeseitigung und zur Sicherstellung der Sicherheit unserer informationstechnischen Systeme. In diesen Zwecken liegt auch unser berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 lit. f DSGVO.\nDie Erfassung der Daten zur Bereitstellung der Website und die Speicherung der Daten in Logfiles ist für den Betrieb der Webseite zwingend erforderlich. Es besteht folglich seitens der Nutzer*innen keine Widerspruchsmöglichkeit.\n\n\nLöschung der Daten\nDie Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Im Falle der Erfassung der Daten zur Bereitstellung der Website ist dies der Fall, wenn die jeweilige Sitzung beendet ist. Im Falle der Speicherung der Daten in Logfiles ist dies nach spätestens sieben Tagen der Fall. Eine darüberhinausgehende Speicherung ist möglich. In diesem Fall werden die IP-Adressen der Nutzer*innen gelöscht oder verfremdet, sodass eine Zuordnung des aufrufenden Geräts nicht mehr möglich ist.\n\n\n\nCookies\nDiese statische Webseite verwendet keine Cookies."
+  },
+  {
+    "objectID": "datenschutz.html#allgemeine-angaben",
+    "href": "datenschutz.html#allgemeine-angaben",
+    "title": "Datenschutzhinweis",
+    "section": "Allgemeine Angaben",
+    "text": "Allgemeine Angaben\n\nKontaktdaten der Verantwortlichen\nVerantwortlich im Sinne der Datenschutz-Grundverordnung und anderer nationaler Datenschutzgesetze sowie sonstiger datenschutzrechtlicher Bestimmungen ist die\nMax-Planck-Gesellschaft zur Förderung der Wissenschaften e.V. (MPG)\nHofgartenstraße 8\nD-80539 München\n\nTelefon: +49 (89) 2108-0\nKontaktformular: https://www.mpg.de/kontakt/anfragen\nInternet: https://www.mpg.de\n\n\nKontaktdaten der Datenschutzbeauftragten\nDie Datenschutzbeauftragte der Verantwortlichen ist wie folgt zu erreichen:\nDatenschutzbeauftragte der MPG\nHofgartenstraße 8\nD-80539 München\nTelefon: +49 (89) 2108-1554\ndatenschutz at mpg dot de"
+  },
+  {
+    "objectID": "datenschutz.html#rechte-der-betroffenen-personen",
+    "href": "datenschutz.html#rechte-der-betroffenen-personen",
+    "title": "Datenschutzhinweis",
+    "section": "Rechte der betroffenen Personen",
+    "text": "Rechte der betroffenen Personen\nAls betroffene Person, deren personenbezogene Daten im Rahmen der oben genannten Dienste erhoben werden, haben Sie grundsätzlich folgende Rechte, soweit in Einzelfällen keine gesetzlichen Ausnahmen zur Anwendung kommen:\n\nAuskunft (Art. 15 DS-GVO)\nBerichtigung (Art. 16 DS-GVO)\nLöschung (Art. 17 Abs. 1 DS-GVO)\nEinschränkung der Verarbeitung (Art. 18 DS-GVO)\nDatenübertragbarkeit (Art. 20 DS-GVO)\nWiderspruch gegen die Verarbeitung (Art. 21 DS-GVO)\nWiderruf der Einwilligung (Art. 7 Abs. 3 DS-GVO)\nBeschwerderecht bei der Aufsichtsbehörde (Art. 77 DS-GVO). Dies ist für die MPG das Bayerische Landesamt für Datenschutzaufsicht, Postfach 1349, 91504 Ansbach."
+  },
+  {
+    "objectID": "impressum.html",
+    "href": "impressum.html",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "",
+    "text": "Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Diensteanbieterkennzeichnung, zu den datenschutzrechtlichen Informationspflichten sowie weitere wichtige rechtliche Hinweise zur Webseite https://cycluster.mpim-bonn.mpg.de."
+  },
+  {
+    "objectID": "impressum.html#diensteanbieter",
+    "href": "impressum.html#diensteanbieter",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Diensteanbieter",
+    "text": "Diensteanbieter\nDie Max-Planck-Gesellschaft zur Förderung der Wissenschaften e.V.\nHofgartenstraße 8\n80539 München\nTelefon: +49 (89) 2108 – 0\nInternet:  www.mpg.de\nist im Rechtssinne Diensteanbieter dieser Webseite."
+  },
+  {
+    "objectID": "impressum.html#vereinsregister",
+    "href": "impressum.html#vereinsregister",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Vereinsregister",
+    "text": "Vereinsregister\nDie Max-Planck-Gesellschaft ist im Vereinsregister des Amtsgerichts Berlin-Charlottenburg unter der Registernummer VR 13378 B eingetragen."
+  },
+  {
+    "objectID": "impressum.html#vertreter",
+    "href": "impressum.html#vertreter",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Vertreter",
+    "text": "Vertreter\nDie Max-Planck-Gesellschaft wird gesetzlich vertreten durch den Vereinsvorstand, und dieser wiederum durch den Präsidenten, Prof. Dr. Patrick Cramer, und die Generalsekretärin, Dr. Simone Schwanitz."
+  },
+  {
+    "objectID": "impressum.html#umsatzsteueridentifikationsnummer",
+    "href": "impressum.html#umsatzsteueridentifikationsnummer",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Umsatzsteueridentifikationsnummer",
+    "text": "Umsatzsteueridentifikationsnummer\nDie Umsatzsteueridentifikationsnummer der Max-Planck-Gesellschaft lautet: DE 129517720."
+  },
+  {
+    "objectID": "impressum.html#verantwortliche",
+    "href": "impressum.html#verantwortliche",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Verantwortliche",
+    "text": "Verantwortliche\n\nRedaktionsverantwortliche\nRedaktionsverantwortliche(r) im Sinne des Presserechts:\nDr. Alexander Weiße\nMax-Planck-Institut für Mathematik\nVivatsgasse 7\n53111 Bonn\ncycluster-l at mpim-bonn dot mpg dot de"
+  },
+  {
+    "objectID": "impressum.html#rechtliche-hinweise-zur-organisationsform",
+    "href": "impressum.html#rechtliche-hinweise-zur-organisationsform",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Rechtliche Hinweise zur Organisationsform",
+    "text": "Rechtliche Hinweise zur Organisationsform\nDie Max-Planck-Gesellschaft ist eine gemeinnützige Forschungseinrichtung, die in der Rechtsform eines eingetragenen Vereins organisiert ist. Die Institute und Einrichtungen der Max-Planck-Gesellschaft sind organisatorisch weitgehend selbständig und haben in der Regel keine eigene Rechtspersönlichkeit."
+  },
+  {
+    "objectID": "impressum.html#fremdsprachige-seiten",
+    "href": "impressum.html#fremdsprachige-seiten",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Fremdsprachige Seiten",
+    "text": "Fremdsprachige Seiten\nSoweit Teile des Internetauftritts auch in anderen Sprachen als deutsch angeboten werden, ist dies ausschließlich ein Service für Mitarbeiter und Gäste der Max-Planck-Gesellschaft, welche der deutschen Sprache nicht mächtig sind."
+  },
+  {
+    "objectID": "impressum.html#rechtliche-hinweise-zur-haftung-für-eigene-inhalte",
+    "href": "impressum.html#rechtliche-hinweise-zur-haftung-für-eigene-inhalte",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Rechtliche Hinweise zur Haftung für eigene Inhalte",
+    "text": "Rechtliche Hinweise zur Haftung für eigene Inhalte\nDie Max-Planck-Gesellschaft ist als Dienstanbieterin nach § 7 Abs. 1 Digital-Dienste-Gesetz für die eigenen Inhalte, die sie zur Nutzung bereithält, nach den allgemeinen Gesetzen verantwortlich. Die Max-Planck-Gesellschaft ist um Richtigkeit und Aktualität der auf dieser Internetpräsenz bereitgestellten Informationen bemüht. Trotzdem können Fehler und Unklarheiten nicht vollständig ausgeschlossen werden. Die Max-Planck-Gesellschaft übernimmt deshalb keine Gewähr für die Aktualität, Richtigkeit, Vollständigkeit oder Qualität der bereitgestellten Informationen. Für Schäden materieller oder immaterieller Art, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen unmittelbar oder mittelbar verursacht werden, haftet die Max-Planck-Gesellschaft nicht, sofern ihr nicht nachweislich vorsätzliches oder grob fahrlässiges Verschulden zur Last fällt. Gleiches gilt für kostenlos zum Download bereitgehaltene Software. Die Max-Planck-Gesellschaft behält es sich vor, Teile des Internetangebots oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen."
+  },
+  {
+    "objectID": "impressum.html#rechtliche-hinweise-zu-verknüpfungen-auf-externe-seiten",
+    "href": "impressum.html#rechtliche-hinweise-zu-verknüpfungen-auf-externe-seiten",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Rechtliche Hinweise zu Verknüpfungen auf externe Seiten",
+    "text": "Rechtliche Hinweise zu Verknüpfungen auf externe Seiten\nAuf dieser Internetpräsenz befinden sich Verknüpfungen zu externen Seiten. Diese externen Links sind wie folgt gekennzeichnet: extern. Für die Inhalte der verlinkten externen Seiten ist stets der jeweilige Anbieter verantwortlich. Die Max-Planck-Gesellschaft hat bei der erstmaligen Verknüpfung den fremden Inhalt daraufhin überprüft, ob durch ihn eine mögliche zivilrechtliche oder strafrechtliche Verantwortlichkeit ausgelöst wird. Eine permanente inhaltliche Kontrolle der verknüpften externen Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Wenn die Max-Planck-Gesellschaft feststellt oder von anderen darauf hingewiesen wird, dass ein externes Angebot, auf das sie per Link verknüpft hat, eine zivil- oder strafrechtliche Verantwortlichkeit auslöst, wird sie den Link auf dieses Angebot unverzüglich aufheben. Die Max-Planck-Gesellschaft distanziert sich ausdrücklich von derartigen Inhalten."
+  },
+  {
+    "objectID": "impressum.html#rechtliche-hinweise-zum-urheberrecht",
+    "href": "impressum.html#rechtliche-hinweise-zum-urheberrecht",
+    "title": "Impressum / Diensteanbieterkennzeichnung",
+    "section": "Rechtliche Hinweise zum Urheberrecht",
+    "text": "Rechtliche Hinweise zum Urheberrecht\nDas Layout der Homepage, die verwendeten Grafiken sowie die sonstigen Inhalte der Internetpräsenz der Max-Planck-Gesellschaft sind urheberrechtlich geschützt.\n© Max-Planck-Gesellschaft zur Förderung der Wissenschaften e.V., München. Alle Rechte vorbehalten."
+  },
+  {
+    "objectID": "aesz.html",
+    "href": "aesz.html",
+    "title": "Search Calabi-Yau operators",
+    "section": "",
+    "text": "Search\n  Example\n  Clear",
+    "crumbs": [
+      "Databases",
+      "AESZ"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Bibliography",
+    "section": "",
+    "text": "This is work in progress …\n\n\n1. Candelas, P., Ossa, X.C. de la, Green, P.S., Parkes, L.: An exactly soluble superconformal theory from a mirror pair of Calabi-Yau manifolds. Phys. Lett. B. 258, 118–126 (1991). https://doi.org/10.1016/0370-2693(91)91218-K\n\n\n2. Morrison, D.R.: Picard–fuchs equations and mirror maps for hypersurfaces. In: Essays on mirror manifolds. pp. 241–264 (1992)\n\n\n3. Heisteeg, D. van de: Charting the complex structure landscape of F-theory. Journal of High Energy Physics. 2025, 150 (2025)\n\n\n4. Batyrev, V.V., Straten, D. van: Generalized hypergeometric functions and rational curves on Calabi–Yau complete intersections in toric varieties. Communications in Mathematical Physics. 168, 493–533 (1995). https://doi.org/10.1007/BF02101841\n\n\n5. Libgober, A., Teitelbaum, J.: Lines on Calabi–Yau complete intersections, mirror symmetry, and Picard–Fuchs equations. International Mathematics Research Notices. 1993, 29–39 (1993). https://doi.org/10.1155/S1073792893000030\n\n\n6. Doran, C.F., Morgan, J.W.: Mirror symmetry and integral variations of Hodge structure underlying one-parameter families of Calabi–Yau threefolds. In: Mirror symmetry v. pp. 517–537 (2006)\n\n\n7. Clingher, A., Doran, C.F., Lewis, J., Novoseltsev, A.Y., Thompson, A.: The 14th case VHS via K3 fibrations. In: Recent advances in hodge theory. pp. 165–228 (2016)\n\n\n8. Candelas, P., Ossa, X. de la, Rodriguez-Villegas, F.: Calabi-Yau manifolds over finite fields, I, https://arxiv.org/abs/hep-th/0012233\n\n\n9. Candelas, P., Ossa, X. de la, Rodriguez-Villegas, F.: Calabi-Yau manifolds over finite fields. II. In: Calabi-Yau varieties and mirror symmetry (Toronto, ON, 2001). pp. 121–157. Amer. Math. Soc., Providence, RI (2003)\n\n\n10. Knapp, J., McGovern, J.: A single point as a calabi-yau zerofold, https://arxiv.org/abs/2506.16726\n\n\n11. Miranda, R., Persson, U.: On extremal rational elliptic surfaces. Math. Z. 193, 537–558 (1986). https://doi.org/10.1007/BF01160474\n\n\n12. Almkvist, G., Straten, D. van: Calabi-Yau operators of degree two. J. Algebraic Combin. 58, 1203–1259 (2023). https://doi.org/10.1007/s10801-023-01272-0\n\n\n13. Haghighat, B., Klemm, A.: Topological strings on Grassmannian Calabi-Yau manifolds. J. High Energy Phys. 029, 31 (2009). https://doi.org/10.1088/1126-6708/2009/01/029\n\n\n14. Candelas, P., Ossa, X. de la, Elmi, M., Straten, D. van: A one parameter family of Calabi-Yau manifolds with attractor points of rank two. J. High Energy Phys. 202, 73 (2020). https://doi.org/10.1007/jhep10(2020)202\n\n\n15. Hulek, K., Verrill, H.: On modularity of rigid and nonrigid Calabi-Yau varieties associated to the root lattice A_4. Nagoya Math. J. 179, 103–146 (2005). https://doi.org/10.1017/S0027763000025617\n\n\n16. Almkvist, G., Enckevort, C. van, Straten, D. van, Zudilin, W.: Tables of Calabi–Yau equations, https://arxiv.org/abs/math/0507430v2\n\n\n17. Almkvist, G.: Calabi–Yau differential equations of degree 2 and 3 and Yifan Yang’s pullback, https://arxiv.org/abs/math/0612215\n\n\n18. Bönisch, K., Klemm, A., Scheidegger, E., Zagier, D.: D-brane masses at special fibres of hypergeometric families of Calabi–Yau threefolds, modular forms, and periods, https://arxiv.org/abs/2203.09426\n\n\n19. Lian, B.H., Yau, S.-T.: Mirror maps, modular relations and hypergeometric series I, https://arxiv.org/abs/hep-th/9507151\n\n\n20. Pichon-Pharabod, E.: Periods of fibre products of elliptic surfaces and the Gamma conjecture, https://arxiv.org/abs/2505.07685v2\n\n\n21. Bönisch, K., Elmi, M., Kashani-Poor, A.-K., Klemm, A.: Time reversal and CP invariance in Calabi–Yau compactifications, https://arxiv.org/abs/2204.06506\n\n\n22. Blesse, P., Dücker, J., Klemm, A., Piribauer, J.F.: Geometry and arithmetic of special loci in the moduli spaces of Type II string theory. J. High Energy Phys. 106 (2026)\n\n\n23. McGovern, J.: Investigations in Calabi–Yau modularity and mirror symmetry, https://arxiv.org/abs/2312.00563, (2023)\n\n\n24. Dücker, J., Klemm, A., Piribauer, J.F.: Calabi–Yau period geometry and restricted moduli in Type II compactifications. J. High Energy Phys. 225 (2025)\n\n\n25. Bönisch, K.: Modularity of special motives of rank four associated with Calabi–Yau threefolds, https://bonndoc.ulb.uni-bonn.de/xmlui/handle/20.500.11811/11048, (2023)\n\n\n26. Blesse, P.: Pure Calabi–Yau motives and modularity, https://zenodo.org/records/23536313, (2024)\n\n\n27. McGovern, J.: How to get an attractive model, https://arxiv.org/abs/2610.35798\n\n\n28. Lukas, A.: The list of complete intersection Calabi–Yau three-folds, https://www-thphys.physics.ox.ac.uk/projects/CalabiYau/cicylist/index.html\n\n\n29. Schimannek, T.: In search of almost generic Calabi–Yau 3-folds, https://arxiv.org/abs/2504.06115\n\n\n30. Katz, S., Schimannek, T.: New non-commutative resolutions of determinantal Calabi–Yau threefolds from hybrid GLSM, https://arxiv.org/abs/2307.00047\n\n\n31. Katz, S., Klemm, A., Schimannek, T., Sharpe, E.: Topological strings on non-commutative resolutions, https://arxiv.org/abs/2212.08655\n\n\n32. Candelas, P., Ossa, X. de la, Straten, D. van: Local zeta functions from calabi–yau differential equations, https://arxiv.org/abs/2104.07816\n\n\n33. Candelas, P., Ossa, X. de la, Kuusela, P.: Local zeta functions of multiparameter calabi–yau threefolds from the picard–fuchs equations. SciPost Physics. 20, 028 (2026)\n\n\n34. Jockers, H., Kotlewski, S., Kuusela, P.: Modular calabi–yau fourfolds and connections to m-theory fluxes, https://arxiv.org/abs/2312.07611\n\n\n35. Kuusela, P., Lathwood, M., Mosso Rojas, M., Stepniczka, M.: Solutions of calabi–yau differential operators as truncated p-adic series and efficient computation of zeta functions, https://arxiv.org/abs/2604.01191\n\n\n36. Almkvist, G., Enckevort, C. van, Straten, D. van, Zudilin, W.: Tables of calabi–yau equations, https://arxiv.org/abs/math/0507430\n\n\n37. Straten, D. van: Calabi–yau operators. In: Uniformization, riemann–hilbert correspondence, calabi–yau manifolds and picard–fuchs equations. pp. 401–451 (2018)",
+    "crumbs": [
+      "Bibliography"
+    ]
+  }
+]

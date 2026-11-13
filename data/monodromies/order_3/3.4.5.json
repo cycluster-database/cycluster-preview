@@ -1,0 +1,115 @@
+{
+  "operator_id": "3.4.5",
+  "coefficient_field": "Q",
+  "basis": {
+    "period_column": "basis_matrix*varpi",
+    "frobenius_asymptotics": [
+      "1",
+      "log(z)",
+      "log(z)^2/2"
+    ],
+    "basis_matrix": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/(2*pi*I)^1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/(2*pi*I)^2"
+      ]
+    ],
+    "basis_matrix_tex": "\\left(\\begin{array}{rrr}\n1 & 0 & 0 \\\\\n0 & -\\frac{i}{2 \\, \\pi} & 0 \\\\\n0 & 0 & -\\frac{1}{4 \\, \\pi^{2}}\n\\end{array}\\right)"
+  },
+  "singularities": [
+    "0",
+    "1/4",
+    "1/8",
+    "+Infinity"
+  ],
+  "monodromy_matrices": [
+    [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "0"
+      ],
+      [
+        "1/2",
+        "1",
+        "1"
+      ]
+    ],
+    [
+      [
+        "9",
+        "96",
+        "512"
+      ],
+      [
+        "-3",
+        "-31",
+        "-160"
+      ],
+      [
+        "1/2",
+        "5",
+        "25"
+      ]
+    ],
+    [
+      [
+        "1",
+        "-16",
+        "128"
+      ],
+      [
+        "0",
+        "1",
+        "-16"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    [
+      [
+        "9",
+        "48",
+        "128"
+      ],
+      [
+        "-6",
+        "-31",
+        "-80"
+      ],
+      [
+        "2",
+        "10",
+        "25"
+      ]
+    ]
+  ],
+  "product_matrix_indices": [
+    3,
+    1,
+    2,
+    0
+  ],
+  "exact_product_is_identity": true,
+  "decimal_precision_of_analytic_continuation": 150,
+  "path_diagram": "monodromy_paths/order_3/3.4.5.html"
+}

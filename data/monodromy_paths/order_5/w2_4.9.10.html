@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AESZ continuation paths</title>
+<style>
+  :root {
+    color-scheme: light;
+    --blue: #2f6fdd;
+    --red: #c5221f;
+    --green: #188038;
+    --ink: #111;
+    --muted: #667085;
+    --grid: #98a2b3;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: var(--ink);
+  }
+  .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 10px 12px;
+    border-bottom: 1px solid #e4e7ec;
+  }
+  button, select {
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  button:hover { background: #f8fafc; }
+  button:disabled { color: #98a2b3; cursor: default; }
+  .hint { color: var(--muted); font-size: 12px; margin-left: 8px; }
+  .wrap { position: relative; }
+  svg { width: 100%; height: min(760px, calc(100vh - 54px)); display: block; touch-action: none; cursor: grab; }
+  svg.dragging { cursor: grabbing; }
+  .axis { stroke: var(--grid); stroke-width: 1; stroke-dasharray: 6 6; }
+  .loop { fill: none; stroke: var(--blue); stroke-width: 1.45; }
+  .singularity { fill: var(--red); stroke: white; stroke-width: 1.2; cursor: pointer; }
+  .base { fill: var(--green); cursor: pointer; }
+  .boundary { fill: none; stroke: var(--ink); stroke-width: 1.8; }
+  .label { font-size: 13px; fill: var(--ink); pointer-events: none; }
+  .small-label { font-size: 11px; fill: #475467; pointer-events: none; }
+  .tooltip {
+    position: absolute;
+    display: none;
+    min-width: 170px;
+    max-width: 330px;
+    padding: 8px 10px;
+    border: 1px solid #d0d5dd;
+    border-radius: 6px;
+    background: rgba(255,255,255,0.97);
+    box-shadow: 0 8px 24px rgba(16,24,40,0.12);
+    font-size: 12px;
+    pointer-events: none;
+  }
+  .tooltip b { font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <label for="loop-select">Loop</label>
+  <select id="loop-select"><option value="finite">Finite loops</option><option value="all">All loops</option></select>
+  <button id="fit-finite">Fit finite</button>
+  <button id="fit">Fit all</button>
+  <button id="reset">Reset</button>
+  <span class="hint">Wheel or trackpad zooms; tooltips show singular points.</span>
+</div>
+<div class="wrap">
+<svg id="plane" viewBox="0 0 1100 760" role="img" aria-label="AESZ continuation paths">
+  <defs>
+    <marker id="arrow-finite" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#2f6fdd"></path></marker>
+    <marker id="arrow-infinity" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#111"></path></marker>
+  </defs>
+  <rect id="background" x="0" y="0" width="1100" height="760" fill="white"></rect>
+  <g id="drawing"></g>
+</svg>
+<div id="tooltip" class="tooltip"></div>
+</div>
+<script>
+const data = {"width": 1100, "height": 760, "points": [{"index": 0, "label": "s0", "matrix": "M0", "x": 0.0, "y": 0.0, "value": "0", "plotX": 0.0, "plotY": 0.0}, {"index": 1, "label": "s1", "matrix": "M7", "x": 0.011203874963741443, "y": 0.0, "value": "0.01120387496374145?", "plotX": 8.333333331157581, "plotY": 0.0}, {"index": 2, "label": "s2", "matrix": "M1", "x": -0.20674369022542427, "y": 0.0, "value": "-0.2067436902254243?", "plotX": -153.77394788300182, "plotY": 0.0}, {"index": 3, "label": "s3", "matrix": "M3", "x": -0.7969181606780271, "y": 0.0, "value": "-0.7969181606780272?", "plotX": -592.7399843424612, "plotY": 0.0}, {"index": 4, "label": "s4", "matrix": "M5", "x": -0.5, "y": -0.8660254037844386, "value": "-0.500000000000000? - 0.866025403784439?*I", "plotX": -371.8951415526478, "plotY": -644.1412802572055}, {"index": 5, "label": "s5", "matrix": "M2", "x": -0.5, "y": 0.8660254037844386, "value": "-0.500000000000000? + 0.866025403784439?*I", "plotX": -371.8951415526478, "plotY": 644.1412802572055}, {"index": 6, "label": "s6", "matrix": "M4", "x": -1.0, "y": 0.0, "value": "-1.000000000000000?", "plotX": -743.7902831052955, "plotY": 0.0}, {"index": 7, "label": "s7", "matrix": "M6", "x": 1.0710294045111386, "y": 0.0, "value": "1.071029404511139?", "plotX": 796.6212639954358, "plotY": 0.0}], "basepoint": {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, "loops": [{"label": "M0", "infinity": false, "vertices": [{"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.000672232498, "y": 0.577738382803, "plotX": 0.5, "plotY": 429.716195305839, "value": "577738382803/1000000000000*I + 336116249/500000000000"}, {"x": -0.103371845112, "y": 0.517668506587, "plotX": -76.88697394097123, "plotY": 385.03680506904027, "value": "517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}]}, {"label": "M1", "infinity": false, "vertices": [{"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": -0.103371845112, "y": 0.517668506587, "plotX": -76.88697394097123, "plotY": 385.03680506904027, "value": "517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": -0.501830925452, "y": 0.38274101025, "plotX": -373.2569661129356, "plotY": 284.6790443698543, "value": "1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.501830925452, "y": -0.38274101025, "plotX": -373.2569661129356, "plotY": -284.6790443698543, "value": "-1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}]}, {"label": "M2", "infinity": false, "vertices": [{"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": -0.501830925452, "y": -0.38274101025, "plotX": -373.2569661129356, "plotY": -284.6790443698543, "value": "-1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.501830925452, "y": 0.38274101025, "plotX": -373.2569661129356, "plotY": 284.6790443698543, "value": "1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.103371845112, "y": 0.517668506587, "plotX": -76.88697394097123, "plotY": 385.03680506904027, "value": "517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": 0.000672232498, "y": 0.577738382803, "plotX": 0.5, "plotY": 429.716195305839, "value": "577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.00627416998, "y": 0.580981359669, "plotX": 4.6666666656749465, "plotY": 432.128289987105, "value": "580981359669/1000000000000*I + 313708499/50000000000"}, {"x": 0.5197224035, "y": 0.88406337715, "plotX": 386.56447363542964, "plotY": 657.5577495734221, "value": "17681267543/20000000000*I + 1039444807/2000000000"}, {"x": 0.035514702256, "y": 1.32815366326, "plotX": 26.415490445390517, "plotY": 987.8677892034907, "value": "66407683163/50000000000*I + 2219668891/62500000000"}, {"x": -0.792897059549, "y": 1.425200720342, "plotX": -589.7491283953071, "plotY": 1060.0504472650473, "value": "712600360171/500000000000*I - 792897059549/1000000000000"}, {"x": -1.2478779097, "y": 1.114516288446, "plotX": -928.1594637366073, "plotY": 828.9663857087136, "value": "557258144223/500000000000*I - 12478779097/10000000000"}, {"x": -1.311235625004, "y": 0.760616042416, "plotX": -975.2843167394743, "plotY": 565.7388215230261, "value": "47538502651/62500000000*I - 327808906251/250000000000"}, {"x": -1.309852566047, "y": 0.756243731606, "plotX": -974.2556109262958, "plotY": 562.4867392278319, "value": "378121865803/500000000000*I - 1309852566047/1000000000000"}, {"x": -0.898459080339, "y": 0.518725591889, "plotX": -668.2651337238683, "plotY": 385.8230548450813, "value": "518725591889/1000000000000*I - 898459080339/1000000000000"}, {"x": -0.501830925452, "y": 0.38274101025, "plotX": -373.2569661129356, "plotY": 284.6790443698543, "value": "1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.501830925452, "y": -0.38274101025, "plotX": -373.2569661129356, "plotY": -284.6790443698543, "value": "-1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}]}, {"label": "M3", "infinity": false, "vertices": [{"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": -0.501830925452, "y": -0.38274101025, "plotX": -373.2569661129356, "plotY": -284.6790443698543, "value": "-1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.501830925452, "y": 0.38274101025, "plotX": -373.2569661129356, "plotY": 284.6790443698543, "value": "1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.898459080339, "y": 0.518725591889, "plotX": -668.2651337238683, "plotY": 385.8230548450813, "value": "518725591889/1000000000000*I - 898459080339/1000000000000"}, {"x": -0.898459080339, "y": -0.518725591889, "plotX": -668.2651337238683, "plotY": -385.8230548450813, "value": "-518725591889/1000000000000*I - 898459080339/1000000000000"}, {"x": -0.501830925452, "y": -0.38274101025, "plotX": -373.2569661129356, "plotY": -284.6790443698543, "value": "-1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}]}, {"label": "M4", "infinity": false, "vertices": [{"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": -0.501830925452, "y": -0.38274101025, "plotX": -373.2569661129356, "plotY": -284.6790443698543, "value": "-1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.898459080339, "y": -0.518725591889, "plotX": -668.2651337238683, "plotY": -385.8230548450813, "value": "-518725591889/1000000000000*I - 898459080339/1000000000000"}, {"x": -0.898459080339, "y": 0.518725591889, "plotX": -668.2651337238683, "plotY": 385.8230548450813, "value": "518725591889/1000000000000*I - 898459080339/1000000000000"}, {"x": -1.309852566047, "y": 0.756243731606, "plotX": -974.2556109262958, "plotY": 562.4867392278319, "value": "378121865803/500000000000*I - 1309852566047/1000000000000"}, {"x": -1.587594211329, "y": 0.0, "plotX": -1180.8371479007253, "plotY": 0.0, "value": "-1587594211329/1000000000000"}, {"x": -1.309852566047, "y": -0.756243731606, "plotX": -974.2556109262958, "plotY": -562.4867392278319, "value": "-378121865803/500000000000*I - 1309852566047/1000000000000"}, {"x": -0.898459080339, "y": -0.518725591889, "plotX": -668.2651337238683, "plotY": -385.8230548450813, "value": "-518725591889/1000000000000*I - 898459080339/1000000000000"}, {"x": -0.501830925452, "y": -0.38274101025, "plotX": -373.2569661129356, "plotY": -284.6790443698543, "value": "-1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}]}, {"label": "M5", "infinity": false, "vertices": [{"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": -0.103371845112, "y": -0.517668506587, "plotX": -76.88697394097123, "plotY": -385.03680506904027, "value": "-517668506587/1000000000000*I - 12921480639/125000000000"}, {"x": -0.501830925452, "y": -0.38274101025, "plotX": -373.2569661129356, "plotY": -284.6790443698543, "value": "-1530964041/4000000000*I - 125457731363/250000000000"}, {"x": -0.898459080339, "y": -0.518725591889, "plotX": -668.2651337238683, "plotY": -385.8230548450813, "value": "-518725591889/1000000000000*I - 898459080339/1000000000000"}, {"x": -1.309852566047, "y": -0.756243731606, "plotX": -974.2556109262958, "plotY": -562.4867392278319, "value": "-378121865803/500000000000*I - 1309852566047/1000000000000"}, {"x": -1.311235625004, "y": -0.760616042416, "plotX": -975.2843167394743, "plotY": -565.7388215230261, "value": "-47538502651/62500000000*I - 327808906251/250000000000"}, {"x": -1.2478779097, "y": -1.114516288446, "plotX": -928.1594637366073, "plotY": -828.9663857087136, "value": "-557258144223/500000000000*I - 12478779097/10000000000"}, {"x": -0.792897059549, "y": -1.425200720342, "plotX": -589.7491283953071, "plotY": -1060.0504472650473, "value": "-712600360171/500000000000*I - 792897059549/1000000000000"}, {"x": 0.035514702256, "y": -1.32815366326, "plotX": 26.415490445390517, "plotY": -987.8677892034907, "value": "-66407683163/50000000000*I + 2219668891/62500000000"}, {"x": 0.5197224035, "y": -0.88406337715, "plotX": 386.56447363542964, "plotY": -657.5577495734221, "value": "-17681267543/20000000000*I + 1039444807/2000000000"}, {"x": 0.00627416998, "y": -0.580981359669, "plotX": 4.6666666656749465, "plotY": -432.128289987105, "value": "-580981359669/1000000000000*I + 313708499/50000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}]}, {"label": "M6", "infinity": false, "vertices": [{"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.00627416998, "y": -0.580981359669, "plotX": 4.6666666656749465, "plotY": -432.128289987105, "value": "-580981359669/1000000000000*I + 313708499/50000000000"}, {"x": 0.5197224035, "y": -0.88406337715, "plotX": 386.56447363542964, "plotY": -657.5577495734221, "value": "-17681267543/20000000000*I + 1039444807/2000000000"}, {"x": 0.541116639738, "y": -0.879129623705, "plotX": 402.47729866371316, "plotY": -653.8880717017939, "value": "-175825924741/200000000000*I + 270558319869/500000000000"}, {"x": 0.86392646406, "y": -0.984604439006, "plotX": 642.5801092853443, "plotY": -732.3392144350034, "value": "-492302219503/500000000000*I + 43196323203/50000000000"}, {"x": 1.1691089653, "y": -0.951366016539, "plotX": 869.5718882814261, "plotY": -707.6167987783001, "value": "-951366016539/1000000000000*I + 11691089653/10000000000"}, {"x": 1.379276175036, "y": -0.760616042416, "plotX": 1025.8922167104156, "plotY": -565.7388215230261, "value": "-47538502651/62500000000*I + 344819043759/250000000000"}, {"x": 1.65862361584, "y": 0.0, "plotX": 1233.6681287907625, "plotY": 0.0, "value": "10366397599/6250000000"}, {"x": 1.379276175036, "y": 0.760616042416, "plotX": 1025.8922167104156, "plotY": 565.7388215230261, "value": "47538502651/62500000000*I + 344819043759/250000000000"}, {"x": 1.1691089653, "y": 0.951366016539, "plotX": 869.5718882814261, "plotY": 707.6167987783001, "value": "951366016539/1000000000000*I + 11691089653/10000000000"}, {"x": 0.86392646406, "y": 0.984604439006, "plotX": 642.5801092853443, "plotY": 732.3392144350034, "value": "492302219503/500000000000*I + 43196323203/50000000000"}, {"x": 0.541116639738, "y": 0.879129623705, "plotX": 402.47729866371316, "plotY": 653.8880717017939, "value": "175825924741/200000000000*I + 270558319869/500000000000"}, {"x": 0.541116639738, "y": -0.879129623705, "plotX": 402.47729866371316, "plotY": -653.8880717017939, "value": "-175825924741/200000000000*I + 270558319869/500000000000"}, {"x": 0.5197224035, "y": -0.88406337715, "plotX": 386.56447363542964, "plotY": -657.5577495734221, "value": "-17681267543/20000000000*I + 1039444807/2000000000"}, {"x": 0.00627416998, "y": -0.580981359669, "plotX": 4.6666666656749465, "plotY": -432.128289987105, "value": "-580981359669/1000000000000*I + 313708499/50000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}]}, {"label": "M7", "infinity": false, "vertices": [{"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.00627416998, "y": -0.580981359669, "plotX": 4.6666666656749465, "plotY": -432.128289987105, "value": "-580981359669/1000000000000*I + 313708499/50000000000"}, {"x": 0.5197224035, "y": -0.88406337715, "plotX": 386.56447363542964, "plotY": -657.5577495734221, "value": "-17681267543/20000000000*I + 1039444807/2000000000"}, {"x": 0.541116639738, "y": -0.879129623705, "plotX": 402.47729866371316, "plotY": -653.8880717017939, "value": "-175825924741/200000000000*I + 270558319869/500000000000"}, {"x": 0.541116639738, "y": 0.879129623705, "plotX": 402.47729866371316, "plotY": 653.8880717017939, "value": "175825924741/200000000000*I + 270558319869/500000000000"}, {"x": 0.5197224035, "y": 0.88406337715, "plotX": 386.56447363542964, "plotY": 657.5577495734221, "value": "17681267543/20000000000*I + 1039444807/2000000000"}, {"x": 0.00627416998, "y": 0.580981359669, "plotX": 4.6666666656749465, "plotY": 432.128289987105, "value": "580981359669/1000000000000*I + 313708499/50000000000"}, {"x": 0.00627416998, "y": -0.580981359669, "plotX": 4.6666666656749465, "plotY": -432.128289987105, "value": "-580981359669/1000000000000*I + 313708499/50000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}]}, {"label": "M8", "infinity": true, "vertices": [{"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.00627416998, "y": -0.580981359669, "plotX": 4.6666666656749465, "plotY": -432.128289987105, "value": "-580981359669/1000000000000*I + 313708499/50000000000"}, {"x": 0.5197224035, "y": -0.88406337715, "plotX": 386.56447363542964, "plotY": -657.5577495734221, "value": "-17681267543/20000000000*I + 1039444807/2000000000"}, {"x": 3.472996684588, "y": -4.319881622856, "plotX": 2583.1811872534613, "plotY": -3213.085975245428, "value": "-539985202857/125000000000*I + 868249171147/250000000000"}, {"x": -5.837893426172, "y": -1.055763288987, "plotX": -4342.168404191016, "plotY": -785.2664756078186, "value": "-1055763288987/1000000000000*I - 1459473356543/250000000000"}, {"x": 1.644361027298, "y": 5.375644911842, "plotX": 1223.059754021294, "plotY": 3998.352450852503, "value": "2687822455921/500000000000*I + 822180513649/500000000000"}, {"x": 3.472996684588, "y": -4.319881622856, "plotX": 2583.1811872534613, "plotY": -3213.085975245428, "value": "-539985202857/125000000000*I + 868249171147/250000000000"}, {"x": 0.5197224035, "y": -0.88406337715, "plotX": 386.56447363542964, "plotY": -657.5577495734221, "value": "-17681267543/20000000000*I + 1039444807/2000000000"}, {"x": 0.00627416998, "y": -0.580981359669, "plotX": 4.6666666656749465, "plotY": -432.128289987105, "value": "-580981359669/1000000000000*I + 313708499/50000000000"}, {"x": 0.000672232498, "y": -0.577738382803, "plotX": 0.5, "plotY": -429.716195305839, "value": "-577738382803/1000000000000*I + 336116249/500000000000"}, {"x": 0.001344464996, "y": 0.0, "plotX": 1.0, "plotY": 0.0, "value": "336116249/250000000000"}]}], "plot": {"type": "linear", "center": "0", "unit": 0.001344464996}};
+const svg = document.getElementById('plane');
+const drawing = document.getElementById('drawing');
+const tooltip = document.getElementById('tooltip');
+const fitButton = document.getElementById('fit');
+const fitFiniteButton = document.getElementById('fit-finite');
+const resetButton = document.getElementById('reset');
+const loopSelect = document.getElementById('loop-select');
+data.loops.forEach(loop => {
+  const option = document.createElement('option');
+  option.value = loop.label;
+  option.textContent = loop.label + (loop.infinity ? ' (infinity)' : '');
+  loopSelect.appendChild(option);
+});
+let W = data.width;
+let H = data.height;
+let view = {cx: 0, cy: 0, scale: 1, fitScale: 1};
+let dragging = null;
+let pinned = null;
+
+function boundsFor(indices = null, includeBoundary = true) {
+  const pts = indices ? indices.map(i => data.points[i]) : data.points;
+  const paths = indices ? [] : data.loops.filter(loop => includeBoundary || !loop.infinity).flatMap(loop => loop.vertices);
+  let xs = pts.concat(paths).map(p => p.plotX).concat([data.basepoint.plotX]);
+  let ys = pts.concat(paths).map(p => p.plotY).concat([data.basepoint.plotY]);
+  let minX = Math.min(...xs), maxX = Math.max(...xs);
+  let minY = Math.min(...ys), maxY = Math.max(...ys);
+  const span = Math.max(maxX - minX, maxY - minY, 1e-12);
+  minX -= 0.08 * span; maxX += 0.08 * span;
+  minY -= 0.08 * span; maxY += 0.08 * span;
+  return {minX, maxX, minY, maxY};
+}
+
+function fitBounds(bounds) {
+  view.cx = (bounds.minX + bounds.maxX) / 2;
+  view.cy = (bounds.minY + bounds.maxY) / 2;
+  view.scale = Math.min((W - 90) / Math.max(bounds.maxX - bounds.minX, 1e-12),
+                        (H - 90) / Math.max(bounds.maxY - bounds.minY, 1e-12));
+  view.fitScale = view.scale;
+  draw();
+}
+
+function screen(point) {
+  return [W / 2 + (point.plotX - view.cx) * view.scale,
+          H / 2 - (point.plotY - view.cy) * view.scale];
+}
+
+function plotFromScreen(x, y) {
+  return {plotX: view.cx + (x - W / 2) / view.scale,
+           plotY: view.cy - (y - H / 2) / view.scale};
+}
+
+function svgPoint(event) {
+  const rect = svg.getBoundingClientRect();
+  return {x: (event.clientX - rect.left) * W / rect.width,
+           y: (event.clientY - rect.top) * H / rect.height};
+}
+
+function el(name, attrs = {}, text = null) {
+  const node = document.createElementNS('http://www.w3.org/2000/svg', name);
+  for (const [key, value] of Object.entries(attrs)) node.setAttribute(key, value);
+  if (text !== null) node.textContent = text;
+  drawing.appendChild(node);
+  return node;
+}
+
+function pointInfo(point, role = 'singularity') {
+  if (role === 'basepoint') {
+    return `<b>basepoint</b><br>z = ${data.basepoint.value}`;
+  }
+  return `<b>${point.label}</b> &nbsp; ${point.matrix}<br>z = ${point.value}`;
+}
+
+function showTooltip(html, event) {
+  tooltip.innerHTML = html;
+  tooltip.style.display = 'block';
+  moveTooltip(event);
+}
+
+function moveTooltip(event) {
+  const rect = svg.getBoundingClientRect();
+  tooltip.style.left = `${event.clientX - rect.left + 14}px`;
+  tooltip.style.top = `${event.clientY - rect.top + 14}px`;
+}
+
+function hideTooltip() {
+  if (pinned === null) tooltip.style.display = 'none';
+}
+
+function nearestScreenDistances() {
+  return data.points.map((p, i) => {
+    const [x0, y0] = screen(p);
+    let nearest = Infinity;
+    data.points.forEach((q, j) => {
+      if (i === j) return;
+      const [x1, y1] = screen(q);
+      nearest = Math.min(nearest, Math.hypot(x0 - x1, y0 - y1));
+    });
+    return nearest;
+  });
+}
+
+function draw() {
+  drawing.innerHTML = '';
+  const xAxisA = screen({plotX: view.cx - W / view.scale, plotY: 0});
+  const xAxisB = screen({plotX: view.cx + W / view.scale, plotY: 0});
+  const yAxisA = screen({plotX: 0, plotY: view.cy - H / view.scale});
+  const yAxisB = screen({plotX: 0, plotY: view.cy + H / view.scale});
+  el('line', {class: 'axis', x1: xAxisA[0], y1: xAxisA[1], x2: xAxisB[0], y2: xAxisB[1]});
+  el('line', {class: 'axis', x1: yAxisA[0], y1: yAxisA[1], x2: yAxisB[0], y2: yAxisB[1]});
+
+  data.loops.forEach(loop => {
+    const selection = loopSelect.value;
+    if (selection !== 'all' && !(selection === 'finite' && !loop.infinity) && selection !== loop.label) return;
+    const arrow = loop.infinity ? 'arrow-infinity' : 'arrow-finite';
+    const vertices = loop.vertices.map(screen);
+    if (vertices.length < 2) return;
+    let d = `M ${vertices[0].join(' ')}`;
+    for (const point of vertices.slice(1)) d += ` L ${point.join(' ')}`;
+    const path = el('path', {class: loop.infinity ? 'boundary' : 'loop',
+      'data-loop': loop.label, d});
+    const length = path.getTotalLength();
+    if (length > 0) [0.2, 0.5, 0.8].forEach(fraction => {
+      const at = fraction * length;
+      const a = path.getPointAtLength(Math.max(0, at - 1));
+      const b = path.getPointAtLength(Math.min(length, at + 1));
+      el('line', {x1: a.x, y1: a.y, x2: b.x, y2: b.y,
+        stroke: loop.infinity ? '#111' : '#2f6fdd', 'stroke-width': 1.45,
+        'marker-end': `url(#${arrow})`});
+    });
+  });
+
+  const base = screen(data.basepoint);
+  const distances = nearestScreenDistances();
+  el('rect', {class: 'base', x: base[0] - 6, y: base[1] - 6, width: 12, height: 12})
+    .addEventListener('pointerenter', e => showTooltip(pointInfo(null, 'basepoint'), e));
+
+  data.points.forEach((point, i) => {
+    const p = screen(point);
+    const r = 13;
+    const group = el('g', {tabindex: '0'});
+    const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    dot.setAttribute('class', 'singularity');
+    dot.setAttribute('cx', p[0]);
+    dot.setAttribute('cy', p[1]);
+    dot.setAttribute('r', 4.8);
+    group.appendChild(dot);
+    drawing.appendChild(group);
+
+    group.addEventListener('pointerenter', e => showTooltip(pointInfo(point), e));
+    group.addEventListener('pointermove', moveTooltip);
+    group.addEventListener('pointerleave', hideTooltip);
+    group.addEventListener('click', e => {
+      pinned = pinned === point.index ? null : point.index;
+      showTooltip(pointInfo(point), e);
+      e.stopPropagation();
+    });
+    group.addEventListener('dblclick', e => {
+      focusBounds(boundsFor([point.index], false));
+      e.stopPropagation();
+    });
+
+    const zoomRatio = view.scale / view.fitScale;
+    const showLabel = distances[i] > 52 || zoomRatio > 3.2 || pinned === point.index;
+    if (showLabel) {
+      const left = Math.abs(p[0] + r + 5 - base[0]) < 26 && Math.abs(p[1] - base[1]) < 24;
+      const x = p[0] + (left ? -r - 5 : r + 5), anchor = left ? 'end' : 'start';
+      el('text', {class: 'label', x, y: p[1] - 3, 'text-anchor': anchor}, point.label);
+      el('text', {class: 'small-label', x, y: p[1] + 11, 'text-anchor': anchor}, point.matrix);
+    }
+  });
+}
+
+function focusBounds(bounds) {
+  fitBounds(bounds);
+  view.scale *= 1.8;
+  view.fitScale = Math.min(view.fitScale, view.scale / 1.8);
+  draw();
+}
+
+fitButton.addEventListener('click', () => { loopSelect.value = 'all'; fitBounds(boundsFor(null, true)); });
+fitFiniteButton.addEventListener('click', () => { loopSelect.value = 'finite'; fitBounds(boundsFor(null, false)); });
+resetButton.addEventListener('click', () => { loopSelect.value = 'finite'; fitBounds(boundsFor(null, false)); });
+loopSelect.addEventListener('change', () => {
+  const chosen = data.loops.find(loop => loop.label === loopSelect.value);
+  fitBounds(boundsFor(null, loopSelect.value === 'all' || !!chosen?.infinity));
+});
+
+svg.addEventListener('wheel', event => {
+  event.preventDefault();
+  const mouse = svgPoint(event);
+  const before = plotFromScreen(mouse.x, mouse.y);
+  const factor = event.deltaY < 0 ? 1.08 : 1 / 1.08;
+  view.scale = Math.max(1e-12, view.scale * factor);
+  view.cx = before.plotX - (mouse.x - W / 2) / view.scale;
+  view.cy = before.plotY + (mouse.y - H / 2) / view.scale;
+  draw();
+}, {passive: false});
+
+svg.addEventListener('pointerdown', event => {
+  if (event.button !== 0) return;
+  dragging = {x: event.clientX, y: event.clientY, cx: view.cx, cy: view.cy};
+  svg.classList.add('dragging');
+});
+window.addEventListener('pointermove', event => {
+  if (!dragging) return;
+  view.cx = dragging.cx - (event.clientX - dragging.x) / view.scale;
+  view.cy = dragging.cy + (event.clientY - dragging.y) / view.scale;
+  draw();
+});
+window.addEventListener('pointerup', () => {
+  dragging = null;
+  svg.classList.remove('dragging');
+});
+svg.addEventListener('click', () => {
+  pinned = null;
+  tooltip.style.display = 'none';
+});
+function resizeCanvas() {
+  const rect = svg.getBoundingClientRect();
+  W = Math.max(1, rect.width);
+  H = Math.max(1, rect.height);
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+  const background = document.getElementById('background');
+  background.setAttribute('width', W);
+  background.setAttribute('height', H);
+  const chosen = data.loops.find(loop => loop.label === loopSelect.value);
+  fitBounds(boundsFor(null, loopSelect.value === 'all' || !!chosen?.infinity));
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+</script>
+</body>
+</html>

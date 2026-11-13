@@ -1,0 +1,46 @@
+{
+  "operator_id": "1.1.1",
+  "coefficient_field": "Q",
+  "basis": {
+    "period_column": "basis_matrix*varpi",
+    "frobenius_asymptotics": [
+      "1"
+    ],
+    "basis_matrix": [
+      [
+        "1"
+      ]
+    ],
+    "basis_matrix_tex": "\\left(\\begin{array}{r}\n1\n\\end{array}\\right)"
+  },
+  "singularities": [
+    "0",
+    "1/4",
+    "+Infinity"
+  ],
+  "monodromy_matrices": [
+    [
+      [
+        "1"
+      ]
+    ],
+    [
+      [
+        "-1"
+      ]
+    ],
+    [
+      [
+        "-1"
+      ]
+    ]
+  ],
+  "product_matrix_indices": [
+    2,
+    1,
+    0
+  ],
+  "exact_product_is_identity": true,
+  "decimal_precision_of_analytic_continuation": 150,
+  "path_diagram": "monodromy_paths/order_1/1.1.1.html"
+}

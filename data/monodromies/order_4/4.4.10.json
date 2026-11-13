@@ -1,0 +1,167 @@
+{
+  "operator_id": "4.4.10",
+  "coefficient_field": "Q(sqrt(6))",
+  "basis": {
+    "frobenius_asymptotics": [
+      "1",
+      "log(z)",
+      "log(z)^2/2",
+      "log(z)^3/6"
+    ],
+    "period_column": "basis_matrix*varpi",
+    "basis_matrix": [
+      [
+        "rho/(2*pi*I)^3",
+        "0",
+        "0",
+        "1/(2*pi*I)^3"
+      ],
+      [
+        "0",
+        "0",
+        "-1/(2*pi*I)^2",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/(2*pi*I)",
+        "0",
+        "0"
+      ]
+    ],
+    "rho": "77/4*zeta(3)"
+  },
+  "singularities": [
+    "0",
+    "0.05396691782172398?",
+    "0.001588637733831574?",
+    "+Infinity"
+  ],
+  "monodromy_matrices": [
+    [
+      [
+        "1",
+        "-1",
+        "1/6",
+        "1/2"
+      ],
+      [
+        "0",
+        "1",
+        "-1/2",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1"
+      ]
+    ],
+    [
+      [
+        "(9/8)*sqrt(6)",
+        "-(2/3)*sqrt(6)",
+        "0",
+        "(5/128)*sqrt(6)"
+      ],
+      [
+        "(2)*sqrt(6)",
+        "-(9/8)*sqrt(6)",
+        "-(5/128)*sqrt(6)",
+        "0"
+      ],
+      [
+        "0",
+        "-(6)*sqrt(6)",
+        "(9/8)*sqrt(6)",
+        "(2)*sqrt(6)"
+      ],
+      [
+        "(6)*sqrt(6)",
+        "0",
+        "-(2/3)*sqrt(6)",
+        "-(9/8)*sqrt(6)"
+      ]
+    ],
+    [
+      [
+        "(3/8)*sqrt(6)",
+        "0",
+        "0",
+        "(5/384)*sqrt(6)"
+      ],
+      [
+        "0",
+        "-(3/8)*sqrt(6)",
+        "-(5/384)*sqrt(6)",
+        "0"
+      ],
+      [
+        "0",
+        "-(2)*sqrt(6)",
+        "(3/8)*sqrt(6)",
+        "0"
+      ],
+      [
+        "(2)*sqrt(6)",
+        "0",
+        "0",
+        "-(3/8)*sqrt(6)"
+      ]
+    ],
+    [
+      [
+        "5/2",
+        "-5/2",
+        "19/96",
+        "19/32"
+      ],
+      [
+        "15/2",
+        "-5",
+        "0",
+        "19/32"
+      ],
+      [
+        "-24",
+        "0",
+        "3",
+        "9/2"
+      ],
+      [
+        "24",
+        "-8",
+        "-3/2",
+        "-3/2"
+      ]
+    ]
+  ],
+  "monodromy_matrices_tex": [
+    "\\left(\\begin{array}{rrrr}\n1 & -1 & \\frac{1}{6} & \\frac{1}{2} \\\\\n0 & 1 & -\\frac{1}{2} & -1 \\\\\n0 & 0 & 1 & 0 \\\\\n0 & 0 & 1 & 1\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{9}{8} \\, \\sqrt{6} & -\\frac{2}{3} \\, \\sqrt{6} & 0 & \\frac{5}{128} \\, \\sqrt{6} \\\\\n2 \\, \\sqrt{6} & -\\frac{9}{8} \\, \\sqrt{6} & -\\frac{5}{128} \\, \\sqrt{6} & 0 \\\\\n0 & -6 \\, \\sqrt{6} & \\frac{9}{8} \\, \\sqrt{6} & 2 \\, \\sqrt{6} \\\\\n6 \\, \\sqrt{6} & 0 & -\\frac{2}{3} \\, \\sqrt{6} & -\\frac{9}{8} \\, \\sqrt{6}\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{3}{8} \\, \\sqrt{6} & 0 & 0 & \\frac{5}{384} \\, \\sqrt{6} \\\\\n0 & -\\frac{3}{8} \\, \\sqrt{6} & -\\frac{5}{384} \\, \\sqrt{6} & 0 \\\\\n0 & -2 \\, \\sqrt{6} & \\frac{3}{8} \\, \\sqrt{6} & 0 \\\\\n2 \\, \\sqrt{6} & 0 & 0 & -\\frac{3}{8} \\, \\sqrt{6}\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{5}{2} & -\\frac{5}{2} & \\frac{19}{96} & \\frac{19}{32} \\\\\n\\frac{15}{2} & -5 & 0 & \\frac{19}{32} \\\\\n-24 & 0 & 3 & \\frac{9}{2} \\\\\n24 & -8 & -\\frac{3}{2} & -\\frac{3}{2}\n\\end{array}\\right)"
+  ],
+  "product_matrix_indices": [
+    3,
+    1,
+    2,
+    0
+  ],
+  "exact_product_is_identity": true,
+  "decimal_precision_of_analytic_continuation": 150,
+  "path_diagram": "monodromy_paths/order_4/4.4.10.html"
+}

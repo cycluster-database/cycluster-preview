@@ -1,0 +1,167 @@
+{
+  "operator_id": "4.3.12",
+  "coefficient_field": "Q(i)",
+  "basis": {
+    "frobenius_asymptotics": [
+      "1",
+      "log(z)",
+      "log(z)^2/2",
+      "log(z)^3/6"
+    ],
+    "period_column": "basis_matrix*varpi",
+    "basis_matrix": [
+      [
+        "rho/(2*pi*I)^3",
+        "0",
+        "0",
+        "1/(2*pi*I)^3"
+      ],
+      [
+        "0",
+        "0",
+        "-1/(2*pi*I)^2",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/(2*pi*I)",
+        "0",
+        "0"
+      ]
+    ],
+    "rho": "4/3*zeta(3)"
+  },
+  "singularities": [
+    "0",
+    "1/1296",
+    "1/1728",
+    "+Infinity"
+  ],
+  "monodromy_matrices": [
+    [
+      [
+        "1",
+        "-1",
+        "1/6",
+        "1/2"
+      ],
+      [
+        "0",
+        "1",
+        "-1/2",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1"
+      ]
+    ],
+    [
+      [
+        "23/12",
+        "-11/36",
+        "121/1296",
+        "77/432"
+      ],
+      [
+        "7/4",
+        "5/12",
+        "77/432",
+        "49/144"
+      ],
+      [
+        "-9",
+        "3",
+        "1/12",
+        "-7/4"
+      ],
+      [
+        "3",
+        "-1",
+        "11/36",
+        "19/12"
+      ]
+    ],
+    [
+      [
+        "0",
+        "-1/18*sqrt(-1)",
+        "-73/648*sqrt(-1)",
+        "0"
+      ],
+      [
+        "-1/4*sqrt(-1)",
+        "0",
+        "0",
+        "-73/144*sqrt(-1)"
+      ],
+      [
+        "9*sqrt(-1)",
+        "0",
+        "0",
+        "1/4*sqrt(-1)"
+      ],
+      [
+        "0",
+        "2*sqrt(-1)",
+        "1/18*sqrt(-1)",
+        "0"
+      ]
+    ],
+    [
+      [
+        "-11/12*sqrt(-1)",
+        "2/3*sqrt(-1)",
+        "0",
+        "-167/432*sqrt(-1)"
+      ],
+      [
+        "-3/2*sqrt(-1)",
+        "11/12*sqrt(-1)",
+        "167/432*sqrt(-1)",
+        "0"
+      ],
+      [
+        "0",
+        "3*sqrt(-1)",
+        "-11/12*sqrt(-1)",
+        "-3/2*sqrt(-1)"
+      ],
+      [
+        "-3*sqrt(-1)",
+        "0",
+        "2/3*sqrt(-1)",
+        "11/12*sqrt(-1)"
+      ]
+    ]
+  ],
+  "monodromy_matrices_tex": [
+    "\\left(\\begin{array}{rrrr}\n1 & -1 & \\frac{1}{6} & \\frac{1}{2} \\\\\n0 & 1 & -\\frac{1}{2} & -1 \\\\\n0 & 0 & 1 & 0 \\\\\n0 & 0 & 1 & 1\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{23}{12} & -\\frac{11}{36} & \\frac{121}{1296} & \\frac{77}{432} \\\\\n\\frac{7}{4} & \\frac{5}{12} & \\frac{77}{432} & \\frac{49}{144} \\\\\n-9 & 3 & \\frac{1}{12} & -\\frac{7}{4} \\\\\n3 & -1 & \\frac{11}{36} & \\frac{19}{12}\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n0 & -\\frac{1}{18} i & -\\frac{73}{648} i & 0 \\\\\n-\\frac{1}{4} i & 0 & 0 & -\\frac{73}{144} i \\\\\n9 i & 0 & 0 & \\frac{1}{4} i \\\\\n0 & 2 i & \\frac{1}{18} i & 0\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n-\\frac{11}{12} i & \\frac{2}{3} i & 0 & -\\frac{167}{432} i \\\\\n-\\frac{3}{2} i & \\frac{11}{12} i & \\frac{167}{432} i & 0 \\\\\n0 & 3 i & -\\frac{11}{12} i & -\\frac{3}{2} i \\\\\n-3 i & 0 & \\frac{2}{3} i & \\frac{11}{12} i\n\\end{array}\\right)"
+  ],
+  "product_matrix_indices": [
+    3,
+    1,
+    2,
+    0
+  ],
+  "exact_product_is_identity": true,
+  "decimal_precision_of_analytic_continuation": 150,
+  "path_diagram": "monodromy_paths/order_4/4.3.12.html"
+}

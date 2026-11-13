@@ -1,0 +1,138 @@
+{
+  "operator_id": "4.1.12",
+  "rational_basis_file": "monodromies/order_4/4.1.12.json",
+  "basis_change_convention": "integral basis period vector = basis_change * rational basis period vector",
+  "basis_change": [
+    [
+      "N^2*kappa",
+      "0",
+      "S",
+      "N*b/24"
+    ],
+    [
+      "0",
+      "N*kappa",
+      "b/24",
+      "N*sigma/2"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "N"
+    ]
+  ],
+  "singularities": [
+    "0",
+    "1/27648",
+    "+Infinity"
+  ],
+  "bases": [
+    {
+      "parameters": {
+        "kappa": 2,
+        "N": 1,
+        "S": 0,
+        "b": 8,
+        "sigma": 0
+      },
+      "epsilon": "-156*zeta(3)",
+      "epsilon_tex": "- 156 \\zeta\\!(3)",
+      "monodromy_matrices": [
+        [
+          [
+            "1",
+            "-1",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "-1",
+            "-2"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "1"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "1",
+            "0",
+            "1"
+          ],
+          [
+            "-1",
+            "0",
+            "1",
+            "-1"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "-1",
+            "1",
+            "-1",
+            "-1"
+          ],
+          [
+            "-2",
+            "1",
+            "-1",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "-1",
+            "0",
+            "-1",
+            "0"
+          ]
+        ]
+      ],
+      "description": "The complete intersection $X(4,6)\\subset\\mathbb{P}^5(1,1,1,2,2,3)$. [BvS95]",
+      "references_list": [
+        "BvS95"
+      ],
+      "geometric_invariants": {
+        "H3": 2,
+        "c2H": 32,
+        "chi": -156
+      }
+    }
+  ]
+}

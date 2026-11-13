@@ -1,0 +1,138 @@
+{
+  "operator_id": "4.2.45",
+  "coefficient_field": "Q(sqrt(3))",
+  "basis": {
+    "frobenius_asymptotics": [
+      "1",
+      "log(z)",
+      "log(z)^2/2",
+      "log(z)^3/6"
+    ],
+    "period_column": "basis_matrix*varpi",
+    "basis_matrix": [
+      [
+        "rho/(2*pi*I)^3",
+        "0",
+        "0",
+        "1/(2*pi*I)^3"
+      ],
+      [
+        "0",
+        "0",
+        "-1/(2*pi*I)^2",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/(2*pi*I)",
+        "0",
+        "0"
+      ]
+    ],
+    "rho": "140*zeta(3)"
+  },
+  "singularities": [
+    "0",
+    "1/46656",
+    "+Infinity"
+  ],
+  "monodromy_matrices": [
+    [
+      [
+        "1",
+        "-1",
+        "1/6",
+        "1/2"
+      ],
+      [
+        "0",
+        "1",
+        "-1/2",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1"
+      ]
+    ],
+    [
+      [
+        "(5/8)*sqrt(3)",
+        "0",
+        "0",
+        "-(11/192)*sqrt(3)"
+      ],
+      [
+        "0",
+        "-(5/8)*sqrt(3)",
+        "(11/192)*sqrt(3)",
+        "0"
+      ],
+      [
+        "0",
+        "-sqrt(3)",
+        "(5/8)*sqrt(3)",
+        "0"
+      ],
+      [
+        "sqrt(3)",
+        "0",
+        "0",
+        "-(5/8)*sqrt(3)"
+      ]
+    ],
+    [
+      [
+        "(9/8)*sqrt(3)",
+        "-(11/24)*sqrt(3)",
+        "-(3/64)*sqrt(3)",
+        "-(71/192)*sqrt(3)"
+      ],
+      [
+        "sqrt(3)",
+        "-(1/8)*sqrt(3)",
+        "-(49/192)*sqrt(3)",
+        "-(5/8)*sqrt(3)"
+      ],
+      [
+        "0",
+        "-sqrt(3)",
+        "(5/8)*sqrt(3)",
+        "0"
+      ],
+      [
+        "sqrt(3)",
+        "sqrt(3)",
+        "-(5/8)*sqrt(3)",
+        "-(5/8)*sqrt(3)"
+      ]
+    ]
+  ],
+  "monodromy_matrices_tex": [
+    "\\left(\\begin{array}{rrrr}\n1 & -1 & \\frac{1}{6} & \\frac{1}{2} \\\\\n0 & 1 & -\\frac{1}{2} & -1 \\\\\n0 & 0 & 1 & 0 \\\\\n0 & 0 & 1 & 1\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{5}{8} \\, \\sqrt{3} & 0 & 0 & -\\frac{11}{192} \\, \\sqrt{3} \\\\\n0 & -\\frac{5}{8} \\, \\sqrt{3} & \\frac{11}{192} \\, \\sqrt{3} & 0 \\\\\n0 & -\\sqrt{3} & \\frac{5}{8} \\, \\sqrt{3} & 0 \\\\\n\\sqrt{3} & 0 & 0 & -\\frac{5}{8} \\, \\sqrt{3}\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{9}{8} \\, \\sqrt{3} & -\\frac{11}{24} \\, \\sqrt{3} & -\\frac{3}{64} \\, \\sqrt{3} & -\\frac{71}{192} \\, \\sqrt{3} \\\\\n\\sqrt{3} & -\\frac{1}{8} \\, \\sqrt{3} & -\\frac{49}{192} \\, \\sqrt{3} & -\\frac{5}{8} \\, \\sqrt{3} \\\\\n0 & -\\sqrt{3} & \\frac{5}{8} \\, \\sqrt{3} & 0 \\\\\n\\sqrt{3} & \\sqrt{3} & -\\frac{5}{8} \\, \\sqrt{3} & -\\frac{5}{8} \\, \\sqrt{3}\n\\end{array}\\right)"
+  ],
+  "product_matrix_indices": [
+    2,
+    1,
+    0
+  ],
+  "exact_product_is_identity": true,
+  "decimal_precision_of_analytic_continuation": 150,
+  "path_diagram": "monodromy_paths/order_4/4.2.45.html"
+}

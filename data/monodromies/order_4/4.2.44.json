@@ -1,0 +1,138 @@
+{
+  "operator_id": "4.2.44",
+  "coefficient_field": "Q(sqrt(2))",
+  "basis": {
+    "frobenius_asymptotics": [
+      "1",
+      "log(z)",
+      "log(z)^2/2",
+      "log(z)^3/6"
+    ],
+    "period_column": "basis_matrix*varpi",
+    "basis_matrix": [
+      [
+        "rho/(2*pi*I)^3",
+        "0",
+        "0",
+        "1/(2*pi*I)^3"
+      ],
+      [
+        "0",
+        "0",
+        "-1/(2*pi*I)^2",
+        "0"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/(2*pi*I)",
+        "0",
+        "0"
+      ]
+    ],
+    "rho": "300*zeta(3)"
+  },
+  "singularities": [
+    "0",
+    "1/262144",
+    "+Infinity"
+  ],
+  "monodromy_matrices": [
+    [
+      [
+        "1",
+        "-1",
+        "1/6",
+        "1/2"
+      ],
+      [
+        "0",
+        "1",
+        "-1/2",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1"
+      ]
+    ],
+    [
+      [
+        "(23/24)*sqrt(2)",
+        "0",
+        "0",
+        "-(241/576)*sqrt(2)"
+      ],
+      [
+        "0",
+        "-(23/24)*sqrt(2)",
+        "(241/576)*sqrt(2)",
+        "0"
+      ],
+      [
+        "0",
+        "-sqrt(2)",
+        "(23/24)*sqrt(2)",
+        "0"
+      ],
+      [
+        "sqrt(2)",
+        "0",
+        "0",
+        "-(23/24)*sqrt(2)"
+      ]
+    ],
+    [
+      [
+        "(35/24)*sqrt(2)",
+        "-(19/24)*sqrt(2)",
+        "(149/576)*sqrt(2)",
+        "-(517/576)*sqrt(2)"
+      ],
+      [
+        "sqrt(2)",
+        "-(11/24)*sqrt(2)",
+        "-(35/576)*sqrt(2)",
+        "-(23/24)*sqrt(2)"
+      ],
+      [
+        "0",
+        "-sqrt(2)",
+        "(23/24)*sqrt(2)",
+        "0"
+      ],
+      [
+        "sqrt(2)",
+        "sqrt(2)",
+        "-(23/24)*sqrt(2)",
+        "-(23/24)*sqrt(2)"
+      ]
+    ]
+  ],
+  "monodromy_matrices_tex": [
+    "\\left(\\begin{array}{rrrr}\n1 & -1 & \\frac{1}{6} & \\frac{1}{2} \\\\\n0 & 1 & -\\frac{1}{2} & -1 \\\\\n0 & 0 & 1 & 0 \\\\\n0 & 0 & 1 & 1\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{23}{24} \\, \\sqrt{2} & 0 & 0 & -\\frac{241}{576} \\, \\sqrt{2} \\\\\n0 & -\\frac{23}{24} \\, \\sqrt{2} & \\frac{241}{576} \\, \\sqrt{2} & 0 \\\\\n0 & -\\sqrt{2} & \\frac{23}{24} \\, \\sqrt{2} & 0 \\\\\n\\sqrt{2} & 0 & 0 & -\\frac{23}{24} \\, \\sqrt{2}\n\\end{array}\\right)",
+    "\\left(\\begin{array}{rrrr}\n\\frac{35}{24} \\, \\sqrt{2} & -\\frac{19}{24} \\, \\sqrt{2} & \\frac{149}{576} \\, \\sqrt{2} & -\\frac{517}{576} \\, \\sqrt{2} \\\\\n\\sqrt{2} & -\\frac{11}{24} \\, \\sqrt{2} & -\\frac{35}{576} \\, \\sqrt{2} & -\\frac{23}{24} \\, \\sqrt{2} \\\\\n0 & -\\sqrt{2} & \\frac{23}{24} \\, \\sqrt{2} & 0 \\\\\n\\sqrt{2} & \\sqrt{2} & -\\frac{23}{24} \\, \\sqrt{2} & -\\frac{23}{24} \\, \\sqrt{2}\n\\end{array}\\right)"
+  ],
+  "product_matrix_indices": [
+    2,
+    1,
+    0
+  ],
+  "exact_product_is_identity": true,
+  "decimal_precision_of_analytic_continuation": 150,
+  "path_diagram": "monodromy_paths/order_4/4.2.44.html"
+}

@@ -1,0 +1,6 @@
+.form-control,
+.form-control:focus,
+.form-control:focus:active,
+.form-control:active {
+    background-color: #fff;
+}
