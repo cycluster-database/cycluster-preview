@@ -146,6 +146,7 @@ if(!nnpatt.test(opnn)) {
 		return;
 	    }
 
+	    const operatorJSON = JSON.stringify(data[0], null, 2);
 	    for (const key of ["inst_list", "sol_list", "zq_list", "qz_list", "yuk_list"]) {
 		data[0][key] ||= [];
 	    }
@@ -158,6 +159,9 @@ if(!nnpatt.test(opnn)) {
 		tmplt.innerHTML.replace(/&(amp|lt|gt|quot|#39);/g, (m, p) => {
 		    return {'amp':'&', 'lt':'<', 'gt':'>', 'quot':'"', '#39':"'"}[p];
 		}), {oper: data[0]});
+	    document.getElementById('download-operator').href = URL.createObjectURL(
+		new Blob([operatorJSON + '\n'], {type: 'application/json'})
+	    );
 
 	    try {
 		await renderExtra(data[0]);
