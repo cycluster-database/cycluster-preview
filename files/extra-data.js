@@ -32,7 +32,7 @@ function rhoTex(value) {
 }
 
 function matrixTex(values) {
-    return `\\begin{pmatrix}${values.map(row => row.map(numberTex).join("&")).join("\\\\")}\\end{pmatrix}`;
+    return `\\begin{pmatrix}${values.map(row => row.map(value => numberTex(value).replaceAll("*", "\\,")).join("&")).join("\\\\")}\\end{pmatrix}`;
 }
 
 function math(tex) { return `\\(${tex}\\)`; }
