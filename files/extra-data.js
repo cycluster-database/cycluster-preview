@@ -10,9 +10,9 @@ Object.assign(window.CYReferences, {
 });
 
 function linkedText(text) {
-    return escapeText(text).replace(/\[([A-Za-z][A-Za-z0-9]+)\]|(?<![\w.])[1-5]\.\d+\.\d+(?![\w.])/g, (match, key) =>
+    return String(text ?? '').split(/(\$[^$]*\$)/g).map((part, i) => i % 2 ? escapeText(part) : escapeText(part).replace(/\[([A-Za-z][A-Za-z0-9]+)\]|(?<![\w.])[1-5]\.\d+\.\d+(?![\w.])/g, (match, key) =>
         key ? `<a href="#ref-${key}">[${key}]</a>` : `<a href="${operatorLink(match)}">${match}</a>`)
-        .replace(/Warning: [^.]*\./g, '<span class="warning">$&</span>');
+        .replace(/Warning: [^.]*\./g, '<span class="warning">$&</span>')).join('');
 }
 
 function numberTex(value) {

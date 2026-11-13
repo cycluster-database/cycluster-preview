@@ -2556,7 +2556,7 @@
   {
     "nn": "4.2.2",
     "aesz": "15",
-    "description": "Hadamard product $B\\ast a$.\n\nA-incarnation: diagonal of (3,3)-intersection in $P^2 \\times P^2$ Listed as AESZ 15 in [AESZ05].",
+    "description": "Hadamard product $B\\ast a$.\n\nA-incarnation: diagonal of (3,3)-intersection in $P^2 \\times P^2$. Listed as AESZ 15 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-3(3X+1)(3X+2)(7X^2+7X+2)",
@@ -4812,7 +4812,7 @@
   {
     "nn": "4.2.15",
     "aesz": "38",
-    "description": "Hadamard product $C\\ast d$ Listed as AESZ 38 in [AESZ05].",
+    "description": "Hadamard product $C\\ast d$. Listed as AESZ 38 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-16(4X+1)(4X+3)(3X^2+3X+1)",
@@ -5839,7 +5839,7 @@
   {
     "nn": "4.2.21",
     "aesz": "134",
-    "description": "Hadamard product $B\\ast f$ Listed as AESZ 134 in [AESZ05].",
+    "description": "Hadamard product $B\\ast f$. Listed as AESZ 134 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-9(3X+1)(3X+2)(3X^2+3X+1)",
@@ -6165,7 +6165,7 @@
   {
     "nn": "4.2.23",
     "aesz": "136",
-    "description": "Hadamard product $D \\ast f$ Listed as AESZ 136 in [AESZ05].",
+    "description": "Hadamard product $D \\ast f$. Listed as AESZ 136 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-36(6X+1)(6X+5)(3X^2+3X+1)",
@@ -6673,7 +6673,7 @@
   {
     "nn": "4.2.26",
     "aesz": "139",
-    "description": "Hadamard product $C \\ast g$ Listed as AESZ 139 in [AESZ05].",
+    "description": "Hadamard product $C \\ast g$. Listed as AESZ 139 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-4(4X+1)(4X+3)(17X^2+17X+6)",
@@ -6846,7 +6846,7 @@
   {
     "nn": "4.2.27",
     "aesz": "140",
-    "description": "Hadamard product $D \\ast g$ Listed as AESZ 140 in [AESZ05].",
+    "description": "Hadamard product $D \\ast g$. Listed as AESZ 140 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-12(6X+1)(6X+5)(17X^2+17X+6)",
@@ -8837,7 +8837,7 @@
   {
     "nn": "4.2.39",
     "aesz": "~80,~81",
-    "description": "Operator equivalent to $\\hat{1}$ of AESZ",
+    "description": "Operator equivalent to $\\hat{1}$ of AESZ.",
     "pols_list": [
       "X^4",
       "-25000X^4-50000X^3-58750X^2-33750X-7380",
@@ -9125,7 +9125,7 @@
   {
     "nn": "4.2.41",
     "aesz": null,
-    "description": "Operator equivalent to $\\hat{4}$",
+    "description": "Operator equivalent to $\\hat{4}$.",
     "pols_list": [
       "X^4",
       "-5832X^4-11664X^3-13770X^2-7938X-1746",
@@ -9270,7 +9270,7 @@
   {
     "nn": "4.2.42",
     "aesz": "~98",
-    "description": "Operator equivalent to $\\hat{5}$",
+    "description": "Operator equivalent to $\\hat{5}$.",
     "pols_list": [
       "X^4",
       "-3456X^4-6912X^3-8184X^2-4728X-1044",
@@ -9413,7 +9413,7 @@
   {
     "nn": "4.2.43",
     "aesz": "~77, ~78,~97",
-    "description": "Operator equivalent to $\\hat{6}$",
+    "description": "Operator equivalent to $\\hat{6}$.",
     "pols_list": [
       "X^4",
       "-8192X^4-16384X^3-19328X^2-11136X-2448",
@@ -9556,7 +9556,7 @@
   {
     "nn": "4.2.44",
     "aesz": null,
-    "description": "Operator equivalent to $\\hat{7}$",
+    "description": "Operator equivalent to $\\hat{7}$.",
     "pols_list": [
       "X^4",
       "-524288X^4-1048576X^3-1224704X^2-700416X-151920",
@@ -9699,7 +9699,7 @@
   {
     "nn": "4.2.45",
     "aesz": "~82",
-    "description": "Operator equivalent to $\\hat{8}$",
+    "description": "Operator equivalent to $\\hat{8}$.",
     "pols_list": [
       "X^4",
       "-93312X^4-186624X^3-218376X^2-125064X-27180",
@@ -9842,7 +9842,7 @@
   {
     "nn": "4.2.46",
     "aesz": null,
-    "description": "Operator equivalent to $\\hat{9}$",
+    "description": "Operator equivalent to $\\hat{9}$.",
     "pols_list": [
       "X^4",
       "-23887872X^4-47775744X^3-55655424X^2-31767552X-6870384",
@@ -9987,7 +9987,7 @@
   {
     "nn": "4.2.47",
     "aesz": null,
-    "description": "Operator equivalent to $\\hat{10}$",
+    "description": "Operator equivalent to $\\hat{10}$.",
     "pols_list": [
       "X^4",
       "-32768X^4-65536X^3-76800X^2-44032X-9584",
@@ -10132,7 +10132,7 @@
   {
     "nn": "4.2.48",
     "aesz": "~94",
-    "description": "Operator equivalent to $\\hat{11}$",
+    "description": "Operator equivalent to $\\hat{11}$.",
     "pols_list": [
       "X^4",
       "-13824X^4-27648X^3-32520X^2-18696X-4092",
@@ -10275,7 +10275,7 @@
   {
     "nn": "4.2.49",
     "aesz": null,
-    "description": "Operator equivalent to $\\hat{12}$",
+    "description": "Operator equivalent to $\\hat{12}$.",
     "pols_list": [
       "X^4",
       "-221184X^4-442368X^3-515712X^2-294528X-63600",
@@ -10418,7 +10418,7 @@
   {
     "nn": "4.2.50",
     "aesz": null,
-    "description": "Operator equivalent to $\\hat{13}$ of AESZ",
+    "description": "Operator equivalent to $\\hat{13}$ of AESZ.",
     "pols_list": [
       "X^4",
       "-1492992X^4-2985984X^3-3462912X^2-1969920X-421488",
@@ -10563,7 +10563,7 @@
   {
     "nn": "4.2.51",
     "aesz": "~88,~89",
-    "description": "Operator equivalent to $\\widehat{14}$\nB-Incarnations:\nDouble octics: D.O.267, D.O.275",
+    "description": "Operator equivalent to $\\widehat{14}$\nB-Incarnations:\nDouble octics: D.O.267, D.O.275.",
     "pols_list": [
       "X^4",
       "-55296X^4-110592X^3-129792X^2-74496X-16272",
@@ -10881,7 +10881,7 @@
   {
     "nn": "4.2.53",
     "aesz": "29",
-    "description": "Hadamard product $I \\ast \\gamma$ Listed as AESZ 29 in [AESZ05].",
+    "description": "Hadamard product $I \\ast \\gamma$. Listed as AESZ 29 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-2(2X+1)^2(17X^2+17X+5)",
@@ -11044,7 +11044,7 @@
   {
     "nn": "4.2.54",
     "aesz": "41",
-    "description": "Hadamard product $I \\ast \\delta$ Listed as AESZ 41 in [AESZ05].",
+    "description": "Hadamard product $I \\ast \\delta$. Listed as AESZ 41 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-2(2X+1)^2(7X^2+7X+3)",
@@ -11207,7 +11207,7 @@
   {
     "nn": "4.2.55",
     "aesz": "42",
-    "description": "Hadamard product $I \\ast \\epsilon$ Listed as AESZ 42 in [AESZ05].",
+    "description": "Hadamard product $I \\ast \\epsilon$. Listed as AESZ 42 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-8(2X+1)^2(3X^2+3X+1)",
@@ -11370,7 +11370,7 @@
   {
     "nn": "4.2.56",
     "aesz": "185\n",
-    "description": "Hadamard product $I \\ast \\zeta$",
+    "description": "Hadamard product $I \\ast \\zeta$.",
     "pols_list": [
       "X^4",
       "-6(2X+1)^2(3X^2+3X+1)",
@@ -11532,7 +11532,7 @@
   {
     "nn": "4.2.57",
     "aesz": "184\n",
-    "description": "Hadamard product $I \\ast \\eta$",
+    "description": "Hadamard product $I \\ast \\eta$.",
     "pols_list": [
       "X^4",
       "-2(2X+1)^2(11X^2+11X+5)",
@@ -11694,7 +11694,7 @@
   {
     "nn": "4.2.58",
     "aesz": "46",
-    "description": "Hadamard product $I \\ast \\iota$ Listed as AESZ 46 in [AESZ05].",
+    "description": "Hadamard product $I \\ast \\iota$. Listed as AESZ 46 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-6(2X+1)^2(9X^2+9X+5)",
@@ -11857,7 +11857,7 @@
   {
     "nn": "4.2.59",
     "aesz": "47",
-    "description": "Hadamard product $I \\ast \\kappa$ Listed as AESZ 47 in [AESZ05].",
+    "description": "Hadamard product $I \\ast \\kappa$. Listed as AESZ 47 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-48(2X+1)^2(18X^2+18X+13)",
@@ -12020,7 +12020,7 @@
   {
     "nn": "4.2.60",
     "aesz": "18",
-    "description": "A-incarnation: (1,1) and (2,2) intersection in $P^3 \\times P^3$ Listed as AESZ 18 in [AESZ05].",
+    "description": "A-incarnation: (1,1) and (2,2) intersection in $P^3 \\times P^3$. Listed as AESZ 18 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-4(2X+1)^2(3X^2+3X+1)",
@@ -12193,7 +12193,7 @@
   {
     "nn": "4.2.61",
     "aesz": "26",
-    "description": "A-incarnation: $X(1,1,1,1,2) \\subset \\text{Grass}(2,6)$ Listed as AESZ 26 in [AESZ05].",
+    "description": "A-incarnation: $X(1,1,1,1,2) \\subset \\text{Grass}(2,6)$. Listed as AESZ 26 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-2(2X+1)^2(13X^2+13X+4)",
@@ -12366,7 +12366,7 @@
   {
     "nn": "4.2.62",
     "aesz": "28",
-    "description": "A-incarnation: $X(1, 1, 1, 1, 1, 1) \\subset \\text{Grass}(3, 6)$ Listed as AESZ 28 in [AESZ05].",
+    "description": "A-incarnation: $X(1, 1, 1, 1, 1, 1) \\subset \\text{Grass}(3, 6)$. Listed as AESZ 28 in [AESZ05].",
     "pols_list": [
       "X^4",
       "-65X^4-130X^3-105X^2-40X-6",
@@ -13579,7 +13579,7 @@
   {
     "nn": "4.2.70",
     "aesz": null,
-    "description": "Operator equivalent to (:aesz 255)",
+    "description": "Operator equivalent to (:aesz 255).",
     "pols_list": [
       "X^4",
       "-512X^4-1408X^3-1652X^2-948X-216",
@@ -14593,7 +14593,7 @@
   {
     "nn": "4.3.5",
     "aesz": null,
-    "description": "Operator equivalent to AESZ 214",
+    "description": "Operator equivalent to AESZ 214.",
     "pols_list": [
       "X^4",
       "-204X^4-408X^3-310X^2-106X-14",
@@ -14905,7 +14905,7 @@
   {
     "nn": "4.3.7",
     "aesz": "~73",
-    "description": "Operator equivalent to AESZ 73",
+    "description": "Operator equivalent to AESZ 73.",
     "pols_list": [
       "X^4",
       "-108X^4-216X^3-54X^2+54X+18",
@@ -15062,7 +15062,7 @@
   {
     "nn": "4.3.8",
     "aesz": "~100",
-    "description": "Operator equivalent to AESZ 100= $ a \\ast a$",
+    "description": "Operator equivalent to AESZ 100= $ a \\ast a$.",
     "pols_list": [
       "X^4",
       "15X^4+30X^3+35X^2+20X+4",
@@ -15690,7 +15690,7 @@
   {
     "nn": "4.3.12",
     "aesz": null,
-    "description": "Operator equivalent to AESZ 154",
+    "description": "Operator equivalent to AESZ 154.",
     "pols_list": [
       "X^4",
       "-4752X^4-7776X^3-5940X^2-2052X-252",
@@ -15845,7 +15845,7 @@
   {
     "nn": "4.3.13",
     "aesz": null,
-    "description": "Operator equivalent to AESZ 229",
+    "description": "Operator equivalent to AESZ 229.",
     "pols_list": [
       "X^4",
       "-2752X^4-4928X^3-3608X^2-1144X-132",
@@ -16155,7 +16155,7 @@
   {
     "nn": "4.3.15",
     "aesz": null,
-    "description": "Operator equivalent to AESZ 328",
+    "description": "Operator equivalent to AESZ 328.",
     "pols_list": [
       "X^4",
       "168X^4+336X^3+240X^2+72X+8",
@@ -17559,7 +17559,7 @@
   {
     "nn": "4.3.24",
     "aesz": null,
-    "description": "This is operator $\\tilde{C_9}$",
+    "description": "This is operator $\\tilde{C_9}$.",
     "pols_list": [
       "X^4",
       "2(2X+1)^2(3X^2+3X+1)",
@@ -17716,7 +17716,7 @@
   {
     "nn": "4.3.25",
     "aesz": null,
-    "description": "This is operator $\\tilde{C_17}$",
+    "description": "This is operator $\\tilde{C_17}$.",
     "pols_list": [
       "X^4",
       "2(2X+1)^2(7X^2+7X+3)",
@@ -18776,7 +18776,7 @@
   {
     "nn": "4.3.32",
     "aesz": null,
-    "description": "Operator equivalent to AESZ 220\nB-Incarnation:\nDouble octic:D.O.244",
+    "description": "Operator equivalent to AESZ 220\nB-Incarnation:\nDouble octic:D.O.244.",
     "pols_list": [
       "X^4",
       "-16(6X^2+6X-1)(2X+1)^2",
@@ -18933,7 +18933,7 @@
   {
     "nn": "4.3.33",
     "aesz": null,
-    "description": "Operator equivalent to AESZ 353",
+    "description": "Operator equivalent to AESZ 353.",
     "pols_list": [
       "X^4",
       "144X^4+288X^3+340X^2+196X+44",
@@ -19090,7 +19090,7 @@
   {
     "nn": "4.3.34",
     "aesz": null,
-    "description": "Operator equivalent to AESZ 107 $=d \\ast d$",
+    "description": "Operator equivalent to AESZ 107 $=d \\ast d$.",
     "pols_list": [
       "X^4",
       "-400X^4-800X^3-688X^2-288X-48",
@@ -19404,7 +19404,7 @@
   {
     "nn": "4.4.2",
     "aesz": "~44",
-    "description": "YY-Operator equivalent to AESZ 44=$ A \\ast \\gamma$",
+    "description": "YY-Operator equivalent to AESZ 44=$ A \\ast \\gamma$.",
     "pols_list": [
       "X^4",
       "-1088(X+1/2)^4-964(X+1/2)^2-27",
@@ -19551,7 +19551,7 @@
   {
     "nn": "4.4.3",
     "aesz": null,
-    "description": "YY-Operator equivalent to AESZ 150=$ A \\ast \\delta $",
+    "description": "YY-Operator equivalent to AESZ 150=$ A \\ast \\delta $.",
     "pols_list": [
       "X^4",
       "-448(X+1/2)^4-412(X+1/2)^2-13",
@@ -20143,7 +20143,7 @@
   {
     "nn": "4.4.7",
     "aesz": null,
-    "description": "YY-operator equivalent to (:AESZ 50), $\\tilde B \\ast \\alpha$",
+    "description": "YY-operator equivalent to (:AESZ 50), $\\tilde B \\ast \\alpha$.",
     "pols_list": [
       "X^4",
       "-1080(X+1/2)^4-978(X+1/2)^2-30",
@@ -20449,7 +20449,7 @@
   {
     "nn": "4.4.9",
     "aesz": null,
-    "description": "YY-operator equivalent to AESZ 151=$B \\ast \\delta$",
+    "description": "YY-operator equivalent to AESZ 151=$B \\ast \\delta$.",
     "pols_list": [
       "X^4",
       "-756(X+1/2)^4-690(X+1/2)^2-87/4",
@@ -27079,7 +27079,7 @@
   {
     "nn": "4.4.51",
     "aesz": null,
-    "description": "Sporadic Operator. There is a second MUM-point\nhiding at infinity, corresponding to Operator\nAESZ 256/4.50",
+    "description": "Sporadic Operator. There is a second MUM-point\nhiding at infinity, corresponding to Operator\nAESZ 256/4.50.",
     "pols_list": [
       "X^4",
       "-1792X^4-6656X^3-4480X^2-1152X-112",
@@ -29391,7 +29391,7 @@
   {
     "nn": "4.4.65",
     "aesz": null,
-    "description": "Sporadic Operator. There is a second MUM-point hiding at infinity,\ncorresponding to Operator AESZ 295/4.64",
+    "description": "Sporadic Operator. There is a second MUM-point hiding at infinity,\ncorresponding to Operator AESZ 295/4.64.",
     "pols_list": [
       "X^4",
       "-80X^4-544X^3-400X^2-128X-16",
@@ -30200,7 +30200,7 @@
   {
     "nn": "4.4.70",
     "aesz": null,
-    "description": "Sporadic Operator. There is a second\nMUM-point hiding at infinity, corresponding to\nOperator AESZ 350/4.69",
+    "description": "Sporadic Operator. There is a second\nMUM-point hiding at infinity, corresponding to\nOperator AESZ 350/4.69.",
     "pols_list": [
       "X^4",
       "356096X^4-614912X^3-368000X^2-60544X-5136",
@@ -31331,7 +31331,7 @@
   {
     "nn": "4.4.77",
     "aesz": null,
-    "description": "Sporadic Operator.\nB-Incarnation: SII4411",
+    "description": "Sporadic Operator.\nB-Incarnation: SII4411.",
     "pols_list": [
       "X^4",
       "-81X^4-162X^3-161X^2-80X-16",
@@ -31500,7 +31500,7 @@
   {
     "nn": "4.5.1",
     "aesz": "17",
-    "description": "There is a second MUM-point at infinity, \ncorresponding to Operator AESZ 290/5.71\nA-incarnation: diagonal subfamily 1,1,1-section in $P^2 \\times P^2 \\times P^2$ Listed as AESZ 17 in [AESZ05].",
+    "description": "There is a second MUM-point at infinity, \ncorresponding to Operator AESZ 290/5.71\nA-incarnation: diagonal subfamily 1,1,1-section in $P^2 \\times P^2 \\times P^2$. Listed as AESZ 17 in [AESZ05].",
     "pols_list": [
       "25X^4",
       "-765X^4-1260X^3-1080X^2-450X-75",
@@ -32036,7 +32036,7 @@
   {
     "nn": "4.5.4",
     "aesz": "21",
-    "description": "There is a second MUM-point at infinity, corresponding to\nOperator AESZ 71/5.11\n\nA-incarnation: (2,0),(0,2),(1,1),(1,1),(1,1) intersection in $P^4 \\times P^4$ Listed as AESZ 21 in [AESZ05].",
+    "description": "There is a second MUM-point at infinity, corresponding to\nOperator AESZ 71/5.11\n\nA-incarnation: (2,0),(0,2),(1,1),(1,1),(1,1) intersection in $P^4 \\times P^4$. Listed as AESZ 21 in [AESZ05].",
     "pols_list": [
       "25X^4",
       "-720X^4-1680X^3-1440X^2-600X-100",
@@ -32404,7 +32404,7 @@
   {
     "nn": "4.5.6",
     "aesz": "23",
-    "description": "There is a second MUM-point at infinity, corresponding to Operator AESZ 56 / 4.5.9. A-incarnation: (2,0),(2,0),(0,2),(0,2),(1,1). Intersection in $P^4 \\times P^4$ Listed as AESZ 23 in [AESZ05].",
+    "description": "There is a second MUM-point at infinity, corresponding to Operator AESZ 56 / 4.5.9. A-incarnation: (2,0),(2,0),(0,2),(0,2),(1,1). Intersection in $P^4 \\times P^4$. Listed as AESZ 23 in [AESZ05].",
     "pols_list": [
       "9X^4",
       "-768X^4-960X^3-876X^2-396X-72",
@@ -36182,7 +36182,7 @@
   {
     "nn": "4.5.28",
     "aesz": "203\n",
-    "description": "There is a second MUM-point at infinity, corresponding to Operator AESZ 202 /5.27",
+    "description": "There is a second MUM-point at infinity, corresponding to Operator AESZ 202 /5.27.",
     "pols_list": [
       "25X^4",
       "5X(499X^3+86X^2+53X+10)",
@@ -39297,7 +39297,7 @@
   {
     "nn": "4.5.46",
     "aesz": "243\n",
-    "description": "A-incarnation: $7 \\times 7$ linear Pfaffian in $P^7$.\nThere is a second MUM point at infinity, associated to\nthe 7 fold linear section of $G(2,7)$ AESZ 27/5.7",
+    "description": "A-incarnation: $7 \\times 7$ linear Pfaffian in $P^7$.\nThere is a second MUM point at infinity, associated to\nthe 7 fold linear section of $G(2,7)$ AESZ 27/5.7.",
     "pols_list": [
       "X^4",
       "295X^4+572X^3+424X^2+138X+17",
@@ -41340,7 +41340,7 @@
   {
     "nn": "4.5.58",
     "aesz": "266\n",
-    "description": "There is a second MUM-point at infinity, corresponding to\nOperator AESZ 267/5.59",
+    "description": "There is a second MUM-point at infinity, corresponding to\nOperator AESZ 267/5.59.",
     "pols_list": [
       "25X^4",
       "-405X^4-1620X^3-1860X^2-1050X-225",
@@ -50906,7 +50906,7 @@
   {
     "nn": "4.5.114",
     "aesz": "412",
-    "description": "B-Incarnation as double octic D.O.256",
+    "description": "B-Incarnation as double octic D.O.256.",
     "pols_list": [
       "X^4",
       "-8960X^4+512X^3-896X^2-1152X-240",
@@ -51951,7 +51951,7 @@
   {
     "nn": "4.5.120",
     "aesz": null,
-    "description": "B-Incarnation as fibre product 62211- x 821--1",
+    "description": "B-Incarnation as fibre product 62211- x 821--1.",
     "pols_list": [
       "X^4",
       "-656X^4-544X^3-400X^2-128X-16",
@@ -52122,7 +52122,7 @@
   {
     "nn": "4.5.121",
     "aesz": null,
-    "description": "B-Incarnation as fibre product 62211- x 182--1",
+    "description": "B-Incarnation as fibre product 62211- x 182--1.",
     "pols_list": [
       "X^4",
       "-272X^4-2080X^3-1456X^2-416X-48",
@@ -52293,7 +52293,7 @@
   {
     "nn": "4.5.122",
     "aesz": null,
-    "description": "B-Incarnation as fibre product 62211- 623--1",
+    "description": "B-Incarnation as fibre product 62211- 623--1.",
     "pols_list": [
       "X^4",
       "119X^4-194X^3-143X^2-46X-6",
@@ -52464,7 +52464,7 @@
   {
     "nn": "4.5.123",
     "aesz": null,
-    "description": "B-Incarnation as fibre product 62211- x 812--1",
+    "description": "B-Incarnation as fibre product 62211- x 812--1.",
     "pols_list": [
       "X^4",
       "448X^4-640X^3-448X^2-128X-16",
@@ -52635,7 +52635,7 @@
   {
     "nn": "4.5.124",
     "aesz": null,
-    "description": "B-Incarnation as fibre product 62211- x 263--1",
+    "description": "B-Incarnation as fibre product 62211- x 263--1.",
     "pols_list": [
       "X^4",
       "-1081X^4-2594X^3-1807X^2-510X-54",
@@ -52806,7 +52806,7 @@
   {
     "nn": "4.5.125",
     "aesz": null,
-    "description": "B-Incarnation as fibre product 62211- x 362--1",
+    "description": "B-Incarnation as fibre product 62211- x 362--1.",
     "pols_list": [
       "X^4",
       "-1217X^4-2050X^3-1437X^2-412X-44",
@@ -53832,7 +53832,7 @@
   {
     "nn": "4.5.131",
     "aesz": null,
-    "description": "B-Incarnation as fibre product 62211- x 326--1",
+    "description": "B-Incarnation as fibre product 62211- x 326--1.",
     "pols_list": [
       "X^4",
       "623X^4-2210X^3-1565X^2-460X-60",
@@ -54003,7 +54003,7 @@
   {
     "nn": "4.5.132",
     "aesz": null,
-    "description": "B-Incarnation as fibre product 62211- x 236--1",
+    "description": "B-Incarnation as fibre product 62211- x 236--1.",
     "pols_list": [
       "X^4",
       "368X^4-2720X^3-1924X^2-564X-72",
@@ -54203,7 +54203,7 @@
   {
     "nn": "4.5.133",
     "aesz": null,
-    "description": "B-incarnation as self-fibre product S53211",
+    "description": "B-incarnation as self-fibre product S53211.",
     "pols_list": [
       "X^4",
       "384X^4-1536X^3-1120X^2-352X-48",
@@ -54384,7 +54384,7 @@
   {
     "nn": "4.5.134",
     "aesz": null,
-    "description": "B-incarnation as fibre product 61131- x 182--1",
+    "description": "B-incarnation as fibre product 61131- x 182--1.",
     "pols_list": [
       "X^4",
       "16X^4-1408X^3-1000X^2-296X-36",
@@ -54565,7 +54565,7 @@
   {
     "nn": "4.6.1",
     "aesz": null,
-    "description": "YY-pullback of AESZ:130",
+    "description": "YY-pullback of AESZ:130.",
     "pols_list": [
       "X^4",
       "-112(X+1/2)^4-112(X+1/2)^2-4",
