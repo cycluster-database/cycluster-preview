@@ -261,12 +261,17 @@ ul.task-list li input[type="checkbox"] {
     <h4>Inverse Mirror map \( q(z)\)</h4>
     <p>&lt;%= texSeries(oper.qz_list, "z") %&gt;</p>
   </div>
-  <div class="notempty">
-    <h4>Yukawa coupling</h4>
-    <h5>Yukawa coupling expansion</h5>
-    <p>&lt;%= texSeries(oper.yuk_list, "q") %&gt;</p>
-  </div>
-  &lt;% if (oper.yuk_alg_tex) { %&gt;<p>\(&lt;%= oper.yuk_alg_tex %&gt;\)</p>&lt;% } %&gt;
+  &lt;% if (oper.yuk_alg_tex || oper.yuk_list.length) { %&gt;
+  <h4>Yukawa coupling</h4>
+  &lt;% if (oper.yuk_alg_tex) { %&gt;
+  <h5>Algebraic Yukawa coupling</h5>
+  <p>\(Y_{&lt;%= "z".repeat(oper.degtheta - 1) %&gt;}(z)=&lt;%= oper.yuk_alg_tex %&gt;\)</p>
+  &lt;% } %&gt;
+  &lt;% if (oper.yuk_list.length) { %&gt;
+  <h5>Normalized Yukawa coupling</h5>
+  <p>\(Y_{&lt;%= "t".repeat(oper.degtheta - 1) %&gt;}(q)=&lt;%= texSeries(oper.yuk_list, "q").slice(2, -2) %&gt;\)</p>
+  &lt;% } %&gt;
+  &lt;% } %&gt;
   <div class="notempty">
     <h4>Normalized instanton numbers</h4>
     <div class="snippet"><p>&lt;%= oper.inst_list.join(", ") %&gt;</p></div>
