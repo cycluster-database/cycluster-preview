@@ -100,7 +100,7 @@ async function renderExtra(row) {
         let shift = available.integral_basis_shift_tex ? `<p>For this operator, the Frobenius basis in the following formula is first changed by ${math(available.integral_basis_shift_tex)}.</p>` : "";
         let formula = available.integral_basis_shift_tex ? def.period_basis_tex.replace("\\varpi", "\\widetilde\\varpi") : def.period_basis_tex;
         content += `<details id="integral"><summary>Integral structures</summary>` +
-            `<div id="integral-knowl" class="knowl-content" hidden><p>${def.paragraphs[0]}</p>${displayMath(definitions.rational_structure[4].frobenius_tex)}${shift}<p>${def.paragraphs[1]} <a href="#ref-Sch25">[Sch25]</a>, <a href="#ref-KS23">[KS23]</a>, <a href="#ref-KKSS22">[KKSS22]</a>.</p>${displayMath(formula)}<p>${def.paragraphs[2]} See also <a href="#ref-PP25">[PP25]</a> for a more general integral basis ansatz.</p></div>`;
+            `<div id="integral-knowl" class="knowl-content" hidden><p>${def.paragraphs[0]}</p>${displayMath(definitions.rational_structure[4].frobenius_tex)}${shift}<p>${def.paragraphs[1]} <a href="#ref-Sch25">[Sch25]</a>, <a href="#ref-KS23">[KS23]</a>, <a href="#ref-KKSS22">[KKSS22]</a></p>${displayMath(formula)}<p>${def.paragraphs[2]} See also <a href="#ref-PP25">[PP25]</a> for a more general integral basis ansatz.</p></div>`;
         if (available.integral_basis_shift_tex) content += `<p>The parameters use the Frobenius basis after the shift ${math(available.integral_basis_shift_tex)}.</p>`;
         content += '<div id="integral-content"></div></details>';
         ["Sch25", "KS23", "KKSS22", "PP25"].forEach(key => refs.add(key));
