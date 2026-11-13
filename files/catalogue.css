@@ -8,7 +8,11 @@ a { color: #176b78; text-underline-offset: 3px; }
 #operator h5 { font-size: 15px; font-weight: 650; }
 #operator p { line-height: 1.55; }
 .katex { position: relative; font-size: 1em; }
-.integral-matrices { display: flex; gap: 2rem; overflow-x: auto; align-items: center; }
+#extra-data details { margin: 16px 0; }
+.integral-table-scroll { overflow-x: auto; }
+.integral-table { width: 100%; border-collapse: collapse; }
+.integral-table th, .integral-table td { padding: 10px 14px; border-bottom: 1px solid #d9e1e5; vertical-align: top; text-align: left; }
+.integral-matrices > td > div { display: flex; gap: 2rem; align-items: center; }
 .integral-matrices[hidden] { display: none; }
 #operator { max-width: 100%; overflow-x: clip; }
 #operator p, #operator .snippet, #operator .katex-display, #operator .grid { max-width: 100%; overflow-x: auto; }

@@ -75,16 +75,17 @@ async function renderExtra(row) {
     addRefs(row.description);
     let content = "";
     if (row.Q_x_tex) content += `<h4>Associated second-order equation</h4>${displayMath(`u''(z)+Q(z)u(z)=0,\\quad Q(z)=${row.Q_x_tex.replaceAll("x", "z")}`)}`;
+    content += '<h4>Rational Structure</h4>';
     if (row.rho != null && definitions.rational_structure[row.degtheta]) {
         let def = definitions.rational_structure[row.degtheta];
         let paragraph = available.monodromy_basis_note ? "After a logarithmic change of the Frobenius basis, the constant $\\rho$ appears in" : def.paragraphs[1];
         let formula = available.monodromy_basis_note ? def.period_basis_tex.replace("\\Pi_{\\mathbb{Q}}", "\\widetilde\\Pi").replace("\\varpi", "\\widetilde\\varpi") : def.period_basis_tex;
-        content += `<h4>Rational Structure Constant ${knowlButton("rho-knowl", "Definition of the rational structure constant")}</h4>` +
+        content += `<h5>Rational Structure Constant ${knowlButton("rho-knowl", "Definition of the rational structure constant")}</h5>` +
             `<div id="rho-knowl" class="knowl-content" hidden><p>${def.paragraphs[0]}</p>${displayMath(def.frobenius_tex)}<p>${paragraph}</p>${displayMath(formula)}</div>` +
-            math(`\\rho=${row.rho_tex || rhoTex(row.rho)}`);
+            `<p>${math(`\\rho=${row.rho_tex || rhoTex(row.rho)}`)}</p>`;
         if (available.monodromy_basis_note) content += `<p>${escapeText(available.monodromy_basis_note)}</p>`;
     }
-    if (available.monodromies) content += '<details id="monodromy"><summary>Monodromy matrices over algebraic numbers</summary><div></div></details>';
+    if (available.monodromies) content += `<details id="monodromy"><summary>${math("\\overline{\\mathbb{Q}}")} monodromy matrices</summary><div></div></details>`;
     if (available.euler_factors) {
         let usesDwork = !available.euler_factors_method || available.euler_factors_method.includes("Dwork");
         if (usesDwork) ["COvS21", "COK24", "JKK23", "KLMS26"].forEach(key => refs.add(key));
@@ -98,10 +99,10 @@ async function renderExtra(row) {
         let def = definitions.integral_parameters;
         let shift = available.integral_basis_shift_tex ? `<p>For this operator, the Frobenius basis in the following formula is first changed by ${math(available.integral_basis_shift_tex)}.</p>` : "";
         let formula = available.integral_basis_shift_tex ? def.period_basis_tex.replace("\\varpi", "\\widetilde\\varpi") : def.period_basis_tex;
-        content += `<h5>Integral-basis parameters ${knowlButton("integral-knowl", "Definition of the integral-basis parameters")}</h5>` +
-            `<div id="integral-knowl" class="knowl-content" hidden><p>${def.paragraphs[0]}</p>${displayMath(definitions.rational_structure[4].frobenius_tex)}${shift}<p>${def.paragraphs[1]}</p>${displayMath(formula)}<p>${def.paragraphs[2]} See also <a href="#ref-PP25">[PP25]</a> for a more general integral basis ansatz.</p></div>`;
+        content += `<details id="integral"><summary>Integral structures</summary>` +
+            `<div id="integral-knowl" class="knowl-content" hidden><p>${def.paragraphs[0]}</p>${displayMath(definitions.rational_structure[4].frobenius_tex)}${shift}<p>${def.paragraphs[1]} <a href="#ref-Sch25">[Sch25]</a>, <a href="#ref-KS23">[KS23]</a>, <a href="#ref-KKSS22">[KKSS22]</a>.</p>${displayMath(formula)}<p>${def.paragraphs[2]} See also <a href="#ref-PP25">[PP25]</a> for a more general integral basis ansatz.</p></div>`;
         if (available.integral_basis_shift_tex) content += `<p>The parameters use the Frobenius basis after the shift ${math(available.integral_basis_shift_tex)}.</p>`;
-        content += '<div id="integral"></div>';
+        content += '<div id="integral-content"></div></details>';
         ["Sch25", "KS23", "KKSS22", "PP25"].forEach(key => refs.add(key));
     } else if (row.degtheta === 4) {
         let message = available.integral_monodromy_status === "none" ? "No integral basis was found in the torsion-refined Gamma-class ansatz" + (available.integral_basis_shift_tex ? ` after the shift ${math(available.integral_basis_shift_tex)}` : "") + "." : "Integral monodromies are not available.";
@@ -172,17 +173,19 @@ async function renderExtra(row) {
     }
     if (available.integral_monodromies) {
         let data = await readData(available.integral_monodromies);
-        let div = document.getElementById("integral");
+        let div = document.getElementById("integral-content");
         div.innerHTML = `<label><input type="checkbox" id="show-integral"> Show integral monodromy matrices</label> <a href="data/${escapeText(available.integral_monodromies)}" download>Download matrices</a><p>The displayed values of ${math("b")} and ${math("S")} are representatives modulo ${math("24")} and ${math("1")}.</p>` +
+            `<div class="integral-table-scroll"><table class="integral-table"><thead><tr><th>Integral structure</th><th>Parameters ${knowlButton("integral-knowl", "Definition of the integral-basis parameters")}</th><th>Geometric realization</th></tr></thead><tbody>` +
             data.bases.map((basis, i) => {
                 let p = basis.parameters;
                 let kappa = basis.kappa_formula ? basis.kappa_formula.replaceAll("*", "\\,") : numberTex(p.kappa);
                 addRefs(basis.description);
                 (basis.references_list || []).forEach(key => refs.add(key));
                 let epsilon = (basis.epsilon_tex || rhoTex(basis.epsilon)).replaceAll("\\!", "");
-                return `<h5>${basis.parameter ? "Family" : "Basis"} ${i+1}</h5><p>${math(`\\kappa=${kappa},\\ N=${numberTex(p.N)},\\ S=${numberTex(p.S)},\\ b=${numberTex(p.b)},\\ \\sigma=${numberTex(p.sigma)},\\ \\epsilon=${epsilon}`)}${basis.parameter ? `, ${math("k\\in\\mathbb{Z}_{\\ge 0}")}` : ""}</p>` +
-                    `<p>${linkedText(basis.description || "Not identified.")}</p><div class="integral-matrices" hidden>${basis.monodromy_matrices.map((m, j) => `<span>${math(`z${data.singularities_tex?.[j]?.startsWith("\\approx") ? "" : "="}${data.singularities_tex?.[j] || (data.singularities[j] === "+Infinity" ? "\\infty" : numberTex(data.singularities[j]))}`)}${displayMath(matrixTex(m))}</span>`).join("")}</div>`;
-            }).join("");
+                let matrices = basis.monodromy_matrices.map((m, j) => `<span>${math(`z${data.singularities_tex?.[j]?.startsWith("\\approx") ? "" : "="}${data.singularities_tex?.[j] || (data.singularities[j] === "+Infinity" ? "\\infty" : numberTex(data.singularities[j]))}`)}${displayMath(matrixTex(m))}</span>`).join("");
+                return `<tr><th scope="row">${basis.parameter ? "Family" : "Basis"} ${i+1}</th><td>${math(`\\kappa=${kappa},\\ N=${numberTex(p.N)},\\ S=${numberTex(p.S)},\\ b=${numberTex(p.b)},\\ \\sigma=${numberTex(p.sigma)},\\ \\epsilon=${epsilon}`)}${basis.parameter ? `, ${math("k\\in\\mathbb{Z}_{\\ge 0}")}` : ""}</td>` +
+                    `<td>${linkedText(basis.description || "Not identified.")}</td></tr><tr class="integral-matrices" hidden><td colspan="3"><div>${matrices}</div></td></tr>`;
+            }).join("") + '</tbody></table></div>';
         div.querySelector("#show-integral").addEventListener("change", e => div.querySelectorAll(".integral-matrices").forEach(el => el.hidden = !e.target.checked));
         end.innerHTML = (relations ? `<h4>Relations to other operators</h4>${relations}` : "") + bibliography(refs);
     }
