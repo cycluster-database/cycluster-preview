@@ -87,6 +87,14 @@ function integerPolynomial(coefficients, p) {
     return terms.join("") || "0";
 }
 
+function eulerCoefficients(entry, p, order) {
+    if (order === 1) return [1, entry[1]];
+    if (order === 2) return [1, entry[1], p];
+    if (order === 3) return [1, entry[1], entry[2], BigInt(entry[3])*p**3n];
+    if (order === 5) return [1, entry[1], p*BigInt(entry[2]), BigInt(entry[3])*p**3n*BigInt(entry[2]), BigInt(entry[3])*p**6n*BigInt(entry[1]), BigInt(entry[3])*p**10n];
+    return [1, entry[1], p*BigInt(entry[2]), p**3n*BigInt(entry[1]), p**6n];
+}
+
 function eulerTex(entry, prime, data, factorizations, order) {
     let p = BigInt(prime);
     if (data.coefficient_field[0] !== "rational") {
@@ -96,10 +104,7 @@ function eulerTex(entry, prime, data, factorizations, order) {
         let one = data.coefficient_basis.map(value => data.coefficient_field[0] === "cyclotomic" ? (value === 0 ? "1" : "0") : (value === 1 ? "1" : "0"));
         return fieldPolynomial([one, a, scale(b, p), scale(fieldProduct(epsilon, a, data), p**3n), scale(fieldProduct(epsilon, epsilon, data), p**6n)], p, data);
     }
-    let values = order === 1 ? [1, entry[1]] : order === 2 ? [1, entry[1], p] : order === 3 ? [1, entry[1], entry[2], BigInt(entry[3])*p**3n] :
-        order === 5 ? [1, entry[1], p*BigInt(entry[2]), BigInt(entry[3])*p**3n*BigInt(entry[2]), BigInt(entry[3])*p**6n*BigInt(entry[1]), BigInt(entry[3])*p**10n] :
-        [1, entry[1], p*BigInt(entry[2]), p**3n*BigInt(entry[1]), p**6n];
-    let factors = CYIntegerFactor.factorIntegerPolynomial(values, p);
+    let factors = CYIntegerFactor.factorIntegerPolynomial(eulerCoefficients(entry, p, order), p);
     return factors.length === 1 ? integerPolynomial(factors[0], p) : factors.map(factor => `\\left(${integerPolynomial(factor, p)}\\right)`).join("");
 }
 

@@ -35,6 +35,12 @@ function matrixTex(values) {
     return `\\begin{pmatrix}${values.map(row => row.map(value => numberTex(value).replaceAll("*", "\\,")).join("&")).join("\\\\")}\\end{pmatrix}`;
 }
 
+function singularityTex(data, index) {
+    let value = data.singularities_tex?.[index] ||
+        (String(data.singularities[index]).includes("Infinity") ? "\\infty" : numberTex(data.singularities[index]));
+    return `z${value.startsWith("\\approx") ? "" : "="}${value}`;
+}
+
 function math(tex) { return `\\(${tex}\\)`; }
 function displayMath(tex) { return `\\[${tex}\\]`; }
 function renderMath(element) {
@@ -61,6 +67,67 @@ function bibliography(keys) {
         return `<li id="ref-${escapeText(key)}">[${escapeText(key)}] ${escapeText(ref.authors)}. <i>${title}</i>. ${escapeText(ref.publication || "")} ${escapeText(ref.year || "")}.</li>`;
     });
     return entries.length ? `<h4>References</h4><ul>${entries.join("")}</ul>` : "";
+}
+
+function relationText(relation) {
+    let ids = (relation.operators || []).map(id => `<a href="${operatorLink(id)}">${escapeText(id)}</a>`).join(" and ");
+    if (!ids) return "";
+    if (relation.type === "hadamard_product") {
+        let points = relation.expansion_points || [];
+        let atZero = points.length && points.every(point => point.value === "0");
+        let text = atZero ? `This operator is the Hadamard product of ${ids}, expanded at ${math("z=0")}.` :
+            `This operator is obtained from the Hadamard product of ${ids}` + (points.length ? ` at ${points.map(point => math(`v=${point.tex}`)).join(" and ")}` : "") + ".";
+        if (relation.local_coordinate_tex) text += ` Expand in ${math(relation.local_coordinate_tex)}.`;
+        if (relation.coordinate_tex) text += ` After taking the product, set ${math(`z=${relation.coordinate_tex}`)}.`;
+        return `<p>${text}</p>` + (relation.period_relation_tex ? displayMath(relation.period_relation_tex) : "");
+    }
+    if (relation.type === "equivalent") return `<p>This operator is equivalent to ${ids}.</p>` +
+        (relation.coordinate_tex && relation.period_relation_tex ? displayMath(`w=${relation.coordinate_tex},\\qquad ${relation.period_relation_tex}`) : "");
+    if (relation.type === "covering") return `<p>This operator is obtained from ${ids} by a quadratic covering and a gauge transformation.</p>` +
+        displayMath(`${relation.coordinate_tex},\\qquad ${relation.period_relation_tex}`);
+    if (relation.type === "coordinate_change") return `<p>This operator is obtained from ${ids} by ${math(relation.coordinate_tex)}` + (relation.gauge_tex ? ` and the gauge factor ${math(relation.gauge_tex)}` : "") + ".</p>";
+    let labels = {symmetric_square: "This operator is the symmetric square of", exterior_square: "This operator is constructed from the exterior square of", exterior_square_construction: "The exterior square of this operator gives"};
+    return `<p>${labels[relation.type] || "Related operator:"} ${ids}.</p>`;
+}
+
+function setupMonodromies(available) {
+    let details = document.getElementById("monodromy");
+    details.addEventListener("toggle", async () => {
+        if (!details.open || details.dataset.loaded) return;
+        details.dataset.loaded = "1";
+        try {
+            let data = await readData(available.monodromies);
+            let links = `<a href="data/${escapeText(available.monodromies)}" download>Download matrices</a>`;
+            if (available.monodromy_paths) links += ` | <a href="data/${escapeText(available.monodromy_paths)}">View continuation paths</a>`;
+            let basis = "";
+            if (["covering", "logarithmic"].includes(data.basis?.kind)) {
+                if (data.basis.kind === "covering") basis += `<p>The basis is obtained from ${linkedText(data.basis.parent_operator)} using ${math(data.basis.coordinate_tex)}.</p>`;
+                basis += `<p>The matrices act on ${math("\\Pi_{\\mathbb Q}=B\\varpi")}, where ${math("\\varpi")} is the Frobenius basis period vector and</p>${displayMath(`B=${data.basis.basis_display_tex || data.basis.basis_matrix_tex}`)}`;
+            }
+            details.querySelector("div").innerHTML = links + basis + data.monodromy_matrices.map((matrix, i) =>
+                `<p>Monodromy around ${math(singularityTex(data, i))}</p>` +
+                displayMath(data.monodromy_matrices_tex?.[i] || matrixTex(matrix))).join("");
+            renderMath(details);
+        } catch (error) { details.querySelector("div").textContent = error.message; }
+    });
+}
+
+async function setupIntegralMonodromies(available, refs, addRefs) {
+    let data = await readData(available.integral_monodromies);
+    let div = document.getElementById("integral-content");
+    div.innerHTML = `<label><input type="checkbox" id="show-integral"> Show integral monodromy matrices</label> <a href="data/${escapeText(available.integral_monodromies)}" download>Download matrices</a><p>The displayed values of ${math("b")} and ${math("S")} are representatives modulo ${math("24")} and ${math("1")}.</p>` +
+        `<div class="integral-table-scroll"><table class="integral-table"><thead><tr><th>Integral structure</th><th>Parameters ${knowlButton("integral-knowl", "Definition of the integral-basis parameters")}</th><th>Geometric realization</th></tr></thead><tbody>` +
+        data.bases.map((basis, i) => {
+            let p = basis.parameters;
+            let kappa = basis.kappa_formula ? basis.kappa_formula.replaceAll("*", "\\,") : numberTex(p.kappa);
+            addRefs(basis.description);
+            (basis.references_list || []).forEach(key => refs.add(key));
+            let epsilon = (basis.epsilon_tex || rhoTex(basis.epsilon)).replaceAll("\\!", "");
+            let matrices = basis.monodromy_matrices.map((m, j) => `<span>${math(singularityTex(data, j))}${displayMath(matrixTex(m))}</span>`).join("");
+            return `<tr><th scope="row">${basis.parameter ? "Family" : "Basis"} ${i+1}</th><td>${math(`\\kappa=${kappa},\\ N=${numberTex(p.N)},\\ S=${numberTex(p.S)},\\ b=${numberTex(p.b)},\\ \\sigma=${numberTex(p.sigma)},\\ \\epsilon=${epsilon}`)}${basis.parameter ? `, ${math("k\\in\\mathbb{Z}_{\\ge 0}")}` : ""}</td>` +
+                `<td>${linkedText(basis.description || "Not identified.")}</td></tr><tr class="integral-matrices" hidden><td colspan="3"><div>${matrices}</div></td></tr>`;
+        }).join("") + '</tbody></table></div>';
+    div.querySelector("#show-integral").addEventListener("change", e => div.querySelectorAll(".integral-matrices").forEach(el => el.hidden = !e.target.checked));
 }
 
 async function renderExtra(row) {
@@ -128,65 +195,12 @@ async function renderExtra(row) {
         button.setAttribute("aria-expanded", String(!panel.hidden));
     });
 
-    let relations = (row.operator_relations || []).map(relation => {
-        let ids = (relation.operators || []).map(id => `<a href="${operatorLink(id)}">${escapeText(id)}</a>`).join(" and ");
-        if (!ids) return "";
-        if (relation.type === "hadamard_product") {
-            let points = relation.expansion_points || [];
-            let atZero = points.length && points.every(point => point.value === "0");
-            let text = atZero ? `This operator is the Hadamard product of ${ids}, expanded at ${math("z=0")}.` :
-                `This operator is obtained from the Hadamard product of ${ids}` + (points.length ? ` at ${points.map(point => math(`v=${point.tex}`)).join(" and ")}` : "") + ".";
-            if (relation.local_coordinate_tex) text += ` Expand in ${math(relation.local_coordinate_tex)}.`;
-            if (relation.coordinate_tex) text += ` After taking the product, set ${math(`z=${relation.coordinate_tex}`)}.`;
-            return `<p>${text}</p>` + (relation.period_relation_tex ? displayMath(relation.period_relation_tex) : "");
-        }
-        if (relation.type === "equivalent") return `<p>This operator is equivalent to ${ids}.</p>` +
-            (relation.coordinate_tex && relation.period_relation_tex ? displayMath(`w=${relation.coordinate_tex},\\qquad ${relation.period_relation_tex}`) : "");
-        if (relation.type === "covering") return `<p>This operator is obtained from ${ids} by a quadratic covering and a gauge transformation.</p>` +
-            displayMath(`${relation.coordinate_tex},\\qquad ${relation.period_relation_tex}`);
-        if (relation.type === "coordinate_change") return `<p>This operator is obtained from ${ids} by ${math(relation.coordinate_tex)}` + (relation.gauge_tex ? ` and the gauge factor ${math(relation.gauge_tex)}` : "") + ".</p>";
-        let labels = {symmetric_square: "This operator is the symmetric square of", exterior_square: "This operator is constructed from the exterior square of", exterior_square_construction: "The exterior square of this operator gives"};
-        return `<p>${labels[relation.type] || "Related operator:"} ${ids}.</p>`;
-    }).join("");
+    let relations = (row.operator_relations || []).map(relationText).join("");
     end.innerHTML = (relations ? `<h4>Relations to other operators</h4>${relations}` : "") + bibliography(refs);
 
-    if (available.monodromies) {
-        let details = document.getElementById("monodromy");
-        details.addEventListener("toggle", async () => {
-            if (!details.open || details.dataset.loaded) return;
-            details.dataset.loaded = "1";
-            try {
-                let data = await readData(available.monodromies);
-                let links = `<a href="data/${escapeText(available.monodromies)}" download>Download matrices</a>`;
-                if (available.monodromy_paths) links += ` | <a href="data/${escapeText(available.monodromy_paths)}">View continuation paths</a>`;
-                let basis = "";
-                if (["covering", "logarithmic"].includes(data.basis?.kind)) {
-                    if (data.basis.kind === "covering") basis += `<p>The basis is obtained from ${linkedText(data.basis.parent_operator)} using ${math(data.basis.coordinate_tex)}.</p>`;
-                    basis += `<p>The matrices act on ${math("\\Pi_{\\mathbb Q}=B\\varpi")}, where ${math("\\varpi")} is the Frobenius basis period vector and</p>${displayMath(`B=${data.basis.basis_display_tex || data.basis.basis_matrix_tex}`)}`;
-                }
-                details.querySelector("div").innerHTML = links + basis + data.monodromy_matrices.map((matrix, i) =>
-                    `<p>Monodromy around ${math(`z${data.singularities_tex?.[i]?.startsWith("\\approx") ? "" : "="}${data.singularities_tex?.[i] || (String(data.singularities[i]).includes("Infinity") ? "\\infty" : numberTex(data.singularities[i]))}`)}</p>` +
-                    displayMath(data.monodromy_matrices_tex?.[i] || matrixTex(matrix))).join("");
-                renderMath(details);
-            } catch (error) { details.querySelector("div").textContent = error.message; }
-        });
-    }
+    if (available.monodromies) setupMonodromies(available);
     if (available.integral_monodromies) {
-        let data = await readData(available.integral_monodromies);
-        let div = document.getElementById("integral-content");
-        div.innerHTML = `<label><input type="checkbox" id="show-integral"> Show integral monodromy matrices</label> <a href="data/${escapeText(available.integral_monodromies)}" download>Download matrices</a><p>The displayed values of ${math("b")} and ${math("S")} are representatives modulo ${math("24")} and ${math("1")}.</p>` +
-            `<div class="integral-table-scroll"><table class="integral-table"><thead><tr><th>Integral structure</th><th>Parameters ${knowlButton("integral-knowl", "Definition of the integral-basis parameters")}</th><th>Geometric realization</th></tr></thead><tbody>` +
-            data.bases.map((basis, i) => {
-                let p = basis.parameters;
-                let kappa = basis.kappa_formula ? basis.kappa_formula.replaceAll("*", "\\,") : numberTex(p.kappa);
-                addRefs(basis.description);
-                (basis.references_list || []).forEach(key => refs.add(key));
-                let epsilon = (basis.epsilon_tex || rhoTex(basis.epsilon)).replaceAll("\\!", "");
-                let matrices = basis.monodromy_matrices.map((m, j) => `<span>${math(`z${data.singularities_tex?.[j]?.startsWith("\\approx") ? "" : "="}${data.singularities_tex?.[j] || (data.singularities[j] === "+Infinity" ? "\\infty" : numberTex(data.singularities[j]))}`)}${displayMath(matrixTex(m))}</span>`).join("");
-                return `<tr><th scope="row">${basis.parameter ? "Family" : "Basis"} ${i+1}</th><td>${math(`\\kappa=${kappa},\\ N=${numberTex(p.N)},\\ S=${numberTex(p.S)},\\ b=${numberTex(p.b)},\\ \\sigma=${numberTex(p.sigma)},\\ \\epsilon=${epsilon}`)}${basis.parameter ? `, ${math("k\\in\\mathbb{Z}_{\\ge 0}")}` : ""}</td>` +
-                    `<td>${linkedText(basis.description || "Not identified.")}</td></tr><tr class="integral-matrices" hidden><td colspan="3"><div>${matrices}</div></td></tr>`;
-            }).join("") + '</tbody></table></div>';
-        div.querySelector("#show-integral").addEventListener("change", e => div.querySelectorAll(".integral-matrices").forEach(el => el.hidden = !e.target.checked));
+        await setupIntegralMonodromies(available, refs, addRefs);
         end.innerHTML = (relations ? `<h4>Relations to other operators</h4>${relations}` : "") + bibliography(refs);
     }
     if (available.euler_factors) setupEuler(row, available);
